@@ -1,0 +1,4 @@
+[deps]
+JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
+MLStyle = "d8e11817-5142-5d16-987a-aa16d5891078"
+Vizagrams = "8c229dad-8b3a-4031-83d6-73545c88426d"
