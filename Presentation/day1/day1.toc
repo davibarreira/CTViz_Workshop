@@ -1,0 +1,9 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Motivation}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Objective and Challenges}{7}{0}{1}
+\beamer@sectionintoc {2}{Category Theory}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Why Category Theory?}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Category Theory Brief Introduction}{11}{0}{2}
+\beamer@sectionintoc {3}{An Application in Data Visualization - Diagrams}{22}{0}{3}
+\beamer@subsectionintoc {3}{1}{Data Visualization Pipeline}{22}{0}{3}
+\beamer@subsectionintoc {3}{2}{Diagrams as Monoids}{23}{0}{3}

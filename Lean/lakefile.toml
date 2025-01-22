@@ -1,0 +1,10 @@
+name = "CTViz"
+version = "0.1.0"
+defaultTargets = ["ctviz"]
+
+[[lean_lib]]
+name = "CTViz"
+
+[[lean_exe]]
+name = "ctviz"
+root = "Main"

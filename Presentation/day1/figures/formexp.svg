@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="253.8358mm"
+   height="70.223671mm"
+   viewBox="0 0 253.8358 70.223673"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="formexp.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0570195"
+     inkscape:cx="702.44683"
+     inkscape:cy="150.42296"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     lock-margins="true"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path37522" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path37528" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path37519" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-10.079716,-68.724843)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 128.15711,87.083944 v 14.728736 h 12.3447"
+       id="path4117-2"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'CMU Serif Extra';-inkscape-font-specification:'CMU Serif Extra Italic';stroke-width:0.264583"
+       x="113.66343"
+       y="81.078377"
+       id="text3488-5"><tspan
+         sodipodi:role="line"
+         id="tspan3486-3"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Bold';stroke-width:0.264583"
+         x="113.66343"
+         y="81.078377">Expressiveness</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.76111px;line-height:1.25;font-family:'CMU Classical Serif';-inkscape-font-specification:'CMU Classical Serif';stroke-width:0.264583"
+       x="143.12129"
+       y="96.90403"
+       id="text7775-6-6"><tspan
+         sodipodi:role="line"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="143.12129"
+         y="96.90403"
+         id="tspan21260-9">Interfacing with Lower</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="143.12129"
+         y="106.60542"
+         id="tspan35241">Level Abstraction</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:'CMU Classical Serif';-inkscape-font-specification:'CMU Classical Serif';stroke-width:1.165;stroke-miterlimit:4;stroke-dasharray:none"
+       x="14.666306"
+       y="81.078377"
+       id="text3488"><tspan
+         sodipodi:role="line"
+         id="tspan3486"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Bold';stroke-width:1.165;stroke-miterlimit:4;stroke-dasharray:none"
+         x="14.666306"
+         y="81.078377">Abstraction</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 29.159983,84.68747 V 99.416208 H 41.504686"
+       id="path4117"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 128.15711,101.81268 v 18.75393 h 12.34471"
+       id="path4117-1"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.76111px;line-height:1.25;font-family:'CMU Classical Serif';-inkscape-font-specification:'CMU Classical Serif';stroke-width:0.264583"
+       x="43.354977"
+       y="98.750084"
+       id="text7775"><tspan
+         sodipodi:role="line"
+         id="tspan7773"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="43.354977"
+         y="98.750084">Category Theory</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.76111px;line-height:1.25;font-family:'CMU Classical Serif';-inkscape-font-specification:'CMU Classical Serif';stroke-width:0.264583"
+       x="142.24445"
+       y="119.43676"
+       id="text7775-6"><tspan
+         sodipodi:role="line"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="142.24445"
+         y="119.43676"
+         id="tspan21256">Nested Marks and</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="142.24445"
+         y="129.13815"
+         id="tspan21260">Coordinates as Manifolds</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:'CMU Classical Serif';-inkscape-font-specification:'CMU Classical Serif';stroke-width:0.136679"
+       x="43.685928"
+       y="104.63335"
+       id="text41628"><tspan
+         sodipodi:role="line"
+         id="tspan41626"
+         style="font-size:4.93889px;stroke-width:0.136679"
+         x="43.685928"
+         y="104.63335">(how objects interact)</tspan></text>
+  </g>
+</svg>

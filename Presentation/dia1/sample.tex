@@ -1,0 +1,339 @@
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[aspectratio=169,xcolor=dvipsnames,10pt]{beamer}
+\usetheme{SimplePlus}
+
+\usepackage{hyperref}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{mathtools}
+\usepackage[square,numbers]{natbib}
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\newcommand*{\QEDB}{\hfill\ensuremath{\square}}%
+
+%----------------------------------------------------------------------------------------
+%    TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{Data Visualization From a Category Theory Perspective}
+\subtitle{}
+
+\author{Davi Sales Barreira, Asla Medeiros e Sá}
+
+\institute
+{
+    FGV - EMAp, IMPATech
+}
+\date{\today} % Date, can be changed to a custom date
+
+%----------------------------------------------------------------------------------------
+%    PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{frame}
+    % Print the title page as the first slide
+    \titlepage
+\end{frame}
+
+\begin{frame}{Table of contents}
+	\setbeamertemplate{section in toc}[sections numbered]
+	\setbeamertemplate{subsection in toc}[subsections numbered]
+	\setbeamerfont{subsection in toc}{size=\small}
+	\tableofcontents[sectionstyle=show, subsectionstyle=show]
+\end{frame}
+
+% \begin{frame}{Overview}
+%     % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+%     \tableofcontents
+% \end{frame}
+
+%------------------------------------------------
+\section{Introduction to the Course}
+\begin{frame}[fragile]{Motivation}
+  Balance expressiveness and abstraction in data visualization
+  frameworks.
+	\vspace{3mm}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.8\textwidth]{./figures/expressiveness.pdf}
+		\end{center}
+        % \caption{Rotated histogram aligned with second main PCA axis.}
+		\label{fig:rotated-histogram}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Motivation}
+    How can we represent complex visualizations without resorting to low-level specifications?
+	\vspace{3mm}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.45\textwidth]{./figs/pca.pdf}
+		\end{center}
+        \caption{Rotated histogram aligned with second main PCA axis.}
+		\label{fig:rotated-histogram}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Motivation}
+    How can we represent complex visualizations without resorting to low-level specifications?
+	\vspace{3mm}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=1.\textwidth]{./figs/moritz.pdf}
+		\end{center}
+        \caption{OECD Better Life Index visualization \citet{oecd}.}
+		\label{fig:rotated-histogram}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Overview}
+    \begin{itemize}
+        \item \textbf{Day 1}: Basics of Category Theory
+        \item \textbf{Day 2}: Programming with Category Theory
+        \item \textbf{Day 3}: Data Visualization Theory
+        \item \textbf{Day 4}: Data Visualization + Categorical Programming
+    \end{itemize}
+\end{frame}
+%------------------------------------------------
+
+\section{Category Theory}
+\begin{frame}[fragile]{Why Category Theory?}
+	\textbf{Category Theory} is a branch of mathematics that
+	studies general abstract structures through their relationships.
+	\vspace{3mm}
+
+	\textbf{Origin: }Samuel Eilenberg e Saunders Mac Lane - 1940
+	\vspace{3mm}
+
+	As pointed by \citet{fong2019invitation}, Category Theory is unmatched
+	in its ability to organize and relate abstractions.
+
+	\vspace{3mm}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.40\textwidth]{./figures/category-triad.pdf}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{What are Categories?}
+	Category Theory is a branch of mathematics that
+	studies general abstract structures through their relationships.
+
+	\begin{definition}[Category]
+        \begin{itemize}
+            \item A collection of objects $\mathrm{Ob}_{\mathcal{C}}$.
+            \item A collection of morphisms $\mathrm{Hom}_{\mathcal{C}}$, where each morphism has a source object and a target object. $\mathrm{Hom}_{\mathcal{C}}(A, B)$ is the collection of morphisms going from object $A$ to object $B$.
+            \item A binary operation $\circ : \mathrm{Hom}_{\mathcal{C}}(A, B) \times \mathrm{Hom}_{\mathcal{C}}(B, C) \to \mathrm{Hom}_{\mathcal{C}}(A, C)$ such that:
+            \begin{enumerate}
+                \item \textbf{Associative}: $(h \circ g) \circ f = h \circ (g \circ f)$.
+                \item \textbf{Identity}: Every object has an identity morphism $1_A \in \mathrm{Hom}_{\mathcal{C}}(A, A)$.
+            \end{enumerate}
+        \end{itemize}
+	\end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{Examples of Categories}
+    The category $\mathbf{1}$ consists of $\text{Ob}_{\mathbf{1}} := \{A\}$ and $\mathrm{Mor}_{\mathbf{1}} = \mathrm{id}_A$.
+
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=1.0\textwidth]{./figs/1Cat.pdf}
+		\end{center}
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile]{Examples of Categories}
+	The category $\bm 2$ consists of $\text{Ob}_{\bm 2} := \{A, B\}$ and $\text{Mor}_{\bm 1} = \{id_A, id_B, f\}$,
+	where $f:A \to B$.
+	The diagram for such category is shown below.
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=1.00\textwidth]{./figs/2Cat.pdf}
+		\end{center}
+		\caption{Category $\bm 2$.}
+		\label{fig:2Cat}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Examples of Categories}
+	The category $\bm 3$ has three morphisms besides the identities. The morphisms are
+	$f$, $g$ and their composition $g \circ f$. The figure below
+	illustrates the category with all its morphisms.
+	\bigskip
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=1.00\textwidth]{./figs/3Cat.pdf}
+		\end{center}
+		\caption{Category $\bm 3$ showing all morphisms.}
+		\label{fig:3Catcomplete}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Examples of Categories}
+	Here are some more interesting
+	categories:
+	\begin{enumerate}[1.]
+		\item $\mathbf{Set}$ which is the category of sets, where the objects are sets and the morphisms are functions between sets.
+		\item $\mathbf{Top}$ is the category where topological spaces are the objects and continuous functions are the morphisms.
+		\item $\mathbf{Vec}_\mathbb F$ is the category where vector spaces over field $\mathbb F$ are the objects,
+		      and linear transformations are the morphisms.
+		\item $\mathbf{Mon}$ is the category of monoids, where morphisms are monoid homormophisms.
+	\end{enumerate}
+\end{frame}
+
+% \begin{frame}[fragile]{Examples of Categories}
+%     \begin{definition}[Slice Category]
+%         Given a category \(\mathcal{C}\) and an object \(S\) of this category, we can define a slice category \(\mathcal{C} / S\), where:
+%         \begin{itemize}
+%             \item The objects are tuples \((A, f)\) where \(A\) is an object in \(\mathcal{C}\) and \(f: A \to S\) is a morphism.
+%             \item A morphism \(\varphi_{(A, B)} : (A, f) \to (B, g)\) is equivalent to a morphism \(\varphi \in \text{Mor}_{\mathcal{C}}(A, B)\) such that \(f = g \circ \varphi\).
+%         \end{itemize}
+%     \end{definition}
+% 		\begin{center}
+% 			\includegraphics[width=1.00\textwidth]{./figs/SliceCategory.svg}
+% 		\end{center}
+% 		\caption{Category $\bm 3$ showing all morphisms.}
+% 		\label{fig:3Catcomplete}
+% 	\end{figure}
+% \end{frame}
+
+
+
+
+\begin{frame}[fragile]{Category Theory Brief Introduction}
+	Objects defined in terms of existence and
+	uniqueness of morphisms are known as \textbf{universal constructions}.
+	\begin{definition}[Zero, Initial and Terminal]
+		Let $\mathcal C$ be a category.
+		\begin{enumerate}[1.]
+			\item An object $I \in \text{Ob}_\mathcal C$ is \textit{initial} if for every $A \in \text{Ob}_\mathcal C$,
+			      there is exactly one morphism from $I$ to $A$. Thus, from $I$ to $I$ there is only the identity.
+			\item An object $T \in \text{Ob}_\mathcal C$ is \textit{terminal} if for every $A \in \text{Ob}_\mathcal C$,
+			      there is exactly one morphism from $A$ to $T$. Thus, from $I$ to $I$ there is only the identity.
+			\item An object is \textit{zero} if it is both terminal and initial.
+		\end{enumerate}
+	\end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{Category Theory Brief Introduction}
+	\begin{definition}[Functor]
+		Let $\mathcal C$ and $\mathcal D$ be two categories. A functor $F: \mathcal C \to \mathcal D$ is
+		a pair of mappings with the following properties:
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=0.7\textwidth]{./figures/Functor.pdf}
+			\end{center}
+			\caption{Diagrams showcasing the properties of functors.}
+			\label{fig:Functor}
+		\end{figure}
+	\end{definition}
+
+\end{frame}
+
+\begin{frame}[fragile]{Category Theory Brief Introduction}
+	\begin{definition}[Natural Transformations]
+		Let $\mathcal C$ and $\mathcal D$ be categories, and let $F,G:\mathcal C \to \mathcal D$ be functors.
+		A natural transformation $\alpha: F \to G$ is such that the following diagram commutes:
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=0.25\textwidth]{./figures/NaturalTransformation.pdf}
+			\end{center}
+			\caption{Commutative diagram of a natural transformation highlighting the commutative property of the definition.}
+			\label{fig:NaturalTransformation}
+		\end{figure}
+	\end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{Category Theory Brief Introduction}
+	\textbf{Monoids} and \textbf{Monads} are two ubiquitous constructions both in Category Theory and
+	Functional Programming. These two concepts will be used when talking about
+	data visualization. Therefore, it is required of us to introduce these constructions.
+
+	Let's start with the definition of a monoid in the context of Set Theory.
+
+	\begin{definition}[Monoid - Set Theory]
+		A monoid is a triple $(M, \otimes, e_M)$ where $M$ is a set, $\otimes:M\times M \to M$ is a binary operation
+		and $e_M$ the neutral element, such that:
+		\begin{enumerate}
+			\item $a \otimes (b \otimes c) = (a \otimes b) \otimes c$
+			\item $a \otimes e_M = e_M \otimes a = a$.
+		\end{enumerate}
+		\label{def:monoid}
+	\end{definition}
+
+	An example of a monoid is $(\mathbb N \cup \{0\}, +, 0)$.
+	It is easy to check that the summation operator satisfies the
+	associativity neutrality properties.
+\end{frame}
+
+% \begin{frame}[fragile]{Category Theory Brief Introduction}
+% 	\begin{definition}[Monoid in the  category $\mathbf{Set}$]
+% 		A monoid in $\mathbf{Set}$ is a triple $(M, \mu, \eta)$, where $M \in \text{Ob}_\mathbf{Set}$,
+% 		$\mu:M \times M \to M$ and $\eta: 1 \to M$ are two morphisms in $\mathbf{Set}$ satisfying the
+% 		commutative diagrams below. Note that $1$ is the terminal object in $\mathbf{Set}$, i.e.
+% 		the singleton set (which is unique up to an isomorphism).
+
+% 		\begin{figure}[H]
+% 			\begin{center}
+% 				\includegraphics[width=1.3\textwidth]{./figures/MonoidalCategory.pdf}
+% 			\end{center}
+% 			\caption{Commutative diagram for monoid.}
+% 			\label{fig:monoid-diagram}
+% 		\end{figure}
+% 		\label{def:monoid-cat}
+% 	\end{definition}
+% \end{frame}
+
+% \begin{frame}[fragile]{Category Theory Brief Introduction}
+% 	\begin{definition}[Monad]
+% 		A monad is a monoid in $\mathbf{End}_\mathcal C$, which is the triple $(T, \mu, \eta)$,
+% 		where $T:\mathcal C \to \mathcal C$ is a functor,
+% 		$\mu:T \circ T \to T$ and $\eta: 1 \to T$ are natural transformations in $\mathbf{End}_\mathcal C$ satisfying the
+% 		commutative diagrams \ref{fig:monad}. Note that $1$ is the identity functor in $\mathcal{C}$.
+% 		\begin{figure}[H]
+% 			\begin{center}
+% 				\includegraphics[width=1.3\textwidth]{./figures/Monad.pdf}
+% 			\end{center}
+% 			\caption{Commutative diagram for monad.}
+% 			\label{fig:monad}
+% 		\end{figure}
+% 	\end{definition}
+% \end{frame}
+
+%------------------------------------------------
+\section{Second Section}
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}{Theorem}
+    \begin{theorem}[Mass--energy equivalence]
+        $E = mc^2$
+    \end{theorem}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{References}
+    \footnotesize
+    \bibliography{reference.bib}
+    \bibliographystyle{apalike}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+    \Huge{\centerline{\textbf{The End}}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

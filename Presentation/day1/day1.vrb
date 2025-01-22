@@ -1,0 +1,16 @@
+\frametitle{Category Theory for Diagrams}
+\textbf{Diagrams as Monoids}
+	\vspace{3mm}
+
+	\citet{yorgey2012monoids} proposed a Domain-Specific Language which models
+	the process of generic diagram creation.
+	The paper explains some of the ideas that went behind the development
+	of the framework \textit{Diagrams} \citep{yates2015diagrams},
+	which is a Haskell library for drawing diagrams.
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.40\textwidth]{./figures/diagrams.png}
+		\end{center}
+		\caption{Example of how a diagram works. Image from \citet{yorgey2012monoids}.}
+		\label{fig:diagrams}
+	\end{figure}
