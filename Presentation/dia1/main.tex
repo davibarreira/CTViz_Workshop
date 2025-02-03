@@ -185,6 +185,35 @@
 \end{frame}
 
 \begin{frame}[fragile]{Examples of Categories}
+	The discrete category $\mathbf{\underline{N}}$ is the category with $N$ objects
+	and $Mor_{\mathbf{\underline{N}}} := \{id_1,...,id_N\}$. An example of this category is
+	illustrated below.
+	\bigskip
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.80\textwidth]{../notebooks/DiscreteCategory.pdf}
+		\end{center}
+        \caption{Category $\mathbf{\underline{N}}$.}
+		\label{fig:3Catcomplete}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Examples of Categories}
+        Given a category \(\mathcal{C}\) and an object \(S\) of this category, we can define a slice category \(\mathcal{C} / S\), where:
+        \begin{itemize}
+            \item The objects are tuples \((A, f)\) where \(A\) is an object in \(\mathcal{C}\) and \(f: A \to S\) is a morphism.
+            \item A morphism \(\varphi_{(A, B)} : (A, f) \to (B, g)\) is equivalent to a morphism \(\varphi \in \text{Mor}_{\mathcal{C}}(A, B)\) such that \(f = g \circ \varphi\).
+        \end{itemize}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.70\textwidth]{./figs/SliceCategory.pdf}
+		\end{center}
+		\caption{Category $\bm 3$ showing all morphisms.}
+		\label{fig:3Catcomplete}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Examples of Categories}
 	Here are some more interesting
 	categories:
 	\begin{enumerate}[1.]
@@ -196,25 +225,8 @@
 	\end{enumerate}
 \end{frame}
 
-\begin{frame}[fragile]{Examples of Categories}
-    \begin{definition}[Slice Category]
-        Given a category \(\mathcal{C}\) and an object \(S\) of this category, we can define a slice category \(\mathcal{C} / S\), where:
-        \begin{itemize}
-            \item The objects are tuples \((A, f)\) where \(A\) is an object in \(\mathcal{C}\) and \(f: A \to S\) is a morphism.
-            \item A morphism \(\varphi_{(A, B)} : (A, f) \to (B, g)\) is equivalent to a morphism \(\varphi \in \text{Mor}_{\mathcal{C}}(A, B)\) such that \(f = g \circ \varphi\).
-        \end{itemize}
-    \end{definition}
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[width=0.70\textwidth]{./figs/SliceCategory.pdf}
-		\end{center}
-		\caption{Category $\bm 3$ showing all morphisms.}
-		\label{fig:3Catcomplete}
-	\end{figure}
-\end{frame}
 
-
-\begin{frame}[fragile]{Category Theory Brief Introduction}
+\begin{frame}[fragile]{Universal Constructions}
 	Objects defined in terms of existence and
 	uniqueness of morphisms are known as \textbf{universal constructions}.
 	\begin{definition}[Zero, Initial and Terminal]
@@ -226,6 +238,10 @@
 			      there is exactly one morphism from $A$ to $T$. Thus, from $I$ to $I$ there is only the identity.
 			\item An object is \textit{zero} if it is both terminal and initial.
 		\end{enumerate}
+	\end{definition}
+\end{frame}
+\begin{frame}[fragile]{Universal Constructions}
+	\begin{definition}[Product]
 	\end{definition}
 \end{frame}
 

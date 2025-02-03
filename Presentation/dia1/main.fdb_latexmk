@@ -1,13 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1738610532 "main.aux" "main.bbl" "main" 1738610845 0
+["bibtex main"] 1738612081 "main.aux" "main.bbl" "main" 1738612086 0
   "./reference.bib" 1737571898 462 b482ba8c940ef7c9a054ff0b4d732b03 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1738610845 5997 013f1d2c0c38094a5ec29cd7ef1a3a53 "pdflatex"
+  "main.aux" 1738612085 6377 0994c18153c8ab811770e0e21c90477c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1738610843 "main.tex" "main.pdf" "main" 1738610845 0
+["pdflatex"] 1738612083 "main.tex" "main.pdf" "main" 1738612086 0
+  "../notebooks/DiscreteCategory.pdf" 1738612008 18303 9d36de69ed9120ae3c9792e4f51feae4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -276,12 +277,12 @@
   "figs/pca.pdf" 1737571595 79880 2d5e4af188dee8ef034e78fee46bdb02 ""
   "figures/category-triad.pdf" 1737471632 8129 336c211091e6f8fab8ab15fdc76c6d96 ""
   "figures/expressiveness.pdf" 1737471632 40498 0debcb71cdf75f98875882b29d2f1b97 ""
-  "main.aux" 1738610845 5997 013f1d2c0c38094a5ec29cd7ef1a3a53 "pdflatex"
-  "main.bbl" 1738610532 463 ba8beda824f6f0dc4ed5a5c6c705c1d8 "bibtex main"
-  "main.nav" 1738610845 2651 ff7c03a77d5516007bb1cae53518d07e "pdflatex"
-  "main.out" 1738610845 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
-  "main.tex" 1738610843 13106 ef427203e34da05bb417d5af6ce4a423 ""
-  "main.vrb" 1738610845 710 ae50c710e206e69013d9eb9653f23414 "pdflatex"
+  "main.aux" 1738612085 6377 0994c18153c8ab811770e0e21c90477c "pdflatex"
+  "main.bbl" 1738612081 463 ba8beda824f6f0dc4ed5a5c6c705c1d8 "bibtex main"
+  "main.nav" 1738612085 2837 49b8156961d921e9da41bde619042eeb "pdflatex"
+  "main.out" 1738612085 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
+  "main.tex" 1738612082 13624 b01be624dab81c88492fc528dda7ec0f ""
+  "main.vrb" 1738612085 710 ae50c710e206e69013d9eb9653f23414 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
