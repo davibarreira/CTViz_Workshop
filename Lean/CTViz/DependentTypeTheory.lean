@@ -1,34 +1,19 @@
--- def search {α} (f : Nat → Option α) (start : Nat) : α :=
---   match f start with
---   | .some x => x
---   | .none => search f (start + 1)
+def cons (α : Type) (a : α) (as : List α) : List α :=
+  List.cons a as
 
-def search {α} (f : Nat → Option α) (start : Nat) : Option α :=
-  match f start with
-  | .some x => .some x
-  | .none =>
-    match start with
-    | 0 => .none
-    | n+1 => search f n
+#check cons Nat        -- Nat → List Nat → List Nat
+#check cons Bool       -- Bool → List Bool → List Bool
+#check cons            -- (α : Type) → α → List α → List α
 
-#eval search (fun n : Nat => some (toString (n+1))) 4
+def identity : α → α := fun x => x
 
-def f (n : Nat) : Option Nat :=
-  if n * n ≤ 121 then .some n else .none
+#check identity
 
-#eval search (fun n => if n * n ≤ 121 then .some n else .none) 0
+def β (n : Nat) : Type :=
+  match n with
+  | 0 => Unit
+  | n + 1 => Unit × β n
 
-#eval f 10
-
-
-def fc (x:Float) (n:Nat) : Float := (n.toFloat) + 2*x
-#eval 1 + 0.4
-#check 1 + 0.4
-
-#check fc 1
-
-
-
-
-
--- def ε {α : Type} (nl : NonEmptyList α) : α :=
+#eval (() : β 0)
+#eval (((),()): β 1)
+#eval (((),(),()): β 2)

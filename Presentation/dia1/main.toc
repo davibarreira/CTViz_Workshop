@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{Introduction to the Course}{2}{0}{1}
+\beamer@sectionintoc {2}{Category Theory}{7}{0}{2}

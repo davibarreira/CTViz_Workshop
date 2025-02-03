@@ -31,3 +31,36 @@ def emptyNonEmptyListInt : List (NonEmptyList Int) := []
 def nlnl := NonEmptyList.mk (NonEmptyList.mk 1 []) []
 #check nlnl
 #eval ε nlnl
+
+
+-- Store Comonad
+inductive Store (s : Type) (c :Type) where
+  | St : (s → c) → s → Store s c
+
+instance : Functor (Store s) where
+  map g st := match st with
+    | Store.St f h => Store.St (g ∘ f) h
+
+def extract (st : (Store s c)) : c :=
+  match st with
+    | Store.St f s' => f s'
+
+def duplicate (st : Store s c) : Store s (Store s c) :=
+  match st with
+  | Store.St f s => Store.St (Store.St f) s
+
+
+def myst := Store.St (fun x : Int => x + 1) 10
+
+
+#eval extract myst
+#check Store.St (Store.St (fun x : Int => x + 1))
+#check Store.St (Store.St (fun x : Int => x + 1)) 10
+
+-- extract :: Store s c -> c
+-- extract (St f s) = f s
+-- instance : Functor Hom where
+--   map f H := Hom.mk (f ∘ H.x)
+
+-- instance Functor (Store s) where
+-- fmap g (St f s) = St (g . f) s

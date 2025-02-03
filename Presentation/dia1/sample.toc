@@ -1,3 +1,0 @@
-\beamer@sectionintoc {1}{Introduction to the Course}{3}{0}{1}
-\beamer@sectionintoc {2}{Category Theory}{7}{0}{2}
-\beamer@sectionintoc {3}{Second Section}{17}{0}{3}

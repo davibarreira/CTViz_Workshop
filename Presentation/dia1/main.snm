@@ -1,8 +1,10 @@
+\beamer@slide {fig:rotated-histogram}{2}
 \beamer@slide {fig:rotated-histogram}{3}
 \beamer@slide {fig:rotated-histogram}{4}
-\beamer@slide {fig:rotated-histogram}{5}
 \beamer@slide {fig:2Cat}{10}
 \beamer@slide {fig:3Catcomplete}{11}
 \beamer@slide {fig:Functor}{14}
 \beamer@slide {fig:NaturalTransformation}{15}
 \beamer@slide {def:monoid}{16}
+\beamer@slide {fig:monoid-diagram}{17}
+\beamer@slide {def:monoid-cat}{17}

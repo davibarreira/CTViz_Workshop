@@ -1,0 +1,16 @@
+\frametitle{Category Theory Brief Introduction}
+\begin{definition}[Monoid in the  category $\mathbf{Set}$]
+		A monoid in $\mathbf{Set}$ is a triple $(M, \mu, \eta)$, where $M \in \text{Ob}_\mathbf{Set}$,
+		$\mu:M \times M \to M$ and $\eta: 1 \to M$ are two morphisms in $\mathbf{Set}$ satisfying the
+		commutative diagrams below. Note that $1$ is the terminal object in $\mathbf{Set}$, i.e.
+		the singleton set (which is unique up to an isomorphism).
+
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=0.7\textwidth]{./figs/MonoidalCategory.pdf}
+			\end{center}
+			\caption{Commutative diagram for monoid.}
+			\label{fig:monoid-diagram}
+		\end{figure}
+		\label{def:monoid-cat}
+	\end{definition}

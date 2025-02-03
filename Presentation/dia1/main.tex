@@ -33,6 +33,9 @@
 %----------------------------------------------------------------------------------------
 %    PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
+\setbeamertemplate{blocks}[default]
+\setbeamercolor{block title}{fg=white, bg=RoyalBlue}
+\setbeamercolor{block body}{fg=black, bg=white}
 
 \begin{document}
 
@@ -40,18 +43,6 @@
     % Print the title page as the first slide
     \titlepage
 \end{frame}
-
-\begin{frame}{Table of contents}
-	\setbeamertemplate{section in toc}[sections numbered]
-	\setbeamertemplate{subsection in toc}[subsections numbered]
-	\setbeamerfont{subsection in toc}{size=\small}
-	\tableofcontents[sectionstyle=show, subsectionstyle=show]
-\end{frame}
-
-% \begin{frame}{Overview}
-%     % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
-%     \tableofcontents
-% \end{frame}
 
 %------------------------------------------------
 \section{Introduction to the Course}
@@ -101,6 +92,22 @@
     \end{itemize}
 \end{frame}
 %------------------------------------------------
+
+\begin{frame}{Table of contents}
+	% \setbeamertemplate{section in toc}[sections numbered]
+	% \setbeamertemplate{subsection in toc}[subsections numbered]
+	% \setbeamerfont{subsection in toc}{size=\small}
+	% \tableofcontents[sectionstyle=show, subsectionstyle=show]
+    \begin{enumerate}
+        \item What are Categories?
+        \item Examples of Categories
+        \item Initial and Terminal objects
+        \item Functors
+        \item Natural Transformations
+        \item Monoids and Monads
+        \item F-Algebras and F-Coalgebras
+    \end{enumerate}
+\end{frame}
 
 \section{Category Theory}
 \begin{frame}[fragile]{Why Category Theory?}
@@ -229,7 +236,7 @@
 		a pair of mappings with the following properties:
 		\begin{figure}[H]
 			\begin{center}
-				\includegraphics[width=0.7\textwidth]{./figures/Functor.pdf}
+				\includegraphics[width=0.6\textwidth]{./figs/Functor.pdf}
 			\end{center}
 			\caption{Diagrams showcasing the properties of functors.}
 			\label{fig:Functor}
@@ -244,7 +251,7 @@
 		A natural transformation $\alpha: F \to G$ is such that the following diagram commutes:
 		\begin{figure}[H]
 			\begin{center}
-				\includegraphics[width=0.25\textwidth]{./figures/NaturalTransformation.pdf}
+				\includegraphics[width=0.60\textwidth]{./figs/NaturalTransformation.pdf}
 			\end{center}
 			\caption{Commutative diagram of a natural transformation highlighting the commutative property of the definition.}
 			\label{fig:NaturalTransformation}
@@ -274,23 +281,23 @@
 	associativity neutrality properties.
 \end{frame}
 
-% \begin{frame}[fragile]{Category Theory Brief Introduction}
-% 	\begin{definition}[Monoid in the  category $\mathbf{Set}$]
-% 		A monoid in $\mathbf{Set}$ is a triple $(M, \mu, \eta)$, where $M \in \text{Ob}_\mathbf{Set}$,
-% 		$\mu:M \times M \to M$ and $\eta: 1 \to M$ are two morphisms in $\mathbf{Set}$ satisfying the
-% 		commutative diagrams below. Note that $1$ is the terminal object in $\mathbf{Set}$, i.e.
-% 		the singleton set (which is unique up to an isomorphism).
+\begin{frame}[fragile]{Category Theory Brief Introduction}
+	\begin{definition}[Monoid in the  category $\mathbf{Set}$]
+		A monoid in $\mathbf{Set}$ is a triple $(M, \mu, \eta)$, where $M \in \text{Ob}_\mathbf{Set}$,
+		$\mu:M \times M \to M$ and $\eta: 1 \to M$ are two morphisms in $\mathbf{Set}$ satisfying the
+		commutative diagrams below. Note that $1$ is the terminal object in $\mathbf{Set}$, i.e.
+		the singleton set (which is unique up to an isomorphism).
 
-% 		\begin{figure}[H]
-% 			\begin{center}
-% 				\includegraphics[width=1.3\textwidth]{./figures/MonoidalCategory.pdf}
-% 			\end{center}
-% 			\caption{Commutative diagram for monoid.}
-% 			\label{fig:monoid-diagram}
-% 		\end{figure}
-% 		\label{def:monoid-cat}
-% 	\end{definition}
-% \end{frame}
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=0.7\textwidth]{./figs/MonoidalCategory.pdf}
+			\end{center}
+			\caption{Commutative diagram for monoid.}
+			\label{fig:monoid-diagram}
+		\end{figure}
+		\label{def:monoid-cat}
+	\end{definition}
+\end{frame}
 
 % \begin{frame}[fragile]{Category Theory Brief Introduction}
 % 	\begin{definition}[Monad]
@@ -307,18 +314,6 @@
 % 		\end{figure}
 % 	\end{definition}
 % \end{frame}
-
-%------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
-
-%------------------------------------------------
-
-\begin{frame}{Theorem}
-    \begin{theorem}[Mass--energy equivalence]
-        $E = mc^2$
-    \end{theorem}
-\end{frame}
 
 %------------------------------------------------
 
