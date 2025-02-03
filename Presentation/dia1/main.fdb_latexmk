@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1738609124 "main.aux" "main.bbl" "main" 1738609513 0
+["bibtex main"] 1738610532 "main.aux" "main.bbl" "main" 1738610845 0
   "./reference.bib" 1737571898 462 b482ba8c940ef7c9a054ff0b4d732b03 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1738609513 5617 ae2584aea35a07339b0628eb965e050d "pdflatex"
+  "main.aux" 1738610845 5997 013f1d2c0c38094a5ec29cd7ef1a3a53 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1738609511 "main.tex" "main.pdf" "main" 1738609513 0
+["pdflatex"] 1738610843 "main.tex" "main.pdf" "main" 1738610845 0
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -68,6 +68,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi8.tfm" 1364512039 3000 8e600ffb247b55d33f019684291222af ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi9.tfm" 1364512039 3020 01116cf88e44582b0455e2a3667f2c00 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
@@ -270,16 +271,17 @@
   "figs/Functor.pdf" 1737560062 25420 f3fc28b0c323c4fbd045d290e116c282 ""
   "figs/MonoidalCategory.pdf" 1737560062 23879 3286b7bbc325d29b1d55ba6fc244b518 ""
   "figs/NaturalTransformation.pdf" 1737560062 30098 0b4ee0ee8ad4a7e813a4716cc1d42e71 ""
+  "figs/SliceCategory.pdf" 1738610297 32555 e5533152a845bd371832a1158138fa26 ""
   "figs/moritz.pdf" 1737560062 76313 dcfa36d82029a7fbc20007a8c62ba7b4 ""
   "figs/pca.pdf" 1737571595 79880 2d5e4af188dee8ef034e78fee46bdb02 ""
   "figures/category-triad.pdf" 1737471632 8129 336c211091e6f8fab8ab15fdc76c6d96 ""
   "figures/expressiveness.pdf" 1737471632 40498 0debcb71cdf75f98875882b29d2f1b97 ""
-  "main.aux" 1738609513 5617 ae2584aea35a07339b0628eb965e050d "pdflatex"
-  "main.bbl" 1738609124 463 ba8beda824f6f0dc4ed5a5c6c705c1d8 "bibtex main"
-  "main.nav" 1738609513 2465 ecbdd06408595010893948da4fdd9331 "pdflatex"
-  "main.out" 1738609513 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
-  "main.tex" 1738609511 12708 ba1869565a753f2dc957889eb4789c78 ""
-  "main.vrb" 1738609513 710 ae50c710e206e69013d9eb9653f23414 "pdflatex"
+  "main.aux" 1738610845 5997 013f1d2c0c38094a5ec29cd7ef1a3a53 "pdflatex"
+  "main.bbl" 1738610532 463 ba8beda824f6f0dc4ed5a5c6c705c1d8 "bibtex main"
+  "main.nav" 1738610845 2651 ff7c03a77d5516007bb1cae53518d07e "pdflatex"
+  "main.out" 1738610845 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
+  "main.tex" 1738610843 13106 ef427203e34da05bb417d5af6ce4a423 ""
+  "main.vrb" 1738610845 710 ae50c710e206e69013d9eb9653f23414 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

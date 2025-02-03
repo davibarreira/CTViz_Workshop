@@ -3,8 +3,9 @@
 \beamer@slide {fig:rotated-histogram}{4}
 \beamer@slide {fig:2Cat}{10}
 \beamer@slide {fig:3Catcomplete}{11}
-\beamer@slide {fig:Functor}{14}
-\beamer@slide {fig:NaturalTransformation}{15}
-\beamer@slide {def:monoid}{16}
-\beamer@slide {fig:monoid-diagram}{17}
-\beamer@slide {def:monoid-cat}{17}
+\beamer@slide {fig:3Catcomplete}{13}
+\beamer@slide {fig:Functor}{16}
+\beamer@slide {fig:NaturalTransformation}{17}
+\beamer@slide {def:monoid}{18}
+\beamer@slide {fig:monoid-diagram}{19}
+\beamer@slide {def:monoid-cat}{19}

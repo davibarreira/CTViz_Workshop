@@ -196,23 +196,22 @@
 	\end{enumerate}
 \end{frame}
 
-% \begin{frame}[fragile]{Examples of Categories}
-%     \begin{definition}[Slice Category]
-%         Given a category \(\mathcal{C}\) and an object \(S\) of this category, we can define a slice category \(\mathcal{C} / S\), where:
-%         \begin{itemize}
-%             \item The objects are tuples \((A, f)\) where \(A\) is an object in \(\mathcal{C}\) and \(f: A \to S\) is a morphism.
-%             \item A morphism \(\varphi_{(A, B)} : (A, f) \to (B, g)\) is equivalent to a morphism \(\varphi \in \text{Mor}_{\mathcal{C}}(A, B)\) such that \(f = g \circ \varphi\).
-%         \end{itemize}
-%     \end{definition}
-% 		\begin{center}
-% 			\includegraphics[width=1.00\textwidth]{./figs/SliceCategory.svg}
-% 		\end{center}
-% 		\caption{Category $\bm 3$ showing all morphisms.}
-% 		\label{fig:3Catcomplete}
-% 	\end{figure}
-% \end{frame}
-
-
+\begin{frame}[fragile]{Examples of Categories}
+    \begin{definition}[Slice Category]
+        Given a category \(\mathcal{C}\) and an object \(S\) of this category, we can define a slice category \(\mathcal{C} / S\), where:
+        \begin{itemize}
+            \item The objects are tuples \((A, f)\) where \(A\) is an object in \(\mathcal{C}\) and \(f: A \to S\) is a morphism.
+            \item A morphism \(\varphi_{(A, B)} : (A, f) \to (B, g)\) is equivalent to a morphism \(\varphi \in \text{Mor}_{\mathcal{C}}(A, B)\) such that \(f = g \circ \varphi\).
+        \end{itemize}
+    \end{definition}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.70\textwidth]{./figs/SliceCategory.pdf}
+		\end{center}
+		\caption{Category $\bm 3$ showing all morphisms.}
+		\label{fig:3Catcomplete}
+	\end{figure}
+\end{frame}
 
 
 \begin{frame}[fragile]{Category Theory Brief Introduction}
@@ -228,6 +227,17 @@
 			\item An object is \textit{zero} if it is both terminal and initial.
 		\end{enumerate}
 	\end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{Set Category}
+    A very important category is \textbf{Set}. This category is used in programming
+    to model types. Some properties:
+    \begin{itemize}
+        \item Initial object: $\varnothing$;
+        \item Terminal object: any singleton set up to isomorphism;
+        \item For any two objects $A$ and $B$, the $\text{Hom}(A,B)$ is also an object.
+    \end{itemize}
+
 \end{frame}
 
 \begin{frame}[fragile]{Category Theory Brief Introduction}
