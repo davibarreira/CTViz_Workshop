@@ -1505,6 +1505,16 @@ INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
+INPUT ../notebooks/3Catsimple.pdf
+INPUT ../notebooks/3Catsimple.pdf
+INPUT ../notebooks/3Catsimple.pdf
+INPUT ../notebooks/3Catsimple.pdf
+INPUT ../notebooks/3Catsimple.pdf
+OUTPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
 INPUT ../notebooks/DiscreteCategory.pdf
 INPUT ../notebooks/DiscreteCategory.pdf
 INPUT ../notebooks/DiscreteCategory.pdf

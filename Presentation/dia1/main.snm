@@ -5,8 +5,9 @@
 \beamer@slide {fig:3Catcomplete}{11}
 \beamer@slide {fig:3Catcomplete}{12}
 \beamer@slide {fig:3Catcomplete}{13}
-\beamer@slide {fig:Functor}{18}
-\beamer@slide {fig:NaturalTransformation}{19}
-\beamer@slide {def:monoid}{20}
-\beamer@slide {fig:monoid-diagram}{21}
-\beamer@slide {def:monoid-cat}{21}
+\beamer@slide {fig:3Catcomplete}{14}
+\beamer@slide {fig:Functor}{19}
+\beamer@slide {fig:NaturalTransformation}{20}
+\beamer@slide {def:monoid}{21}
+\beamer@slide {fig:monoid-diagram}{22}
+\beamer@slide {def:monoid-cat}{22}
