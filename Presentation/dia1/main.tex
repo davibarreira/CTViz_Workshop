@@ -165,7 +165,7 @@
 \end{frame}
 
 \begin{frame}[fragile]{Examples of Categories}
-    The category $\mathbf{1}$ consists of $\text{Ob}_{\mathbf{1}} := \{A\}$ and $\mathrm{Mor}_{\mathbf{1}} = \mathrm{id}_A$.
+    The category $\mathbf{1}$ consists of $\text{Ob}_{\mathbf{1}} := \{A\}$ and $\mathrm{Hom}_{\mathbf{1}} = \mathrm{id}_A$.
 
 	\begin{figure}[H]
 		\begin{center}
@@ -176,7 +176,7 @@
 \end{frame}
 
 \begin{frame}[fragile]{Examples of Categories}
-	The category $\bm 2$ consists of $\text{Ob}_{\bm 2} := \{A, B\}$ and $\text{Mor}_{\bm 1} = \{id_A, id_B, f\}$,
+	The category $\bm 2$ consists of $\text{Ob}_{\bm 2} := \{A, B\}$ and $\text{Hom}_{\bm 1} = \{id_A, id_B, f\}$,
 	where $f:A \to B$.
 	The diagram for such category is shown below.
 	\begin{figure}[H]
@@ -218,7 +218,7 @@
 
 \begin{frame}[fragile]{Examples of Categories}
 	The discrete category $\mathbf{\underline{N}}$ is the category with $N$ objects
-	and $Mor_{\mathbf{\underline{N}}} := \{id_1,...,id_N\}$. An example of this category is
+    and $\text{Hom}{\mathbf{\underline{N}}} := \{id_1,...,id_N\}$. An example of this category is
 	illustrated below.
 	\bigskip
 	\begin{figure}[H]
@@ -234,15 +234,32 @@
         Given a category \(\mathcal{C}\) and an object \(S\) of this category, we can define a slice category \(\mathcal{C} / S\), where:
         \begin{itemize}
             \item The objects are tuples \((A, f)\) where \(A\) is an object in \(\mathcal{C}\) and \(f: A \to S\) is a morphism.
-            \item A morphism \(\varphi_{(A, B)} : (A, f) \to (B, g)\) is equivalent to a morphism \(\varphi \in \text{Mor}_{\mathcal{C}}(A, B)\) such that \(f = g \circ \varphi\).
+            \item A morphism \(\varphi_{(A, B)} : (A, f) \to (B, g)\) is equivalent to a morphism \(\varphi \in \text{Hom}_{\mathcal{C}}(A, B)\) such that \(f = g \circ \varphi\).
         \end{itemize}
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=0.70\textwidth]{./figs/SliceCategory.pdf}
 		\end{center}
-		\caption{Category $\bm 3$ showing all morphisms.}
-		\label{fig:3Catcomplete}
+		\caption{Example of slice category.}
+		\label{fig:slice}
 	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Examples of Categories}
+    \begin{definition}[Subcategory]
+        Let $\mathcal C$ be a category. A \textit{subcategory} $\mathcal S$ of $\mathcal C$ is such that
+        \begin{enumerate}[(i)]
+            \item $\text{Ob}_\mathcal S \subseteq \text{Ob}_\mathcal C$;
+            \item For every $A,B \in \text{Ob}_\mathcal S$, we have $\text{Mor}_\mathcal S(A,B) \subseteq \text{Ob}_\mathcal C(A,B)$;
+            \item Composition and identity in $\mathcal S$ are the same as in $\mathcal C$, restricted to morphisms and objects of $\mathcal S$.
+        \end{enumerate}
+
+        A subcategory $\mathcal S$ is said to be \textit{wide} if $\text{Ob}_\mathcal S = \text{Ob}_\mathcal C$,
+        and it is said to be \textit{full} if for every $A,B \in \text{Ob}_\mathcal S$, then 
+        $\text{Mor}_\mathcal S(A,B) = \text{Ob}_\mathcal C(A,B)$.
+        Finally, a subcategory is \textit{thin} if
+        for every $A,B \in \text{Ob}_\mathcal S$ the set $\text{Mor}_\mathcal S(A,B)$ has only a single morphism.
+    \end{definition}
 \end{frame}
 
 \begin{frame}[fragile]{Examples of Categories}
@@ -272,6 +289,48 @@
 		\end{enumerate}
 	\end{definition}
 \end{frame}
+
+\begin{frame}[fragile]{Universal Constructions}
+	\begin{definition}[Categorical Isomorphism]
+        Let $\mathcal C$ be a category with $X,Y \in Ob_\mathcal C$ and $f \in \text{Hom}_\mathcal C (X,Y)$.
+        \begin{enumerate}[(i)]
+            \item We say that $f$ is \textit{left invertible} if there exists $f_l \in \text{Hom}_\mathcal C (Y,X)$ such
+                  that $f_l \circ f = id_X$;
+              \item We say that $f$ is \textit{right invertible} if there exists $f_r \in \text{Hom}_\mathcal C (Y,X)$ such
+                  that $f \circ f_r = id_Y$;
+            \item We say that $f$ is invertible if it's both left and right invertible.
+        \end{enumerate}
+	\end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{Universal Constructions}
+    \begin{theorem}
+        Every \textit{initial} object is unique up to an isomorphism, i.e. if in a category there
+        are two \textit{initial} objects, then they are isomorphic.
+        Similarly, \textit{terminal} objects are unique up to an isomorphism.
+        Moreover, the isomorphism is unique between initial object, and between terminal objects.
+    \end{theorem}
+    \begin{proof}
+    \end{proof}
+\end{frame}
+
+\begin{frame}[fragile]{Universal Constructions}
+    \begin{theorem}
+        Every \textit{initial} object is unique up to an isomorphism, i.e. if in a category there
+        are two \textit{initial} objects, then they are isomorphic.
+        Similarly, \textit{terminal} objects are unique up to an isomorphism.
+        Moreover, the isomorphism is unique between initial object, and between terminal objects.
+    \end{theorem}
+    \begin{proof}
+        Let $I_1, I_2$ be initial. Then, there exists only $f:I_1 \to I_2$ and $g:I_2 \to I_1$.
+        But since $g \circ f:I_1 \to I_1$ is a morphism from the initial object $I_1$, it must
+        be equal to $id_{I_1}$. The same for $I_2$, which implies that $f$ and $g$ are inverses,
+        and thus the objects are isomorphic. Since both $f$ and $g$ are the only morphisms from
+        $I_1$ and $I_2$, this also implies that their are the only isomorphism.
+        The same proof works for terminal objects.
+    \end{proof}
+\end{frame}
+
 \begin{frame}[fragile]{Universal Constructions}
 	\begin{definition}[Product]
 	\end{definition}
