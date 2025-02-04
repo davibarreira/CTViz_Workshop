@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  4 FEB 2025 10:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  4 FEB 2025 11:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1009,19 +1009,24 @@ Package pdftex.def Info: ./figs/SliceCategory.pdf  used on input line 9.
 ]
 \openout4 = `main.vrb'.
 
+ (./main.vrb) [24
+
+]
+\openout4 = `main.vrb'.
+
  (./main.vrb
 
 pdfTeX warning: pdflatex (file ./figs/Functor.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figs/Functor.pdf, id=725, 476.91855pt x 270.54938pt>
+<./figs/Functor.pdf, id=730, 476.91855pt x 270.54938pt>
 File: ./figs/Functor.pdf Graphic file (type pdf)
 <use ./figs/Functor.pdf>
 Package pdftex.def Info: ./figs/Functor.pdf  used on input line 7.
 (pdftex.def)             Requested size: 249.14894pt x 141.33875pt.
 )
-Overfull \vbox (28.76653pt too high) detected at line 363
+Overfull \vbox (28.76653pt too high) detected at line 380
  []
 
-[24
+[25
 
  <./figs/Functor.pdf>]
 \openout4 = `main.vrb'.
@@ -1029,17 +1034,17 @@ Overfull \vbox (28.76653pt too high) detected at line 363
  (./main.vrb
 
 pdfTeX warning: pdflatex (file ./figs/NaturalTransformation.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figs/NaturalTransformation.pdf, id=772, 376.40625pt x 147.40778pt>
+<./figs/NaturalTransformation.pdf, id=778, 376.40625pt x 147.40778pt>
 File: ./figs/NaturalTransformation.pdf Graphic file (type pdf)
 <use ./figs/NaturalTransformation.pdf>
 Package pdftex.def Info: ./figs/NaturalTransformation.pdf  used on input line 7.
 (pdftex.def)             Requested size: 249.14894pt x 97.57507pt.
-) [25
+) [26
 
  <./figs/NaturalTransformation.pdf>]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [26
+ (./main.vrb) [27
 
 ]
 \openout4 = `main.vrb'.
@@ -1050,21 +1055,21 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <12> not available
 
 
 pdfTeX warning: pdflatex (file ./figs/MonoidalCategory.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figs/MonoidalCategory.pdf, id=838, 421.72406pt x 110.87703pt>
+<./figs/MonoidalCategory.pdf, id=843, 421.72406pt x 110.87703pt>
 File: ./figs/MonoidalCategory.pdf Graphic file (type pdf)
 <use ./figs/MonoidalCategory.pdf>
 Package pdftex.def Info: ./figs/MonoidalCategory.pdf  used on input line 10.
 (pdftex.def)             Requested size: 290.66954pt x 76.42064pt.
-) [27
+) [28
 
  <./figs/MonoidalCategory.pdf>] (./main.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\translate ' on input line 1.
 
-) [28
+) [29
 
-] [29
+] [30
 
 ]
 \tf@nav=\write6
@@ -1084,18 +1089,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5F0770F84E46BE7DB6C860BB89263440;396.
  ) 
 Here is how much of TeX's memory you used:
- 23476 strings out of 476025
- 456674 string characters out of 5790016
+ 23482 strings out of 476025
+ 456727 string characters out of 5790016
  1859388 words of memory out of 5000000
- 43258 multiletter control sequences out of 15000+600000
+ 43260 multiletter control sequences out of 15000+600000
  541630 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,11n,122p,400b,733s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/fira/FiraSans-Light.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (29 pages, 987970 bytes).
+Output written on main.pdf (30 pages, 989398 bytes).
 PDF statistics:
- 1006 PDF objects out of 1200 (max. 8388607)
- 696 compressed objects within 7 object streams
- 74 named destinations out of 1000 (max. 500000)
+ 1011 PDF objects out of 1200 (max. 8388607)
+ 700 compressed objects within 7 object streams
+ 76 named destinations out of 1000 (max. 500000)
  132 words of extra memory for PDF output out of 10000 (max. 10000000)
 

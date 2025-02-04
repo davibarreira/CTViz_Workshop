@@ -218,7 +218,7 @@
 
 \begin{frame}[fragile]{Examples of Categories}
 	The discrete category $\mathbf{\underline{N}}$ is the category with $N$ objects
-    and $\text{Hom}{\mathbf{\underline{N}}} := \{id_1,...,id_N\}$. An example of this category is
+    and $\text{Hom}_{\mathbf{\underline{N}}} := \{id_1,...,id_N\}$. An example of this category is
 	illustrated below.
 	\bigskip
 	\begin{figure}[H]
@@ -250,15 +250,32 @@
         Let $\mathcal C$ be a category. A \textit{subcategory} $\mathcal S$ of $\mathcal C$ is such that
         \begin{enumerate}[(i)]
             \item $\text{Ob}_\mathcal S \subseteq \text{Ob}_\mathcal C$;
-            \item For every $A,B \in \text{Ob}_\mathcal S$, we have $\text{Mor}_\mathcal S(A,B) \subseteq \text{Ob}_\mathcal C(A,B)$;
+            \item For every $A,B \in \text{Ob}_\mathcal S$, we have $\text{Hom}_\mathcal S(A,B) \subseteq \text{Ob}_\mathcal C(A,B)$;
             \item Composition and identity in $\mathcal S$ are the same as in $\mathcal C$, restricted to morphisms and objects of $\mathcal S$.
         \end{enumerate}
 
         A subcategory $\mathcal S$ is said to be \textit{wide} if $\text{Ob}_\mathcal S = \text{Ob}_\mathcal C$,
         and it is said to be \textit{full} if for every $A,B \in \text{Ob}_\mathcal S$, then 
-        $\text{Mor}_\mathcal S(A,B) = \text{Ob}_\mathcal C(A,B)$.
+        $\text{Hom}_\mathcal S(A,B) = \text{Ob}_\mathcal C(A,B)$.
         Finally, a subcategory is \textit{thin} if
-        for every $A,B \in \text{Ob}_\mathcal S$ the set $\text{Mor}_\mathcal S(A,B)$ has only a single morphism.
+        for every $A,B \in \text{Ob}_\mathcal S$ the set $\text{Hom}_\mathcal S(A,B)$ has only a single morphism.
+    \end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{Examples of Categories}
+    \begin{definition}[Dual Category]
+        Let $\mathcal C$ be a category. A \textit{subcategory} $\mathcal S$ of $\mathcal C$ is such that
+        \begin{enumerate}[(i)]
+            \item $\text{Ob}_\mathcal S \subseteq \text{Ob}_\mathcal C$;
+            \item For every $A,B \in \text{Ob}_\mathcal S$, we have $\text{Hom}_\mathcal S(A,B) \subseteq \text{Ob}_\mathcal C(A,B)$;
+            \item Composition and identity in $\mathcal S$ are the same as in $\mathcal C$, restricted to morphisms and objects of $\mathcal S$.
+        \end{enumerate}
+
+        A subcategory $\mathcal S$ is said to be \textit{wide} if $\text{Ob}_\mathcal S = \text{Ob}_\mathcal C$,
+        and it is said to be \textit{full} if for every $A,B \in \text{Ob}_\mathcal S$, then 
+        $\text{Hom}_\mathcal S(A,B) = \text{Ob}_\mathcal C(A,B)$.
+        Finally, a subcategory is \textit{thin} if
+        for every $A,B \in \text{Ob}_\mathcal S$ the set $\text{Hom}_\mathcal S(A,B)$ has only a single morphism.
     \end{definition}
 \end{frame}
 

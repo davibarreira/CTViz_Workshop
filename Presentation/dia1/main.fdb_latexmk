@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1738676581 "main.aux" "main.bbl" "main" 1738676583 0
+["bibtex main"] 1738679968 "main.aux" "main.bbl" "main" 1738679996 0
   "./reference.bib" 1738672787 922 b0a1f22a9ca207f79b0e2696048ded37 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1738676583 7349 a422c7b3dd14ab8404e5074d000549e9 "pdflatex"
+  "main.aux" 1738679995 7478 67f1c70989ce6c81b3f12dfdcc7378d3 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1738676581 "main.tex" "main.pdf" "main" 1738676583 0
+["pdflatex"] 1738679993 "main.tex" "main.pdf" "main" 1738679996 0
   "../notebooks/3Catsimple.pdf" 1738612305 7340 76e7429aad8310da91ff138e072acd03 ""
   "../notebooks/DiscreteCategory.pdf" 1738612308 18303 44d9756e1b21984d86a36313c7f8bfcc ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -278,12 +278,12 @@
   "figs/pca.pdf" 1737571595 79880 2d5e4af188dee8ef034e78fee46bdb02 ""
   "figures/category-triad.pdf" 1737471632 8129 336c211091e6f8fab8ab15fdc76c6d96 ""
   "figures/expressiveness.pdf" 1737471632 40498 0debcb71cdf75f98875882b29d2f1b97 ""
-  "main.aux" 1738676583 7349 a422c7b3dd14ab8404e5074d000549e9 "pdflatex"
-  "main.bbl" 1738676581 659 8bc1c5ac1e4100c8ea625ff31a8933e0 "bibtex main"
-  "main.nav" 1738676583 3395 18a9b2f7386b52dd8dfeb33d2b408dbd "pdflatex"
-  "main.out" 1738676583 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
-  "main.tex" 1738676578 18397 4eb06283de7013aab6678bb270d444be ""
-  "main.vrb" 1738676583 710 ae50c710e206e69013d9eb9653f23414 "pdflatex"
+  "main.aux" 1738679995 7478 67f1c70989ce6c81b3f12dfdcc7378d3 "pdflatex"
+  "main.bbl" 1738679968 659 8bc1c5ac1e4100c8ea625ff31a8933e0 "bibtex main"
+  "main.nav" 1738679995 3488 40584962f6f94391a851217dbb74d1f1 "pdflatex"
+  "main.out" 1738679995 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
+  "main.tex" 1738679991 19468 65a787ee4af8a048d20c2ede31501c9c ""
+  "main.vrb" 1738679995 710 ae50c710e206e69013d9eb9653f23414 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

@@ -1581,6 +1581,11 @@ INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
+OUTPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
 INPUT ./figs/Functor.pdf
 INPUT ./figs/Functor.pdf
 INPUT ./figs/Functor.pdf
