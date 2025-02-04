@@ -1460,6 +1460,12 @@ INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
+OUTPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
+INPUT ./main.vrb
+INPUT main.vrb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT ./figs/1Cat.pdf
@@ -1540,7 +1546,6 @@ INPUT ./main.vrb
 INPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 OUTPUT main.vrb
 INPUT ./main.vrb
 INPUT main.vrb

@@ -101,7 +101,7 @@
     \begin{enumerate}
         \item What are Categories?
         \item Examples of Categories
-        \item Initial and Terminal objects
+        \item Universal Constructions
         \item Functors
         \item Natural Transformations
         \item Monoids and Monads
@@ -144,6 +144,24 @@
             \end{enumerate}
         \end{itemize}
 	\end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{What are Categories?}
+
+    \begin{definition}[Small and Locally Small Category]
+        A category $\mathcal C$ is \textit{small} if $\text{Ob}_\mathcal C$ and
+        $\text{Hom}_\mathcal C$ are sets. A category $\mathcal C$ is \textit{locally small} if
+        for any $A, B \in \text{Ob}_\mathcal C$, then
+        $\text{Hom}_\mathcal C(A,B)$ is a set. Note that a small category is also locally small.
+    \end{definition}
+
+    Note that when talking about $\text{Ob}_\mathcal C$ and $\text{Hom}_\mathcal C$, we didn't say
+    that they were sets, instead we called them \textit{classes}. The reason for
+    this lies in the foundations of Set Theory. There are collections in mathematics
+    that are ``larger'' than sets, e.g. the ``set'' of all sets, which itself cannot be a set,
+    otherwise it would incur in a paradox (Russell's Paradox). A way to deal
+    with this is making a distinction between classes and sets.
+    This point is quite technical; readers interested in understanding this nuance can check books such as \citet{borceux1994handbook}.
 \end{frame}
 
 \begin{frame}[fragile]{Examples of Categories}

@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Borceux, 1994]{borceux1994handbook}
+Borceux, F. (1994).
+\newblock {\em Handbook of categorical algebra: volume 1, Basic category theory}, volume~1.
+\newblock Cambridge University Press.
+
 \bibitem[Fong and Spivak, 2019]{fong2019invitation}
 Fong, B. and Spivak, D.~I. (2019).
 \newblock {\em An invitation to applied category theory: seven sketches in compositionality}.
