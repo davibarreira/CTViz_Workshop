@@ -1,4 +1,4 @@
-\frametitle{Category Theory Brief Introduction}
+\frametitle{Monoids and Monads}
 \begin{definition}[Monad]
 		A monad is a monoid in $\mathbf{End}_\mathcal C$, which is the triple $(T, \mu, \eta)$,
 		where $T:\mathcal C \to \mathcal C$ is a functor,

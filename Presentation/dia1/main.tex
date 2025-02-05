@@ -728,7 +728,71 @@
 	\end{definition}
 \end{frame}
 
-\begin{frame}[fragile]{Category Theory Brief Introduction}
+\begin{frame}[fragile]{Natural Transformations}
+    \begin{definition}[Vertical Composition]
+        Let $\alpha: F \to G$ and $\beta: G \to H$ be natural transformations
+        where $F$, $G$ and $H$ are functors from $\mathcal C$ to $\mathcal D$.
+        We can define a vertical composition between them by making
+        $(\beta \circ \alpha)_A = \beta_A \circ \alpha_A$ for every object $A \in \text{Ob}_\mathcal C$.
+        One can check that this composition is associative.
+        The vertical composition is shown below.
+    \end{definition}
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics{../notebooks/VerticalComposition.pdf}
+        \end{center}
+        \caption{Vertical composition of natural transformations.}
+        \label{fig:verticalcomp}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Natural Transformations}
+    \begin{definition}[Horizontal Composition]
+        Let $\alpha: F \to G$ and $\beta: H \to K$ be natural transformations
+        where $F, G: \mathcal C \to \mathcal D$ and $H, K: \mathcal D \to \mathcal F$.
+        We can define a horizontal composition between them by making
+        \begin{displaymath}
+            (\beta * \alpha)_A = \beta_{GA} \circ H(\alpha_A) =  K(\alpha_A) \circ \beta_{FA}.
+        \end{displaymath}
+        Hence, this defines a natural transformation
+        \begin{displaymath}
+            \beta * \alpha: H \circ F \to K \circ G
+        \end{displaymath}
+        The horizontal composition is illustrated below.
+    \end{definition}
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.60\textwidth]{../notebooks/HorizontalComposition.pdf}
+        \end{center}
+        \caption{Horizontal composition of natural transformations.}
+        \label{fig:horizontalcomp}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Natural Transformations}
+    \begin{definition}[Category of Functors]
+        For a small category $\mathcal C$ and a category $\mathcal D$,
+        denote $\mathcal D^{\mathcal C}$ as the category of functors
+        from $\mathcal C$ to $\mathcal D$ where objects are functors, morphisms are natural transformations,
+        i.e.
+        \begin{displaymath}
+            \text{Ob}_{\mathcal D^{\mathcal C}} :={\text{Functors from } \mathcal C \text{ to } \mathcal D}
+        \end{displaymath}
+        \begin{displaymath}
+            \text{Mor}_{\mathcal D^{\mathcal C}}(F,G) :={\text{Natural Transformations from }
+            F \text{ to } G}.
+        \end{displaymath}
+        The identity morphism for a functor $F$ is the identity natural transformation $\text{id}_F$,
+        and the composition is the vertical composition of natural transformations.
+    \end{definition}
+    An endofunctor is a functor $F:\mathcal C \to \mathcal C$, i.e. a functor that
+    has the same category as domain and codomain. We call $\mathbf{End}_\mathcal C$ the
+    category of endofunctors in $\mathcal C$, i.e. $\mathcal C^\mathcal C$.
+\end{frame}
+
+\begin{frame}[fragile]{Monoids and Monads}
 	\textbf{Monoids} and \textbf{Monads} are two ubiquitous constructions both in Category Theory and
 	Functional Programming. These two concepts will be used when talking about
 	data visualization. Therefore, it is required of us to introduce these constructions.
@@ -750,7 +814,7 @@
 	associativity neutrality properties.
 \end{frame}
 
-\begin{frame}[fragile]{Category Theory Brief Introduction}
+\begin{frame}[fragile]{Monoids and Monads}
 	\begin{definition}[Monoid in the  category $\mathbf{Set}$]
 		A monoid in $\mathbf{Set}$ is a triple $(M, \mu, \eta)$, where $M \in \text{Ob}_\mathbf{Set}$,
 		$\mu:M \times M \to M$ and $\eta: 1 \to M$ are two morphisms in $\mathbf{Set}$ satisfying the
@@ -768,7 +832,7 @@
 	\end{definition}
 \end{frame}
 
-\begin{frame}[fragile]{Category Theory Brief Introduction}
+\begin{frame}[fragile]{Monoids and Monads}
 	\begin{definition}[Monad]
 		A monad is a monoid in $\mathbf{End}_\mathcal C$, which is the triple $(T, \mu, \eta)$,
 		where $T:\mathcal C \to \mathcal C$ is a functor,

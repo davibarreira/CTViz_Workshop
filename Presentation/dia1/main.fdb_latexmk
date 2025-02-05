@@ -1,17 +1,19 @@
 # Fdb version 4
-["bibtex main"] 1738779987 "main.aux" "main.bbl" "main" 1738780009 0
+["bibtex main"] 1738783309 "main.aux" "main.bbl" "main" 1738783467 0
   "./reference.bib" 1738777729 1265 f862bdcd7ebc74f381ae822a86e6be41 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1738780008 9146 19573a66ce46f5e7ddced11e7a37c64d "pdflatex"
+  "main.aux" 1738783467 9783 44168cc905f8a84df87d555042109f86 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1738780006 "main.tex" "main.pdf" "main" 1738780009 0
-  "../notebooks/3Catsimple.pdf" 1738765875 7338 d65290087699c7a70750b7c39412ca30 ""
-  "../notebooks/DiscreteCategory.pdf" 1738765875 18303 ca583d4e3eb997b0fd25d657855be817 ""
-  "../notebooks/DualCategory.pdf" 1738765876 12134 8d7543ee42fe20c71ad42a782b967136 ""
+["pdflatex"] 1738783465 "main.tex" "main.pdf" "main" 1738783467 0
+  "../notebooks/3Catsimple.pdf" 1738782320 7339 23631708a3420ca7fa0a6293a2b7b7ee ""
+  "../notebooks/DiscreteCategory.pdf" 1738782321 18303 da17a7a0efa4fbdd1540d13ca77c054c ""
+  "../notebooks/DualCategory.pdf" 1738782322 12134 bc61368ae1ea415be79eb89e4162610c ""
+  "../notebooks/HorizontalComposition.pdf" 1738765883 14642 f0aea329013cc87019e4c8ae2f072a06 ""
   "../notebooks/Monad.pdf" 1738765929 19492 184fda43b8d8f7cdc3c60435b13c1cfb ""
+  "../notebooks/VerticalComposition.pdf" 1738765882 14110 6c853b7991ae056f26f97617265bc7a6 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -86,6 +88,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb" 1248133631 25168 33771b85f45c82138dd7745db7092d1c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb" 1248133631 25029 6f2cec9646ca278302ed7d604e506e3e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb" 1248133631 32442 c975af247b6702f7ca0c299af3616b80 ""
@@ -298,12 +301,12 @@
   "figs/pca.pdf" 1737571595 79880 2d5e4af188dee8ef034e78fee46bdb02 ""
   "figures/category-triad.pdf" 1737471632 8129 336c211091e6f8fab8ab15fdc76c6d96 ""
   "figures/expressiveness.pdf" 1737471632 40498 0debcb71cdf75f98875882b29d2f1b97 ""
-  "main.aux" 1738780008 9146 19573a66ce46f5e7ddced11e7a37c64d "pdflatex"
-  "main.bbl" 1738779987 921 dccf88887f9b0b409024add61d95c60b "bibtex main"
-  "main.nav" 1738780008 4418 dc577ed30652a032d6eaddbf78ab3666 "pdflatex"
-  "main.out" 1738780008 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
-  "main.tex" 1738780004 34674 930d7e622582a9499584d6db4b7795a1 ""
-  "main.vrb" 1738780008 636 835108e255fbefd8f3498e243d81ca88 "pdflatex"
+  "main.aux" 1738783467 9783 44168cc905f8a84df87d555042109f86 "pdflatex"
+  "main.bbl" 1738783309 921 dccf88887f9b0b409024add61d95c60b "bibtex main"
+  "main.nav" 1738783467 4697 57f84b2485e407c4f65084362c093646 "pdflatex"
+  "main.out" 1738783467 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
+  "main.tex" 1738783466 37613 141e49d13c17dada6acca4f42e4da529 ""
+  "main.vrb" 1738783467 620 6e3b7fe6dd3caf33a403acf690e12566 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

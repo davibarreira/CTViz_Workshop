@@ -9,7 +9,9 @@
 \beamer@slide {fig:dual}{17}
 \beamer@slide {fig:Functor}{30}
 \beamer@slide {fig:NaturalTransformation}{35}
-\beamer@slide {def:monoid}{36}
-\beamer@slide {fig:monoid-diagram}{37}
-\beamer@slide {def:monoid-cat}{37}
-\beamer@slide {fig:monad}{38}
+\beamer@slide {fig:verticalcomp}{36}
+\beamer@slide {fig:horizontalcomp}{37}
+\beamer@slide {def:monoid}{39}
+\beamer@slide {fig:monoid-diagram}{40}
+\beamer@slide {def:monoid-cat}{40}
+\beamer@slide {fig:monad}{41}
