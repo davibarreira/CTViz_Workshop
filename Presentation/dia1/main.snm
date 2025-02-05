@@ -8,8 +8,8 @@
 \beamer@slide {fig:slice}{15}
 \beamer@slide {fig:dual}{17}
 \beamer@slide {fig:Functor}{30}
-\beamer@slide {fig:NaturalTransformation}{34}
-\beamer@slide {def:monoid}{35}
-\beamer@slide {fig:monoid-diagram}{36}
-\beamer@slide {def:monoid-cat}{36}
-\beamer@slide {fig:monad}{37}
+\beamer@slide {fig:NaturalTransformation}{35}
+\beamer@slide {def:monoid}{36}
+\beamer@slide {fig:monoid-diagram}{37}
+\beamer@slide {def:monoid-cat}{37}
+\beamer@slide {fig:monad}{38}

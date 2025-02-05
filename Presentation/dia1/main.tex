@@ -511,7 +511,6 @@
         on $A$ and $B$ is a triple $(Z,f,g)$ where $f:Z\to A$ and
         $g:Z\to B$ are morphisms in $\mathcal C$.
 	\end{definition}
-    % https://q.uiver.app/#q=WzAsNCxbMSwwLCJaIl0sWzAsMSwiQSJdLFsyLDEsIkIiXSxbMSwyLCJBIFxcdGltZXMgQiJdLFswLDEsImYiLDJdLFswLDIsImciXSxbMywyLCJcXHBpXzIiXSxbMywxLCJcXHBpXzEiLDJdLFszLDAsImhfe2YsZ30iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=
     \[\begin{tikzcd}
         & Z \\
         A && B \\
@@ -527,7 +526,6 @@
         there exists a unique morphism $h_{f,g}:Z \to A \times B$ such that
         $\pi_1 \circ h_{f,g} = f$ and $\pi_2 \circ h_{f,g} = g$.
     \end{definition}
-    % https://q.uiver.app/#q=WzAsNCxbMSwwLCJaIl0sWzAsMSwiQSJdLFsyLDEsIkIiXSxbMSwyLCJBIFxcdGltZXMgQiJdLFswLDEsImYiLDJdLFswLDIsImciXSxbMywyLCJcXHBpXzIiXSxbMywxLCJcXHBpXzEiLDJdLFszLDAsImhfe2YsZ30iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=
     \[\begin{tikzcd}
         & Z \\
         A && B \\
@@ -696,6 +694,25 @@
 %     This functor also respects composition and identity morphisms.
 % \end{frame}
 
+\begin{frame}[fragile]{Examples of Functors}
+
+    \begin{definition}[Functor Composition and Identity]
+        For two functors $F:\mathcal C \to \mathcal D$
+        and $G:\mathcal D \to \mathcal E$, then $G \circ F$ is
+        a functor from $\mathcal C$ to $\mathcal E$ where
+        \begin{enumerate}[(i)]
+            \item For any $A \in Ob_\mathcal C$, $G\circ F (A) = G(F(A))$,
+            \item For any $f \in \text{Hom}_\mathcal C$, $G\circ F (f) = G(F(f))$.
+        \end{enumerate}
+
+        We also have identity functors, denoted by $1_\mathcal C : \mathcal C \to \mathcal C$,
+        where:
+        \begin{enumerate}[(i)]
+            \item $1_\mathcal C (A) = A \in \text{Ob}_\mathcal C$;
+            \item $1_\mathcal C (f) = f \in \text{Hom}_\mathcal C$.
+        \end{enumerate}
+    \end{definition}
+\end{frame}
 
 \begin{frame}[fragile]{Natural Transformations}
 	\begin{definition}[Natural Transformations]

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1738777848 "main.aux" "main.bbl" "main" 1738777850 0
+["bibtex main"] 1738779987 "main.aux" "main.bbl" "main" 1738780009 0
   "./reference.bib" 1738777729 1265 f862bdcd7ebc74f381ae822a86e6be41 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1738777850 9017 44f8450d61aaee57138b8a72f5c55a2b "pdflatex"
+  "main.aux" 1738780008 9146 19573a66ce46f5e7ddced11e7a37c64d "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1738777848 "main.tex" "main.pdf" "main" 1738777850 0
+["pdflatex"] 1738780006 "main.tex" "main.pdf" "main" 1738780009 0
   "../notebooks/3Catsimple.pdf" 1738765875 7338 d65290087699c7a70750b7c39412ca30 ""
   "../notebooks/DiscreteCategory.pdf" 1738765875 18303 ca583d4e3eb997b0fd25d657855be817 ""
   "../notebooks/DualCategory.pdf" 1738765876 12134 8d7543ee42fe20c71ad42a782b967136 ""
@@ -298,12 +298,12 @@
   "figs/pca.pdf" 1737571595 79880 2d5e4af188dee8ef034e78fee46bdb02 ""
   "figures/category-triad.pdf" 1737471632 8129 336c211091e6f8fab8ab15fdc76c6d96 ""
   "figures/expressiveness.pdf" 1737471632 40498 0debcb71cdf75f98875882b29d2f1b97 ""
-  "main.aux" 1738777850 9017 44f8450d61aaee57138b8a72f5c55a2b "pdflatex"
-  "main.bbl" 1738777848 921 dccf88887f9b0b409024add61d95c60b "bibtex main"
-  "main.nav" 1738777850 4325 57ca642c06fb74cabbe3d843300ba88d "pdflatex"
-  "main.out" 1738777850 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
-  "main.tex" 1738777844 34348 19654d1656032a0a134a43d2f9b51d8f ""
-  "main.vrb" 1738777850 636 835108e255fbefd8f3498e243d81ca88 "pdflatex"
+  "main.aux" 1738780008 9146 19573a66ce46f5e7ddced11e7a37c64d "pdflatex"
+  "main.bbl" 1738779987 921 dccf88887f9b0b409024add61d95c60b "bibtex main"
+  "main.nav" 1738780008 4418 dc577ed30652a032d6eaddbf78ab3666 "pdflatex"
+  "main.out" 1738780008 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
+  "main.tex" 1738780004 34674 930d7e622582a9499584d6db4b7795a1 ""
+  "main.vrb" 1738780008 636 835108e255fbefd8f3498e243d81ca88 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
