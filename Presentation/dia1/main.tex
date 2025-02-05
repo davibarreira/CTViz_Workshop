@@ -12,6 +12,8 @@
 \usepackage{bm}
 \usepackage{mathtools}
 \usepackage{amsthm}
+\usepackage{tikz-cd}
+
 \theoremstyle{definition}
 \newtheorem{proposition}{Proposition}
 
@@ -260,9 +262,9 @@
 
         A subcategory $\mathcal S$ is said to be \textit{wide} if $\text{Ob}_\mathcal S = \text{Ob}_\mathcal C$,
         and it is said to be \textit{full} if for every $A,B \in \text{Ob}_\mathcal S$, then 
-        $\text{Hom}_\mathcal S(A,B) = \text{Ob}_\mathcal C(A,B)$.
-        Finally, a subcategory is \textit{thin} if
-        for every $A,B \in \text{Ob}_\mathcal S$ the set $\text{Hom}_\mathcal S(A,B)$ has only a single morphism.
+        $\text{Hom}_\mathcal S(A,B) = \text{Hom}_\mathcal C(A,B)$.
+        % Finally, a subcategory is \textit{thin} if
+        % for every $A,B \in \text{Ob}_\mathcal S$ the set $\text{Hom}_\mathcal S(A,B)$ has only a single morphism.
     \end{definition}
 \end{frame}
 
@@ -504,18 +506,85 @@
 \begin{frame}[fragile]{Universal Constructions}
     In Set Theory, we are used to the notion of a Cartesian product.
     Similarly to how we did for isomorphism, the idea of a product can be generalized via Category Theory
-	\begin{definition}[Product]
+	\begin{definition}[Span]
+        Let $A,B$ be objects in a  category $\mathcal C$. A span
+        on $A$ and $B$ is a triple $(Z,f,g)$ where $f:Z\to A$ and
+        $g:Z\to B$ are morphisms in $\mathcal C$.
 	\end{definition}
+    % https://q.uiver.app/#q=WzAsNCxbMSwwLCJaIl0sWzAsMSwiQSJdLFsyLDEsIkIiXSxbMSwyLCJBIFxcdGltZXMgQiJdLFswLDEsImYiLDJdLFswLDIsImciXSxbMywyLCJcXHBpXzIiXSxbMywxLCJcXHBpXzEiLDJdLFszLDAsImhfe2YsZ30iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=
+    \[\begin{tikzcd}
+        & Z \\
+        A && B \\
+        \arrow["f"', from=1-2, to=2-1]
+        \arrow["g", from=1-2, to=2-3]
+    \end{tikzcd}\]
+\end{frame}
+
+\begin{frame}[fragile]{Universal Constructions}
+    \begin{definition}[Categorical Product]
+        Let $A,B$ be objects in a  category $\mathcal C$. A span $(A\times B, \pi_1, \pi_2)$
+        is called a product between $A$ and $B$ if for every span $(Z, f, g)$ of $A$ and $B$,
+        there exists a unique morphism $h_{f,g}:Z \to A \times B$ such that
+        $\pi_1 \circ h_{f,g} = f$ and $\pi_2 \circ h_{f,g} = g$.
+    \end{definition}
+    % https://q.uiver.app/#q=WzAsNCxbMSwwLCJaIl0sWzAsMSwiQSJdLFsyLDEsIkIiXSxbMSwyLCJBIFxcdGltZXMgQiJdLFswLDEsImYiLDJdLFswLDIsImciXSxbMywyLCJcXHBpXzIiXSxbMywxLCJcXHBpXzEiLDJdLFszLDAsImhfe2YsZ30iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=
+    \[\begin{tikzcd}
+        & Z \\
+        A && B \\
+        & {A \times B}
+        \arrow["f"', from=1-2, to=2-1]
+        \arrow["g", from=1-2, to=2-3]
+        \arrow["{h_{f,g}}"{description}, dashed, from=1-2, to=3-2]
+        \arrow["{\pi_1}"', from=3-2, to=2-1]
+        \arrow["{\pi_2}", from=3-2, to=2-3]
+    \end{tikzcd}\]
+    \textbf{Exercise:} Prove that the categorical product is equivalent to Cartesian product in $\mathbf{Set}$.
+\end{frame}
+
+\begin{frame}[fragile]{Universal Constructions}
+    Given the Categorical Product, we can think of a dual concept, called coproduct.
+	\begin{definition}[Cospan]
+        Let $A,B$ be objects in a  category $\mathcal C$. A span
+        on $A$ and $B$ is a triple $(Z,f,g)$ where $f:A\to Z$ and
+        $g:B\to Z$ are morphisms in $\mathcal C$.
+	\end{definition}
+    \[\begin{tikzcd}
+        & Z \\
+        A && B \\
+        \arrow["f", from=2-1, to=1-2]
+        \arrow["g"', from=2-3, to=1-2]
+    \end{tikzcd}\]
+\end{frame}
+
+\begin{frame}[fragile]{Universal Constructions}
+    \begin{definition}[Categorical Coproduct]
+        Let $A,B$ be objects in a  category $\mathcal C$. A cospan $(A + B, \pi_1, \pi_2)$
+        is called a coproduct between $A$ and $B$ if for every cospan $(Z, f, g)$ of $A$ and $B$,
+        there exists a unique morphism $l_{f,g}:Z \to A + B$ such that
+        $h_{f,g} \circ i_1 = f$ and $h_{f,g} \circ i_2 = g$.
+    \end{definition}
+    \[\begin{tikzcd}
+        & Z \\
+        A && B \\
+        & {A + B}
+        \arrow["{h_{f,g}}"{description}, dashed, from=1-2, to=3-2]
+        \arrow["f", from=2-1, to=1-2]
+        \arrow["{i_1}"', from=2-1, to=3-2]
+        \arrow["g"', from=2-3, to=1-2]
+        \arrow["{i_2}", from=2-3, to=3-2]
+    \end{tikzcd}\]
 \end{frame}
 
 \begin{frame}[fragile]{Set Category}
-    A very important category is \textbf{Set}. Here are some of its properties:
+    Here are some more properties related to $\mathbf{Set}$:
     \begin{itemize}
         \item Initial object: $\varnothing$;
         \item Terminal object: any singleton set up to isomorphism;
         \item For any two objects $A$ and $B$, the $\text{Hom}(A,B)$ is also an object (called exponential object $B^A$);
         \item Monomorphisms are equivalent to injective functions;
         \item Epimorphisms are equivalent to surjective functions.
+        \item Categorical products are equivalent to Cartesian products;
+        \item Categorical coproducts are equivalent to the disjoint unions.
     \end{itemize}
 \end{frame}
 

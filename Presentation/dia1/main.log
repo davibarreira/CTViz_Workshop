@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  5 FEB 2025 11:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  5 FEB 2025 13:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -610,18 +610,82 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen315
 \xmathstrut@box=\box76
 \xmathstrut@dim=\dimen316
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
+Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box77
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen317
+\pgf@nodesepend=\dimen318
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen319
+\pgffor@skip=\dimen320
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count342
+\pgfplotmarksize=\dimen321
 )
-\c@proposition=\count342
+\tikz@lastx=\dimen322
+\tikz@lasty=\dimen323
+\tikz@lastxsaved=\dimen324
+\tikz@lastysaved=\dimen325
+\tikz@lastmovetox=\dimen326
+\tikz@lastmovetoy=\dimen327
+\tikzleveldistance=\dimen328
+\tikzsiblingdistance=\dimen329
+\tikz@figbox=\box78
+\tikz@figbox@bg=\box79
+\tikz@tempbox=\box80
+\tikz@tempbox@bg=\box81
+\tikztreelevel=\count343
+\tikznumberofchildren=\count344
+\tikznumberofcurrentchild=\count345
+\tikz@fig@count=\count346
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count347
+\pgfmatrixcurrentcolumn=\count348
+\pgf@matrix@numberofcolumns=\count349
+)
+\tikz@expandcount=\count350
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/local/texlive/2023/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen330
+\pgfarrowlength=\dimen331
+\pgfarrowwidth=\dimen332
+\pgfarrowlinewidth=\dimen333
+)))
+\c@proposition=\count351
  (/usr/local/texlive/2023/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip69
 \bibsep=\skip70
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count343
+\c@NAT@ctr=\count352
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count344
-\l__pdf_internal_box=\box77
+\l__color_backend_stack_int=\count353
+\l__pdf_internal_box=\box82
 ) (./main.aux
 
 LaTeX Warning: Label `fig:rotated-histogram' multiply defined.
@@ -638,24 +702,24 @@ LaTeX Warning: Label `fig:3Catcomplete' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -693,17 +757,17 @@ LaTeX Font Info:    ... okay on input line 44.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
-\scratchdimen=\dimen317
-\scratchbox=\box78
-\nofMPsegments=\count346
-\nofMParguments=\count347
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count348
-\MPscratchDim=\dimen318
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count354
+\scratchdimen=\dimen334
+\scratchbox=\box83
+\nofMPsegments=\count355
+\nofMParguments=\count356
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count357
+\MPscratchDim=\dimen335
+\MPnumerator=\count358
+\makeMPintoPDFobject=\count359
+\everyMPtoPDFconversion=\toks48
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
  (/usr/local/texlive/2023/texmf-dist/tex/latex/grfext/grfext.sty
@@ -716,60 +780,60 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 44.
+Package hyperref Info: Link coloring OFF on input line 46.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 44.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 46.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 44.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 46.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 44.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 46.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 44.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 46.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 44.
+(Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 44.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 46.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 44.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 44.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 46.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 44.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 44.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 46.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 44.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 44.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 46.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 44.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 46.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 44.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 44.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 44.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 44.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 44.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 44.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 44.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 46.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 46.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 44.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 46.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 44.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 46.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 44.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 46.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -985,7 +1049,7 @@ File: ../notebooks/DualCategory.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../notebooks/DualCategory.pdf  used on input line 12.
 (pdftex.def)             Requested size: 145.33794pt x 92.17178pt.
 )
-Overfull \vbox (8.15512pt too high) detected at line 285
+Overfull \vbox (8.15512pt too high) detected at line 287
  []
 
 [17
@@ -1033,19 +1097,34 @@ Overfull \vbox (8.15512pt too high) detected at line 285
 ]
 \openout4 = `main.vrb'.
 
+ (./main.vrb) [26
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [27
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [28
+
+]
+\openout4 = `main.vrb'.
+
  (./main.vrb
 
 pdfTeX warning: pdflatex (file ./figs/Functor.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figs/Functor.pdf, id=759, 476.91855pt x 270.54938pt>
+<./figs/Functor.pdf, id=776, 476.91855pt x 270.54938pt>
 File: ./figs/Functor.pdf Graphic file (type pdf)
 <use ./figs/Functor.pdf>
 Package pdftex.def Info: ./figs/Functor.pdf  used on input line 7.
 (pdftex.def)             Requested size: 249.14894pt x 141.33875pt.
 )
-Overfull \vbox (28.76653pt too high) detected at line 535
+Overfull \vbox (28.76653pt too high) detected at line 604
  []
 
-[26
+[29
 
  <./figs/Functor.pdf>]
 \openout4 = `main.vrb'.
@@ -1053,17 +1132,17 @@ Overfull \vbox (28.76653pt too high) detected at line 535
  (./main.vrb
 
 pdfTeX warning: pdflatex (file ./figs/NaturalTransformation.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figs/NaturalTransformation.pdf, id=806, 376.40625pt x 147.40778pt>
+<./figs/NaturalTransformation.pdf, id=822, 376.40625pt x 147.40778pt>
 File: ./figs/NaturalTransformation.pdf Graphic file (type pdf)
 <use ./figs/NaturalTransformation.pdf>
 Package pdftex.def Info: ./figs/NaturalTransformation.pdf  used on input line 7.
 (pdftex.def)             Requested size: 249.14894pt x 97.57507pt.
-) [27
+) [30
 
  <./figs/NaturalTransformation.pdf>]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [28
+ (./main.vrb) [31
 
 ]
 \openout4 = `main.vrb'.
@@ -1074,12 +1153,12 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <12> not available
 
 
 pdfTeX warning: pdflatex (file ./figs/MonoidalCategory.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figs/MonoidalCategory.pdf, id=871, 421.72406pt x 110.87703pt>
+<./figs/MonoidalCategory.pdf, id=888, 421.72406pt x 110.87703pt>
 File: ./figs/MonoidalCategory.pdf Graphic file (type pdf)
 <use ./figs/MonoidalCategory.pdf>
 Package pdftex.def Info: ./figs/MonoidalCategory.pdf  used on input line 10.
 (pdftex.def)             Requested size: 290.66954pt x 76.42064pt.
-) [29
+) [32
 
  <./figs/MonoidalCategory.pdf>]
 \openout4 = `main.vrb'.
@@ -1087,21 +1166,21 @@ Package pdftex.def Info: ./figs/MonoidalCategory.pdf  used on input line 10.
  (./main.vrb
 
 pdfTeX warning: pdflatex (file ../notebooks/Monad.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<../notebooks/Monad.pdf, id=919, 415.75497pt x 110.83638pt>
+<../notebooks/Monad.pdf, id=936, 415.75497pt x 110.83638pt>
 File: ../notebooks/Monad.pdf Graphic file (type pdf)
 <use ../notebooks/Monad.pdf>
 Package pdftex.def Info: ../notebooks/Monad.pdf  used on input line 9.
 (pdftex.def)             Requested size: 290.66954pt x 77.49022pt.
-) [30
+) [33
 
  <../notebooks/Monad.pdf>] (./main.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\translate ' on input line 1.
 
-) [31
+) [34
 
-] [32
+] [35
 
 ]
 \tf@nav=\write6
@@ -1121,18 +1200,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5F0770F84E46BE7DB6C860BB89263440;396.
  ) 
 Here is how much of TeX's memory you used:
- 23524 strings out of 476025
- 457565 string characters out of 5790016
- 1859388 words of memory out of 5000000
- 43290 multiletter control sequences out of 15000+600000
+ 27712 strings out of 476025
+ 564105 string characters out of 5790016
+ 1865388 words of memory out of 5000000
+ 47407 multiletter control sequences out of 15000+600000
  541630 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,11n,122p,400b,733s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/fira/FiraSans-Light.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (32 pages, 1018104 bytes).
+ 128i,16n,122p,400b,1094s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/fira/FiraSans-Light.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (35 pages, 1032966 bytes).
 PDF statistics:
- 1083 PDF objects out of 1200 (max. 8388607)
- 751 compressed objects within 8 object streams
- 82 named destinations out of 1000 (max. 500000)
+ 1104 PDF objects out of 1200 (max. 8388607)
+ 767 compressed objects within 8 object streams
+ 88 named destinations out of 1000 (max. 500000)
  142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
