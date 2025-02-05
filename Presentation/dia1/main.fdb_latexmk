@@ -1,15 +1,16 @@
 # Fdb version 4
-["bibtex main"] 1738679968 "main.aux" "main.bbl" "main" 1738679996 0
+["bibtex main"] 1738761922 "main.aux" "main.bbl" "main" 1738761976 0
   "./reference.bib" 1738672787 922 b0a1f22a9ca207f79b0e2696048ded37 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1738679995 7478 67f1c70989ce6c81b3f12dfdcc7378d3 "pdflatex"
+  "main.aux" 1738761975 7843 190f6fbdd35887d117e49a5c0c190daa "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1738679993 "main.tex" "main.pdf" "main" 1738679996 0
+["pdflatex"] 1738761973 "main.tex" "main.pdf" "main" 1738761976 0
   "../notebooks/3Catsimple.pdf" 1738612305 7340 76e7429aad8310da91ff138e072acd03 ""
   "../notebooks/DiscreteCategory.pdf" 1738612308 18303 44d9756e1b21984d86a36313c7f8bfcc ""
+  "../notebooks/DualCategory.pdf" 1738677670 12133 44fd56a422f7255139ab06103a657690 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -278,12 +279,12 @@
   "figs/pca.pdf" 1737571595 79880 2d5e4af188dee8ef034e78fee46bdb02 ""
   "figures/category-triad.pdf" 1737471632 8129 336c211091e6f8fab8ab15fdc76c6d96 ""
   "figures/expressiveness.pdf" 1737471632 40498 0debcb71cdf75f98875882b29d2f1b97 ""
-  "main.aux" 1738679995 7478 67f1c70989ce6c81b3f12dfdcc7378d3 "pdflatex"
-  "main.bbl" 1738679968 659 8bc1c5ac1e4100c8ea625ff31a8933e0 "bibtex main"
-  "main.nav" 1738679995 3488 40584962f6f94391a851217dbb74d1f1 "pdflatex"
-  "main.out" 1738679995 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
-  "main.tex" 1738679991 19468 65a787ee4af8a048d20c2ede31501c9c ""
-  "main.vrb" 1738679995 710 ae50c710e206e69013d9eb9653f23414 "pdflatex"
+  "main.aux" 1738761975 7843 190f6fbdd35887d117e49a5c0c190daa "pdflatex"
+  "main.bbl" 1738761922 659 8bc1c5ac1e4100c8ea625ff31a8933e0 "bibtex main"
+  "main.nav" 1738761975 3674 a9d2209592061fe8ef34090844797acc "pdflatex"
+  "main.out" 1738761975 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
+  "main.tex" 1738761973 20704 453826bb37dfc1c60b42d1ffb073b6d5 ""
+  "main.vrb" 1738761975 710 ae50c710e206e69013d9eb9653f23414 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

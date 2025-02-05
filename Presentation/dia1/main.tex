@@ -11,6 +11,10 @@
 \usepackage{bbm}
 \usepackage{bm}
 \usepackage{mathtools}
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{proposition}{Proposition}
+
 \usepackage[square,numbers]{natbib}
 \newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
 \newcommand*{\QEDB}{\hfill\ensuremath{\square}}%
@@ -264,19 +268,20 @@
 
 \begin{frame}[fragile]{Examples of Categories}
     \begin{definition}[Dual Category]
-        Let $\mathcal C$ be a category. A \textit{subcategory} $\mathcal S$ of $\mathcal C$ is such that
-        \begin{enumerate}[(i)]
-            \item $\text{Ob}_\mathcal S \subseteq \text{Ob}_\mathcal C$;
-            \item For every $A,B \in \text{Ob}_\mathcal S$, we have $\text{Hom}_\mathcal S(A,B) \subseteq \text{Ob}_\mathcal C(A,B)$;
-            \item Composition and identity in $\mathcal S$ are the same as in $\mathcal C$, restricted to morphisms and objects of $\mathcal S$.
-        \end{enumerate}
-
-        A subcategory $\mathcal S$ is said to be \textit{wide} if $\text{Ob}_\mathcal S = \text{Ob}_\mathcal C$,
-        and it is said to be \textit{full} if for every $A,B \in \text{Ob}_\mathcal S$, then 
-        $\text{Hom}_\mathcal S(A,B) = \text{Ob}_\mathcal C(A,B)$.
-        Finally, a subcategory is \textit{thin} if
-        for every $A,B \in \text{Ob}_\mathcal S$ the set $\text{Hom}_\mathcal S(A,B)$ has only a single morphism.
+        Given a category $\mathcal C$, the dual (opposite) category $\mathcal C^{op}$ is defined as:
+        \begin{itemize}
+            \item $\text{Ob}_{\mathcal C^{op}} = \text{Op}_\mathcal C$;
+            \item For every morphism $f:A\to B$ in $\mathcal C$, have an equivalent morphism $f^{op}:B \to A$ in $\mathcal C^{op}$;
+            \item The composition in $\mathcal C^{op}$ satisfies $f^{op} \circ g^{op} = (g \circ f)^{op}$.
+        \end{itemize}
     \end{definition}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.35\textwidth]{../notebooks/DualCategory.pdf}
+		\end{center}
+		\caption{Example of dual category.}
+		\label{fig:dual}
+	\end{figure}
 \end{frame}
 
 \begin{frame}[fragile]{Examples of Categories}
@@ -291,6 +296,51 @@
 	\end{enumerate}
 \end{frame}
 
+\begin{frame}[fragile]{Isomorphisms, monomorphism and epimorphism}
+	\begin{definition}[Categorical Isomorphism]
+        Let $\mathcal C$ be a category with $X,Y \in Ob_\mathcal C$ and $f \in \text{Hom}_\mathcal C (X,Y)$.
+        \begin{enumerate}[(i)]
+            \item We say that $f$ is \textit{left invertible} if there exists $f_l \in \text{Hom}_\mathcal C (Y,X)$ such
+                  that $f_l \circ f = id_X$;
+              \item We say that $f$ is \textit{right invertible} if there exists $f_r \in \text{Hom}_\mathcal C (Y,X)$ such
+                  that $f \circ f_r = id_Y$;
+            \item We say that $f$ is invertible if it's both left and right invertible.
+        \end{enumerate}
+	\end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{Isomorphisms, monomorphism and epimorphism}
+	\begin{definition}[Monomorphism]
+        In a given category $\mathcal C$, a morphism $m:X\to Y$ is said to be a monomorphism (monic),
+        if for every $A \in \text{Ob}_\mathcal C$ and $f,g:A \to X$ we have that:
+        $$
+        m\circ f = m\circ g \implies f = g.
+        $$
+	\end{definition}
+	\begin{definition}[Epimorphism]
+        In a given category $\mathcal C$, a morphism $e:X\to Y$ is said to be an epimorphism (epic),
+        if for every $A \in \text{Ob}_\mathcal C$ and $f,g:A \to X$ we have that:
+        $$
+        f \circ e = g \circ e \implies f = g.
+        $$
+	\end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{Isomorphisms, monomorphism and epimorphism}
+    \begin{proposition}
+        The following properties on monomorphism and epimorphism are true:
+        \begin{enumerate}[1.]
+            \item $f$ left-invertible $\implies$ $f$ is monic. The converse is not true.
+            \item $f$ right-invertible $\implies$ $f$ is epic. The converse is not true.
+            \item $f$ invertible $\implies$ $f$ is monic and epic. The converse is not true.
+            \item $f$ monic and right-invertible $\implies $ $f$ is isomorphism.
+            \item $f$ epic and left-invertible $\implies $ $f$ is isomorphism.
+        \end{enumerate}
+    \end{proposition}
+    \begin{proof}
+        Left as exercise.
+    \end{proof}
+\end{frame}
 
 \begin{frame}[fragile]{Universal Constructions}
 	Objects defined in terms of existence and
@@ -307,18 +357,6 @@
 	\end{definition}
 \end{frame}
 
-\begin{frame}[fragile]{Universal Constructions}
-	\begin{definition}[Categorical Isomorphism]
-        Let $\mathcal C$ be a category with $X,Y \in Ob_\mathcal C$ and $f \in \text{Hom}_\mathcal C (X,Y)$.
-        \begin{enumerate}[(i)]
-            \item We say that $f$ is \textit{left invertible} if there exists $f_l \in \text{Hom}_\mathcal C (Y,X)$ such
-                  that $f_l \circ f = id_X$;
-              \item We say that $f$ is \textit{right invertible} if there exists $f_r \in \text{Hom}_\mathcal C (Y,X)$ such
-                  that $f \circ f_r = id_Y$;
-            \item We say that $f$ is invertible if it's both left and right invertible.
-        \end{enumerate}
-	\end{definition}
-\end{frame}
 
 \begin{frame}[fragile]{Universal Constructions}
     \begin{theorem}
