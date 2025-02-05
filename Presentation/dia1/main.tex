@@ -297,6 +297,9 @@
 \end{frame}
 
 \begin{frame}[fragile]{Isomorphisms, monomorphism and epimorphism}
+    A very important definition in Category Theory is the notion of isomorphism. In Set Theory,
+    we say that two sets are isomorphic if there is a bijective function between them. Yet, this
+    concept is not restricted to Set Theory and can be generalized in Category Theory as follows:
 	\begin{definition}[Categorical Isomorphism]
         Let $\mathcal C$ be a category with $X,Y \in Ob_\mathcal C$ and $f \in \text{Hom}_\mathcal C (X,Y)$.
         \begin{enumerate}[(i)]
@@ -307,7 +310,75 @@
             \item We say that $f$ is invertible if it's both left and right invertible.
         \end{enumerate}
 	\end{definition}
+    \textbf{Exercise}: Prove that in the category $\mathbf{Set}$, the categorical isomorphism is equivalent to
+    the set theoretic isomorphism.
 \end{frame}
+
+% \begin{frame}[fragile]{Isomorphisms, monomorphism and epimorphism}
+%     A very important definition in Category Theory is the notion of isomorphism. In Set Theory,
+%     we say that two sets are isomorphic if there is a bijective function between them. Yet, this
+%     concept is not restricted to Set Theory and can be generalized in Category Theory as follows:
+% 	\begin{definition}[Categorical Isomorphism]
+%         Let $\mathcal C$ be a category with $X,Y \in Ob_\mathcal C$ and $f \in \text{Hom}_\mathcal C (X,Y)$.
+%         \begin{enumerate}[(i)]
+%             \item We say that $f$ is \textit{left invertible} if there exists $f_l \in \text{Hom}_\mathcal C (Y,X)$ such
+%                   that $f_l \circ f = id_X$;
+%               \item We say that $f$ is \textit{right invertible} if there exists $f_r \in \text{Hom}_\mathcal C (Y,X)$ such
+%                   that $f \circ f_r = id_Y$;
+%             \item We say that $f$ is invertible if it's both left and right invertible.
+%         \end{enumerate}
+% 	\end{definition}
+%     \begin{proof}
+%         Let $f: A \to B$ be a morphism in $\mathbf{Set}$. We will show that $f$ is a categorical isomorphism if and only if it is a bijection.
+
+%         \textbf{(⟹) If $f$ is a categorical isomorphism, then $f$ is a bijection.}  
+
+%         Since $f$ is an isomorphism, there exists a morphism $g: B \to A$ such that:
+%         \[
+%         g \circ f = \text{id}_A, \quad f \circ g = \text{id}_B.
+%         \]
+
+%         - \textit{$f$ is injective}: Suppose $f(x) = f(y)$. Applying $g$ to both sides, we get  
+%           \[
+%           g(f(x)) = g(f(y)).
+%           \]  
+%           Since $g \circ f = \text{id}_A$, this simplifies to  
+%           \[
+%           x = y.
+%           \]  
+%           Thus, $f$ is injective.  
+
+%         - \textit{$f$ is surjective}: For every $b \in B$, we have  
+%           \[
+%           f(g(b)) = \text{id}_B(b) = b.
+%           \]  
+%           This shows that every element of $B$ has a preimage in $A$, proving that $f$ is surjective.  
+
+%         Since $f$ is both injective and surjective, it is a bijection.
+
+%         \textbf{(⟸) If $f$ is a bijection, then it is a categorical isomorphism.}  
+
+%         Since $f$ is a bijection, it has an inverse function $f^{-1}: B \to A$ such that  
+%         \[
+%         f^{-1} \circ f = \text{id}_A, \quad f \circ f^{-1} = \text{id}_B.
+%         \]  
+%         This precisely means that $f$ is an isomorphism in the categorical sense.
+
+%         Thus, we have shown that a categorical isomorphism in $\mathbf{Set}$ is the same as a bijection. $\square$
+%     \end{proof}
+% \end{frame}
+% \begin{frame}[fragile]{Isomorphisms, monomorphism and epimorphism}
+%     A partially ordered set (poset) is defined by a tuple $(P, \leq)$, where $P$ is a set of values and
+%     $\leq$ is a binary relation satisfying reflexivity, antisymmetry and transitivity.
+%     \begin{enumerate}[(i)]
+%         \item For $a,b \in P$, if $a\leq b$ and $b \leq c$, then $a \leq c$;
+%         \item For every $a \in P$, $a \leq a$.
+%     \end{enumerate}
+
+%     The \textbf{Poset} category has partially ordered sets as objects and monotone maps as morphisms,
+%     i.e., maps $f : X \to Y$, such that for each $x, x' \in X$ with $x \leq x'$ in $X$, we have $f(x) \leq f(x')$ in $Y$.
+
+% \end{frame}
 
 \begin{frame}[fragile]{Isomorphisms, monomorphism and epimorphism}
 	\begin{definition}[Monomorphism]
@@ -342,6 +413,49 @@
     \end{proof}
 \end{frame}
 
+% \begin{frame}[fragile]{Isomorphisms, monomorphism and epimorphism}
+%     \begin{proposition}
+%         The following properties on monomorphism and epimorphism are true:
+%         \begin{enumerate}[1.]
+%             \item $f$ left-invertible $\implies$ $f$ is monic. The converse is not true.
+%             \item $f$ right-invertible $\implies$ $f$ is epic. The converse is not true.
+%             \item $f$ invertible $\implies$ $f$ is monic and epic. The converse is not true.
+%             \item $f$ monic and right-invertible $\implies $ $f$ is isomorphism.
+%             \item $f$ epic and left-invertible $\implies $ $f$ is isomorphism.
+%         \end{enumerate}
+%     \end{proposition}
+%     \begin{proof}
+%         1. Note $f:A \to B$ left-invertible implies that there exists a $f_l:B \to A$ such that
+%         $f_l \circ f = id$. Hence, for a $g:B\to C$ and $h: B \to C$, if
+%         \begin{displaymath}
+%             f \circ g = f \circ h,
+%         \end{displaymath}
+%         then we have that
+%         \begin{displaymath}
+%             f_l \circ f \circ g = f_l \circ f \circ h \implies g =h.
+%         \end{displaymath}
+%         To show that the converse is false, consider the category $\mathbf{2}$ (Figure \ref{fig:2Cat}). Note that
+%         $f:A\to B$ is monic, since the only morphism that composes with $f$ is
+%         $id_A$ and $id_B$. Yet, note that $f$ is not left invertible, since there isn't even
+%         a morphism from $B$ to $A$.
+
+%         2. Use the same argument, but reversing the order of the compositions.
+%         For the converse, again consider the same category $\mathbf{2}$. Note that
+%         $f:A\to B$ is epic, but it's not right invertible.
+
+%         3. True since invertible means left and right invertible.
+
+%         4. Since $f:A \to B$ right invertible, then there exists $f_r:B \to A$
+%         such that $f \circ f_r = id_B$. Thus,
+%         \begin{displaymath}
+%             id_B \circ f = (f \circ f_r) \circ f =
+%             f \circ (f_r \circ f) =
+%             f \circ id_A \implies f_r \circ f = id_A.
+%         \end{displaymath}
+%         5. Same argument.
+%     \end{proof}
+% \end{frame}
+
 \begin{frame}[fragile]{Universal Constructions}
 	Objects defined in terms of existence and
 	uniqueness of morphisms are known as \textbf{universal constructions}.
@@ -366,40 +480,43 @@
         Moreover, the isomorphism is unique between initial object, and between terminal objects.
     \end{theorem}
     \begin{proof}
+        Left as exercise.
     \end{proof}
 \end{frame}
 
-\begin{frame}[fragile]{Universal Constructions}
-    \begin{theorem}
-        Every \textit{initial} object is unique up to an isomorphism, i.e. if in a category there
-        are two \textit{initial} objects, then they are isomorphic.
-        Similarly, \textit{terminal} objects are unique up to an isomorphism.
-        Moreover, the isomorphism is unique between initial object, and between terminal objects.
-    \end{theorem}
-    \begin{proof}
-        Let $I_1, I_2$ be initial. Then, there exists only $f:I_1 \to I_2$ and $g:I_2 \to I_1$.
-        But since $g \circ f:I_1 \to I_1$ is a morphism from the initial object $I_1$, it must
-        be equal to $id_{I_1}$. The same for $I_2$, which implies that $f$ and $g$ are inverses,
-        and thus the objects are isomorphic. Since both $f$ and $g$ are the only morphisms from
-        $I_1$ and $I_2$, this also implies that their are the only isomorphism.
-        The same proof works for terminal objects.
-    \end{proof}
-\end{frame}
+% \begin{frame}[fragile]{Universal Constructions}
+%     \begin{theorem}
+%         Every \textit{initial} object is unique up to an isomorphism, i.e. if in a category there
+%         are two \textit{initial} objects, then they are isomorphic.
+%         Similarly, \textit{terminal} objects are unique up to an isomorphism.
+%         Moreover, the isomorphism is unique between initial object, and between terminal objects.
+%     \end{theorem}
+%     \begin{proof}
+%         Let $I_1, I_2$ be initial. Then, there exists only $f:I_1 \to I_2$ and $g:I_2 \to I_1$.
+%         But since $g \circ f:I_1 \to I_1$ is a morphism from the initial object $I_1$, it must
+%         be equal to $id_{I_1}$. The same for $I_2$, which implies that $f$ and $g$ are inverses,
+%         and thus the objects are isomorphic. Since both $f$ and $g$ are the only morphisms from
+%         $I_1$ and $I_2$, this also implies that their are the only isomorphism.
+%         The same proof works for terminal objects.
+%     \end{proof}
+% \end{frame}
 
 \begin{frame}[fragile]{Universal Constructions}
+    In Set Theory, we are used to the notion of a Cartesian product.
+    Similarly to how we did for isomorphism, the idea of a product can be generalized via Category Theory
 	\begin{definition}[Product]
 	\end{definition}
 \end{frame}
 
 \begin{frame}[fragile]{Set Category}
-    A very important category is \textbf{Set}. This category is used in programming
-    to model types. Some properties:
+    A very important category is \textbf{Set}. Here are some of its properties:
     \begin{itemize}
         \item Initial object: $\varnothing$;
         \item Terminal object: any singleton set up to isomorphism;
-        \item For any two objects $A$ and $B$, the $\text{Hom}(A,B)$ is also an object.
+        \item For any two objects $A$ and $B$, the $\text{Hom}(A,B)$ is also an object (called exponential object $B^A$);
+        \item Monomorphisms are equivalent to injective functions;
+        \item Epimorphisms are equivalent to surjective functions.
     \end{itemize}
-
 \end{frame}
 
 \begin{frame}[fragile]{Category Theory Brief Introduction}
@@ -471,21 +588,21 @@
 	\end{definition}
 \end{frame}
 
-% \begin{frame}[fragile]{Category Theory Brief Introduction}
-% 	\begin{definition}[Monad]
-% 		A monad is a monoid in $\mathbf{End}_\mathcal C$, which is the triple $(T, \mu, \eta)$,
-% 		where $T:\mathcal C \to \mathcal C$ is a functor,
-% 		$\mu:T \circ T \to T$ and $\eta: 1 \to T$ are natural transformations in $\mathbf{End}_\mathcal C$ satisfying the
-% 		commutative diagrams \ref{fig:monad}. Note that $1$ is the identity functor in $\mathcal{C}$.
-% 		\begin{figure}[H]
-% 			\begin{center}
-% 				\includegraphics[width=1.3\textwidth]{./figures/Monad.pdf}
-% 			\end{center}
-% 			\caption{Commutative diagram for monad.}
-% 			\label{fig:monad}
-% 		\end{figure}
-% 	\end{definition}
-% \end{frame}
+\begin{frame}[fragile]{Category Theory Brief Introduction}
+	\begin{definition}[Monad]
+		A monad is a monoid in $\mathbf{End}_\mathcal C$, which is the triple $(T, \mu, \eta)$,
+		where $T:\mathcal C \to \mathcal C$ is a functor,
+		$\mu:T \circ T \to T$ and $\eta: 1 \to T$ are natural transformations in $\mathbf{End}_\mathcal C$ satisfying the
+		commutative diagrams below. Note that $1$ is the identity functor in $\mathcal{C}$.
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=0.7\textwidth]{../notebooks/Monad.pdf}
+			\end{center}
+			\caption{Commutative diagram for monad.}
+			\label{fig:monad}
+		\end{figure}
+	\end{definition}
+\end{frame}
 
 %------------------------------------------------
 

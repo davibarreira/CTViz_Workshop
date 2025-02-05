@@ -1,16 +1,17 @@
 # Fdb version 4
-["bibtex main"] 1738761922 "main.aux" "main.bbl" "main" 1738761976 0
+["bibtex main"] 1738765729 "main.aux" "main.bbl" "main" 1738766013 0
   "./reference.bib" 1738672787 922 b0a1f22a9ca207f79b0e2696048ded37 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1738761975 7843 190f6fbdd35887d117e49a5c0c190daa "pdflatex"
+  "main.aux" 1738766013 7942 57571d752e585335b919d42e8a0901e7 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1738761973 "main.tex" "main.pdf" "main" 1738761976 0
-  "../notebooks/3Catsimple.pdf" 1738612305 7340 76e7429aad8310da91ff138e072acd03 ""
-  "../notebooks/DiscreteCategory.pdf" 1738612308 18303 44d9756e1b21984d86a36313c7f8bfcc ""
-  "../notebooks/DualCategory.pdf" 1738677670 12133 44fd56a422f7255139ab06103a657690 ""
+["pdflatex"] 1738766011 "main.tex" "main.pdf" "main" 1738766013 0
+  "../notebooks/3Catsimple.pdf" 1738765875 7338 d65290087699c7a70750b7c39412ca30 ""
+  "../notebooks/DiscreteCategory.pdf" 1738765875 18303 ca583d4e3eb997b0fd25d657855be817 ""
+  "../notebooks/DualCategory.pdf" 1738765876 12134 8d7543ee42fe20c71ad42a782b967136 ""
+  "../notebooks/Monad.pdf" 1738765929 19492 184fda43b8d8f7cdc3c60435b13c1cfb ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -279,12 +280,12 @@
   "figs/pca.pdf" 1737571595 79880 2d5e4af188dee8ef034e78fee46bdb02 ""
   "figures/category-triad.pdf" 1737471632 8129 336c211091e6f8fab8ab15fdc76c6d96 ""
   "figures/expressiveness.pdf" 1737471632 40498 0debcb71cdf75f98875882b29d2f1b97 ""
-  "main.aux" 1738761975 7843 190f6fbdd35887d117e49a5c0c190daa "pdflatex"
-  "main.bbl" 1738761922 659 8bc1c5ac1e4100c8ea625ff31a8933e0 "bibtex main"
-  "main.nav" 1738761975 3674 a9d2209592061fe8ef34090844797acc "pdflatex"
-  "main.out" 1738761975 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
-  "main.tex" 1738761973 20704 453826bb37dfc1c60b42d1ffb073b6d5 ""
-  "main.vrb" 1738761975 710 ae50c710e206e69013d9eb9653f23414 "pdflatex"
+  "main.aux" 1738766013 7942 57571d752e585335b919d42e8a0901e7 "pdflatex"
+  "main.bbl" 1738765729 659 8bc1c5ac1e4100c8ea625ff31a8933e0 "bibtex main"
+  "main.nav" 1738766013 3674 a9d2209592061fe8ef34090844797acc "pdflatex"
+  "main.out" 1738766013 396 5f0770f84e46be7db6c860bb89263440 "pdflatex"
+  "main.tex" 1738766009 26950 16ae90668ce01583e8d764ecae1ca702 ""
+  "main.vrb" 1738766013 636 835108e255fbefd8f3498e243d81ca88 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
