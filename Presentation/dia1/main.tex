@@ -588,7 +588,29 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Category Theory Brief Introduction}
+
+\begin{frame}[fragile]{Functors}
+	\begin{definition}[Functor]
+        A functor $F: \mathcal C \to \mathcal D$ consists of:
+        \begin{itemize}
+            \item A mapping between objects: $F: \text{Ob}_\mathcal C \to \text{Ob}_\mathcal D$.
+            \item A mapping between morphisms:
+            \begin{itemize}
+                \item Covariant: $F(f): F(A) \to F(B)$, for $f: A \to B$.
+                \item Contravariant: $F(f): F(B) \to F(A)$, for $f: A \to B$.
+            \end{itemize}
+            \item Identity preservation: $F(id_A) = id_{F(A)}$.
+            \item Composition preservation: 
+            \begin{itemize}
+                \item Covariant: $F(g \circ f) = F(g) \circ F(f)$.
+                \item Contravariant: $F(g \circ f) = F(f) \circ F(g)$.
+            \end{itemize}
+        \end{itemize}
+    \end{definition}
+\end{frame}
+
+
+\begin{frame}[fragile]{Functors}
 	\begin{definition}[Functor]
 		Let $\mathcal C$ and $\mathcal D$ be two categories. A functor $F: \mathcal C \to \mathcal D$ is
 		a pair of mappings with the following properties:
@@ -603,7 +625,79 @@
 
 \end{frame}
 
-\begin{frame}[fragile]{Category Theory Brief Introduction}
+\begin{frame}[fragile]{Examples of Functors}
+    \begin{definition}[Power set functor]
+        The power-set functor $\mathcal P : \mathbf{Set} \to \mathbf{Set}$ sends a set $A$
+        to its power set $\mathcal P (A)$, and sends $f:A\to B$ to 
+        $\mathcal P f : \mathcal P(A) \to \mathcal P(B)$, where given $X \in \mathcal P (A)$:
+        $$
+            \mathcal P f (X) = \{f(x) : x \in X\}.
+        $$
+
+        \textbf{Exercise:} Show that this is indeed a (covariant) functor.
+    \end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{Examples of Functors}
+    \begin{definition}[Inverse Image Functor]
+        An example of \textbf{contravariant} functor is the inverse image functor
+        $Im : \mathbf{Set} \to \mathbf{Set}$, which sends a set $A$ to its
+        power-set $\mathcal P(A)$, but sends $f:A\to B$ to the inverse image of $f$, i.e.
+        for any $Y \subset B$ we have:
+        $$
+            Im \ f(Y) = f^{-1}(Y) := \{x \in A : f(x) \in Y\}.
+        $$
+        Note that the inverse image satisfy the contravariant property
+        \begin{displaymath}
+            Im(f \circ g) = (f \circ g) ^{-1} = g^{-1} \circ f^{-1} = Im \ g \circ Im \ f.
+        \end{displaymath}
+        Also, for $id_A: A \to A$, we have
+        \begin{displaymath}
+            Im(id_A) = id_{\mathcal P (A)}.
+        \end{displaymath}
+    \end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{Examples of Functors}
+    \begin{definition}[Group Homormophism as Functors]
+    In abstract algebra, a group is a triple $(G, \cdot, e)$, where $G$ is a set,
+    $\cdot : G \times G \to G$ is the product mapping which is associative and has an inverse,
+    and $e \in G$ is the identity element.
+
+	\vspace{3mm}
+    We can \textit{categorify} groups (also called delooping \citep{perrone2024starting}),
+    i.e. we can interpret them as categories. Define a category $\mathbf B G$ as containing a single
+    object $G$, the elements of $G$ are the morphisms, i.e. for $g \in G$ we have $g:G\to G$.
+    Morphism composition is given by $\cdot$, hence $g_1 \cdot g_2 \equiv g_1 \circ g_2$.
+
+	\vspace{3mm}
+    Let $(G, \cdot_G, e_G)$ and $(H, \cdot_H, e_H)$ be two groups. A function
+    $f:G \to H$ is a homomorphism between $G$ and $H$ if 
+    for every $g_1, g_2 \in G$ we have:
+
+    $$f(g_1 \cdot_G g_2) = f(g_1) \cdot_H f(g_2),$$
+
+    Note that this is exactly the definition of a functor $F:\mathbf B G \to \mathbf B H$.
+    This is actually by design, as functors are effectively \textit{homormophisms between categories}
+    \citep{ncatlabfunctor}.
+    \end{definition}
+\end{frame}
+
+% \begin{frame}[fragile]{Examples of Functors}
+
+%     The \textit{free-set functor} is another common example of a functor from $\mathbf{Set}$ to itself. It assigns to each set $A$ the set of all finite sequences of elements from $A$, often called the free monoid on $A$. This functor is denoted by:
+%     \[
+%     \mathbf{Set} \xrightarrow{\text{Free}} \mathbf{Set}.
+%     \]
+%     For any set $A$, the free-set functor maps $A$ to the set of all finite sequences of elements of $A$. For any function $f: A \to B$, the functor maps $f$ to the function that extends $f$ to sequences:
+%     \[
+%     \text{Free}(f)(\mathbf{a}_1, \mathbf{a}_2, \dots, \mathbf{a}_n) = (f(\mathbf{a}_1), f(\mathbf{a}_2), \dots, f(\mathbf{a}_n)).
+%     \]
+%     This functor also respects composition and identity morphisms.
+% \end{frame}
+
+
+\begin{frame}[fragile]{Natural Transformations}
 	\begin{definition}[Natural Transformations]
 		Let $\mathcal C$ and $\mathcal D$ be categories, and let $F,G:\mathcal C \to \mathcal D$ be functors.
 		A natural transformation $\alpha: F \to G$ is such that the following diagram commutes:

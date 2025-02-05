@@ -7,9 +7,9 @@
 \beamer@slide {fig:3Catcomplete}{14}
 \beamer@slide {fig:slice}{15}
 \beamer@slide {fig:dual}{17}
-\beamer@slide {fig:Functor}{29}
-\beamer@slide {fig:NaturalTransformation}{30}
-\beamer@slide {def:monoid}{31}
-\beamer@slide {fig:monoid-diagram}{32}
-\beamer@slide {def:monoid-cat}{32}
-\beamer@slide {fig:monad}{33}
+\beamer@slide {fig:Functor}{30}
+\beamer@slide {fig:NaturalTransformation}{34}
+\beamer@slide {def:monoid}{35}
+\beamer@slide {fig:monoid-diagram}{36}
+\beamer@slide {def:monoid-cat}{36}
+\beamer@slide {fig:monad}{37}
