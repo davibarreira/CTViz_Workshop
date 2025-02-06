@@ -997,14 +997,54 @@
         Prove that $in$ is the inverse of $h$.
     \end{proof}
 \end{frame}
-    % Depending on the endofunctor, the $\mathcal Alg(F)$ category might have an initial
-    % object, called \textit{initial algebra}. As we have shown, initial objects
-    % are unique up to an isomorphism, therefore, we can pick a single representative.
-    % In this case, we use $(I,in)$ as the initial $F$-algebra. A result
-    % known as Lambek's theorem, originally proved in \citep{lambek},
-    % states that if $(I,in)$ is an initial algebra,
-    % then $I \cong F I$ via $in$, i.e. $I$ is isomorphic to $FI$.
-    % This theorem also implies that $I$ is the least fixed point of $F$.
+
+\begin{frame}[fragile]{F-Algebras and F-Coalgebras}
+    In programming, the usefulness of this whole discussion on $F$-algebras and initial
+    algebras is that they help us formalize the idea of recursive data structures.
+    For example, consider an endofunctor $F_\mathbb Z:\mathbf{Set}\to\mathbf{Set}$, where:
+    \begin{displaymath}
+        F_\mathbb Z(X) := 1 + \mathbb Z \times X.
+    \end{displaymath}
+    The data type representing a list of integers is equal to the
+    carrier object for the initial algebra for this functor:
+    \begin{displaymath}
+        \text{List}_\mathbb Z \cong 1 + \mathbb Z \times \text{List}_\mathbb Z
+            = 1 + \mathbb Z + (\mathbb Z \times \mathbb Z) + (\mathbb Z \times \mathbb Z \times \mathbb Z) \dots
+    \end{displaymath}
+    In this context, the catamorphism is the function that generalizes how to
+    apply an $F_\mathbb Z$-algebra on $\text{List}_\mathbb Z$.
+\end{frame}
+\begin{frame}[fragile]{F-Algebras and F-Coalgebras}
+    If algebras evaluate expressions, then coalgebras produce expressions.
+    In categorical terms, the $F$-coalgebra is simply the dual of an $F$-algebra:
+    \begin{definition}[$F$-coalgebra]
+        Let $F:\mathcal C \to \mathcal C$ be an endofunctor. An $F$-coalgebra is a tuple $(U,\varphi)$, where:
+        \begin{itemize}
+            \item An object $U \in \mathcal C$;
+            \item A morphism $\varphi : U \to FU$.
+        \end{itemize}
+    \end{definition}
+
+    One can also construct a category of $F$-coalgebras and consider its terminal
+    object as $(T, out)$. The dual notion of the catamorphism is called
+    anamorphism, and is given by:
+    \begin{displaymath}
+        ana_\varphi = out^{-1} \circ F ana_\varphi \circ \varphi.
+    \end{displaymath}
+\end{frame}
+
+\begin{frame}[fragile]{F-Algebras and F-Coalgebras}
+    We can then think of a map that combines both operations together, i.e. it uses
+    the coalgebra to produce expressions, and then consumes it using the algebra.
+    The name of such map is hylomorphism, defined as $hylo:(A,alg)\times (B,coalg) \times B \to A$.
+    An example of this is the factorial function, as discussed by \citet{slodivcak2011some},
+    where the coalgebra takes an integers and produces a list of integers, which is then
+    consumed by multiplying each value.
+    The hylomorphism is computed by:
+    \begin{displaymath}
+        hylo(alg,coalg) = alg \circ F hylo \circ coalg.
+    \end{displaymath}
+\end{frame}
 
 
 %------------------------------------------------

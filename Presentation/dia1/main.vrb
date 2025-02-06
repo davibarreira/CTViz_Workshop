@@ -1,16 +1,11 @@
 \frametitle{F-Algebras and F-Coalgebras}
-\begin{theorem}[Lambek's Lemma]
-        Let $F:\mathcal C \to \mathcal C$ be an endofunctor, and let
-        $(I,in)$ be the initial $F$-algebra. Then, $in:F I \to I$ is an isomorphism,
-        meaning that there exists an inverse morphism $in^{-1}:I \to F I$.
-    \end{theorem}
-    \begin{proof}
-        Left as exercise.
-        \\
-        \textbf{Step 1}. Prove that for the initial $F$-algebra $(I,in)$,
-        for any other $F$-algebra $(I,a)$, we have $a = id_I$.
-        \\
-        \textbf{Step 2}. Since $(I,in)$ is initial, given the $F$-algebra
-        $(FI,Fin)$, there exists a unique algebra homomorphism $h: I \to FI$.
-        Prove that $in$ is the inverse of $h$.
-    \end{proof}
+We can then think of a map that combines both operations together, i.e. it uses
+    the coalgebra to produce expressions, and then consumes it using the algebra.
+    The name of such map is hylomorphism, defined as $hylo:(A,alg)\times (B,coalg) \times B \to A$.
+    An example of this is the factorial function, as discussed by \citet{slodivcak2011some},
+    where the coalgebra takes an integers and produces a list of integers, which is then
+    consumed by multiplying each value.
+    The hylomorphism is computed by:
+    \begin{displaymath}
+        hylo(alg,coalg) = alg \circ F hylo \circ coalg.
+    \end{displaymath}
