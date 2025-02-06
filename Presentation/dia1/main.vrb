@@ -1,14 +1,16 @@
-\frametitle{Monoids and Monads}
-\begin{definition}[Monad]
-		A monad is a monoid in $\mathbf{End}_\mathcal C$, which is the triple $(T, \mu, \eta)$,
-		where $T:\mathcal C \to \mathcal C$ is a functor,
-		$\mu:T \circ T \to T$ and $\eta: 1 \to T$ are natural transformations in $\mathbf{End}_\mathcal C$ satisfying the
-		commutative diagrams below. Note that $1$ is the identity functor in $\mathcal{C}$.
-		\begin{figure}[H]
-			\begin{center}
-				\includegraphics[width=0.7\textwidth]{../notebooks/Monad.pdf}
-			\end{center}
-			\caption{Commutative diagram for monad.}
-			\label{fig:monad}
-		\end{figure}
-	\end{definition}
+\frametitle{F-Algebras and F-Coalgebras}
+\begin{theorem}[Lambek's Lemma]
+        Let $F:\mathcal C \to \mathcal C$ be an endofunctor, and let
+        $(I,in)$ be the initial $F$-algebra. Then, $in:F I \to I$ is an isomorphism,
+        meaning that there exists an inverse morphism $in^{-1}:I \to F I$.
+    \end{theorem}
+    \begin{proof}
+        Left as exercise.
+        \\
+        \textbf{Step 1}. Prove that for the initial $F$-algebra $(I,in)$,
+        for any other $F$-algebra $(I,a)$, we have $a = id_I$.
+        \\
+        \textbf{Step 2}. Since $(I,in)$ is initial, given the $F$-algebra
+        $(FI,Fin)$, there exists a unique algebra homomorphism $h: I \to FI$.
+        Prove that $in$ is the inverse of $h$.
+    \end{proof}

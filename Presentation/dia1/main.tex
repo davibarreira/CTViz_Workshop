@@ -848,8 +848,166 @@
 	\end{definition}
 \end{frame}
 
-%------------------------------------------------
+\begin{frame}[fragile]{Monoids and Monads}
+    Monads induce a category called \textit{Kleisli category}. Such category is of special interest
+    in Functional Programming, where it is used to model computational effects.
 
+    \begin{definition}[Kleisli Category]
+        Let $(T, \mu, \eta)$ be a monad over a category $\mathcal C$. The Kleisli category
+        is the category $\mathcal C_T$, where:
+        \begin{enumerate}[(i)]
+        \item $\text{Ob}_{\mathcal C_T} = \text{Ob}_{\mathcal C}$;
+        \item $\text{Mor}_{\mathcal C_T}(A,B) = \text{Mor}_{\mathcal C}(A,TB)$;
+        \item the composition of morphisms in $\mathcal C_T$ is given by:
+            \begin{displaymath}
+                g \circ_T f :=  \mu_C \circ T g \circ f,
+            \end{displaymath}
+        with $f:A \to T B$ and $g:B \to T C$ as morphisms in $\mathcal C$;
+        \item the identity morphism of an object $A$ in $\mathcal C_T$ is $\eta:A\to TA$.
+        \end{enumerate}
+        In summary, the Kleisli category is defined in such a way that two morphisms
+        $f:A \to TB$ and $g:B \to TC$ can be composed using $g \circ_T f:A \to TC$.
+    \end{definition}
+\end{frame}
+
+\begin{frame}[fragile]{F-Algebras and F-Coalgebras}
+    The informal idea of ``doing algebra'' is that we have an expression,
+    such as $1 + 1$, and we want to evaluate this expression so that we
+    get a single number, e.g. $1 + 1 = 2$. This concept of defining generic
+    expressions and evaluating them can be expressed in Category Theory
+    via the $F$-algebras:
+
+    \begin{definition}[$F$-algebra]
+        Let $F:\mathcal C \to \mathcal C$ be an endofunctor. An $F$-algebra is a tuple $(A,\phi)$, where:
+        \begin{itemize}
+            \item An object $A \in \mathcal C$, called \textit{carrier};
+            \item A morphism $\phi : FA \to A$, called \textit{structure map}.
+        \end{itemize}
+    \end{definition}
+
+    Note that for a fixed endofunctor $F$, we can define different algebras by picking
+    different carriers or different structure maps.
+\end{frame}
+
+\begin{frame}[fragile]{F-Algebras and F-Coalgebras}
+    Consider an endofunctor $F$ as:
+    \begin{displaymath}
+        (\cdot \times \cdot + 1):\mathbf{Set} \to \mathbf{Set},
+    \end{displaymath}
+    where $\times$ is the Cartesian product, $+$ is the disjoint union operator and $1$ is the terminal
+    object in $\mathbf{Set}$, i.e. a generic singleton set $\{e\}$.
+
+    We can then define an $F$-algebra $(\mathbb Z, \phi)$, where:
+    \begin{gather*}
+        \phi:(\mathbb{Z} \times \mathbb{Z} + \{e\}) \to \mathbb Z, \ \text{such that } \\
+        \phi((a,b)) \mapsto a + b \\
+        \phi(e) \mapsto 0.
+    \end{gather*}
+    What this means is that, for our specific $F$-algebra, an expression is a value of
+    $F \mathbb Z = \mathbb{Z} \times \mathbb{Z} + \{e\}$, which is either a tuple of
+    integers, or $e$. Our map $\phi$ evaluates expressions by either summing 
+    the tuple of integers or returning $0$ for $e$.
+\end{frame}
+
+
+\begin{frame}[fragile]{F-Algebras and F-Coalgebras}
+    For a fixed endofunctor $F$, we can define the category of $F$-algebras:
+    \begin{definition}[Category of $F$-algebras]
+        Let $F:\mathcal C \to \mathcal C$ be an endofunctor. The category of
+        $F$-algebras, denoted by $\mathcal Alg(F)$,
+        has $F$-algebras as objects, and algebra homomorphisms as morphisms.
+        Given two $F$-algebras $(\phi, A)$ and $(\psi, B)$,
+        a morphism $f:A \to B$ is an \textit{algebra homomorphism}
+        between $(\phi, A)$ and $(\psi, B)$ if the diagram below commutes.
+    \end{definition}
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.6\textwidth]{../notebooks/F-algebra.pdf}
+        \end{center}
+        \caption{Commutative diagram for $F$-algebra morphism.}
+        \label{fig:falgebra}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile]{F-Algebras and F-Coalgebras}
+    \begin{definition}[Initial $F$-algebras]
+        An initial $F$-algebra (if it exists) is an initial object in $\mathcal Alg(F)$.
+        In other words, an initial $F$-algebra is a tuple $(I, in)$ with
+        $in: F I \to I$, such that for any other $F$-algebra $(A, \phi)$,
+        there exists a unique algebra homomorphism $cata_\phi: I \to A$,
+        commonly called \textit{catamorphism} \citep{milewski2018category}.
+    \end{definition}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.6\textwidth]{../notebooks/cata.pdf}
+        \end{center}
+        \caption{Commutative diagram for $F$-algebra morphism.}
+        \label{fig:falgebra}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{F-Algebras and F-Coalgebras}
+    \begin{definition}[Initial $F$-algebras]
+        An initial $F$-algebra (if it exists) is an initial object in $\mathcal Alg(F)$.
+        In other words, an initial $F$-algebra is a tuple $(I, in)$ with
+        $in: F I \to I$, such that for any other $F$-algebra $(A, \phi)$,
+        there exists a unique algebra homomorphism $cata_\phi: I \to A$,
+        commonly called \textit{catamorphism} \citep{milewski2018category}.
+    \end{definition}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.6\textwidth]{../notebooks/cata.pdf}
+        \end{center}
+        \caption{Commutative diagram for $F$-algebra morphism.}
+        \label{fig:falgebra}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{F-Algebras and F-Coalgebras}
+    \begin{theorem}[Lambek's Lemma]
+        Let $F:\mathcal C \to \mathcal C$ be an endofunctor, and let
+        $(I,in)$ be the initial $F$-algebra. Then, $in:F I \to I$ is an isomorphism,
+        meaning that there exists an inverse morphism $in^{-1}:I \to F I$.
+    \end{theorem}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.6\textwidth]{../notebooks/catamorphism.pdf}
+        \end{center}
+        \caption{Commutative diagram for $F$-algebra morphism.}
+        \label{fig:falgebra}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{F-Algebras and F-Coalgebras}
+    \begin{theorem}[Lambek's Lemma]
+        Let $F:\mathcal C \to \mathcal C$ be an endofunctor, and let
+        $(I,in)$ be the initial $F$-algebra. Then, $in:F I \to I$ is an isomorphism,
+        meaning that there exists an inverse morphism $in^{-1}:I \to F I$.
+    \end{theorem}
+    \begin{proof}
+        Left as exercise.
+        \\
+        \textbf{Step 1}. Prove that for the initial $F$-algebra $(I,in)$,
+        for any other $F$-algebra $(I,a)$, we have $a = id_I$.
+        \\
+        \textbf{Step 2}. Since $(I,in)$ is initial, given the $F$-algebra
+        $(FI,Fin)$, there exists a unique algebra homomorphism $h: I \to FI$.
+        Prove that $in$ is the inverse of $h$.
+    \end{proof}
+\end{frame}
+    % Depending on the endofunctor, the $\mathcal Alg(F)$ category might have an initial
+    % object, called \textit{initial algebra}. As we have shown, initial objects
+    % are unique up to an isomorphism, therefore, we can pick a single representative.
+    % In this case, we use $(I,in)$ as the initial $F$-algebra. A result
+    % known as Lambek's theorem, originally proved in \citep{lambek},
+    % states that if $(I,in)$ is an initial algebra,
+    % then $I \cong F I$ via $in$, i.e. $I$ is isomorphic to $FI$.
+    % This theorem also implies that $I$ is the least fixed point of $F$.
+
+
+%------------------------------------------------
 \begin{frame}{References}
     \footnotesize
     \bibliography{reference.bib}
@@ -858,9 +1016,9 @@
 
 %------------------------------------------------
 
-\begin{frame}
-    \Huge{\centerline{\textbf{The End}}}
-\end{frame}
+% \begin{frame}
+%     \Huge{\centerline{\textbf{The End}}}
+% \end{frame}
 
 %----------------------------------------------------------------------------------------
 

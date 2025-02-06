@@ -10,6 +10,11 @@ Fong, B. and Spivak, D.~I. (2019).
 \newblock {\em An invitation to applied category theory: seven sketches in compositionality}.
 \newblock Cambridge University Press.
 
+\bibitem[Milewski, 2018]{milewski2018category}
+Milewski, B. (2018).
+\newblock {\em Category theory for programmers}.
+\newblock Blurb.
+
 \bibitem[nLab contributors, nd]{ncatlabfunctor}
 nLab contributors (n.d.).
 \newblock Functor.
