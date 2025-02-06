@@ -1,0 +1,9 @@
+\frametitle{Category Theory in Programming}
+In \textbf{Categorical Programming}, programming can be loosely interpreted as a subcategory of $\mathbf{Set}$.
+    \begin{itemize}
+        \item Sets = Types;
+        \item Functions = Programming functions;
+        \item Functors = Parametric type with an \pc{fmap} function;
+        \item Natural transformations = Parametric polymorphisms.
+    \end{itemize}
+    ...

@@ -1,0 +1,123 @@
+%! TeX program = lualatex
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[aspectratio=169,xcolor=dvipsnames,10pt]{beamer}
+\usetheme{SimplePlus}
+
+\usepackage{hyperref}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{listings}
+
+%%%%%%% JULIA %%%%%%%%%%
+\input{julia_font}
+\input{julia_listings}
+\input{julia_listings_unicode}
+
+\lstdefinelanguage{JuliaLocal}{
+    language = Julia, % inherit Julia lang. to add keywords
+}
+% \newcommand{\pc}[1]{\lstinline[style=julia]{#1}}
+\newcommand{\pc}[1]{\lstinline[style=juliasmall]{#1}}
+\newcommand{\pcsmall}[1]{\lstinline[style=juliasmall]{#1}}
+\renewcommand{\lstlistingname}{Code}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\theoremstyle{definition}
+\newtheorem{proposition}{Proposition}
+
+\usepackage[square,numbers]{natbib}
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\newcommand*{\QEDB}{\hfill\ensuremath{\square}}%
+
+%----------------------------------------------------------------------------------------
+%    TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{Data Visualization From a Category Theory Perspective}
+\subtitle{}
+
+\author{Davi Sales Barreira, Asla Medeiros e Sá}
+
+\institute
+{
+    FGV - EMAp, IMPATech
+}
+\date{\today} % Date, can be changed to a custom date
+
+%----------------------------------------------------------------------------------------
+%    PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+\setbeamertemplate{blocks}[default]
+\setbeamercolor{block title}{fg=white, bg=RoyalBlue}
+\setbeamercolor{block body}{fg=black, bg=white}
+
+\begin{document}
+
+\begin{frame}
+    % Print the title page as the first slide
+    \titlepage
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Table of contents}
+	% \setbeamertemplate{section in toc}[sections numbered]
+	% \setbeamertemplate{subsection in toc}[subsections numbered]
+	% \setbeamerfont{subsection in toc}{size=\small}
+	% \tableofcontents[sectionstyle=show, subsectionstyle=show]
+    \begin{enumerate}
+        \item Category Theory in Programming
+        \item Julia's Type System
+        \item Functional Programming
+        \item Categorical Programming in Julia
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Category Theory in Programming}
+    Perhaps the most influential application of Category Theory has been in
+    programming, specially within Functional Programming.
+    \citet{orchard2012categorical} states that the application of CT to
+    programming can be divided into two distinct approaches, namely
+    \textit{categorical programming} and \textit{categorical semantics}.
+    \begin{itemize}
+        \item Categorical Semantics formally interprets programming languages through the structures of Category Theory;
+        \item Categorical Programming uses categorical concepts as design patterns for organizing and structuring programs.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Category Theory in Programming}
+    In \textbf{Categorical Programming}, programming can be loosely interpreted as a subcategory of $\mathbf{Set}$.
+    \begin{itemize}
+        \item Sets = Types;
+        \item Functions = Programming functions;
+        \item Functors = Parametric type with an \pc{fmap} function;
+        \item Natural transformations = Parametric polymorphisms.
+    \end{itemize}
+    ...
+\end{frame}
+
+
+%------------------------------------------------
+\begin{frame}{References}
+    \footnotesize
+    \bibliography{reference.bib}
+    \bibliographystyle{apalike}
+\end{frame}
+
+%------------------------------------------------
+
+% \begin{frame}
+%     \Huge{\centerline{\textbf{The End}}}
+% \end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
