@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1738806539 "main.aux" "main.bbl" "main" 1738806587 0
+["bibtex main"] 1738808184 "main.aux" "main.bbl" "main" 1738808187 0
   "./reference.bib" 1738806476 2433 a99359dc7224af0b7b8d10c9c497746e ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1738806586 1865 e9d3df3df6c0626f28647a549edc1bb4 "lualatex"
+  "main.aux" 1738808186 2237 dc5b0254b21e6059614f9b6c11a1a4dd "lualatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["lualatex"] 1738806584 "main.tex" "main.pdf" "main" 1738806587 0
+["lualatex"] 1738808184 "main.tex" "main.pdf" "main" 1738808187 0
   "/Users/davibarreira/Library/Fonts/JuliaMono-Regular.ttf" 1714921523 3109732 cf8431d5b5360cd8002dbd43cc40eb2e ""
   "/Users/davibarreira/Library/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/juliamono-bold.luc" 1721990823 1630025 a3b59fbb6bde3567ce009dd4e5068232 ""
   "/Users/davibarreira/Library/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/juliamono-regular.luc" 1721990823 1629068 4216b9130120075a53d18436fdb4e513 ""
@@ -23,7 +23,7 @@
   "/Users/davibarreira/Library/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmsans17-regular.luc" 1728664211 127862 582b02d6a00bc64715c8297b4ad27ad8 ""
   "/Users/davibarreira/Library/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmsans8-oblique.luc" 1738806117 129065 13d5bb7ad72ae09c4e445b95d5b370c5 ""
   "/Users/davibarreira/Library/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmsans8-regular.luc" 1717789109 127596 c6681aa8f04dcc62a60c86deb05b1537 ""
-  "/Users/davibarreira/Library/texlive/2023/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1738806213 2061 a414e41b02ff2244d08bbc41eee3f9dd ""
+  "/Users/davibarreira/Library/texlive/2023/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1738808017 2144 da34fac3174d16a3a744db61ce437d7f ""
   "/Users/davibarreira/Library/texlive/2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1737641424 393706 71cb1a3cef0974bc112746e7df9f35b1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmromandemi10-regular.otf" 1255129361 111892 bcd3166022befea094c973b521411001 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf" 1255129361 107448 a9e5b7aaaf5f74194deee407f2fd1552 ""
@@ -315,12 +315,12 @@
   "julia_font.tex" 1738805937 316 035bdd8a821950e69a1c5ad511836c6e ""
   "julia_listings.tex" 1738805937 22738 03456cb0252fc635d7ae0d72b7fd077e ""
   "julia_listings_unicode.tex" 1738805937 204207 3f4c3e9e23e788ea9d3c33f0ec207153 ""
-  "main.aux" 1738806586 1865 e9d3df3df6c0626f28647a549edc1bb4 "lualatex"
-  "main.bbl" 1738806540 260 20527be992dc0070c420a16a2602950e "bibtex main"
-  "main.nav" 1738806586 837 16f65e2f9de4b6890a0875be5bc09dda "lualatex"
-  "main.out" 1738806586 93 aea4b6a8ae45636c75679c2f0dfa4493 "lualatex"
-  "main.tex" 1738806583 4164 4b2b2e565077caec8fe50a2e84484001 ""
-  "main.vrb" 1738806586 414 351b82a0e320a2ee4119cc46aacdbd86 "lualatex"
+  "main.aux" 1738808186 2237 dc5b0254b21e6059614f9b6c11a1a4dd "lualatex"
+  "main.bbl" 1738808184 260 20527be992dc0070c420a16a2602950e "bibtex main"
+  "main.nav" 1738808186 1101 f55ec80efb2adb60a5830fbbdf1f52d6 "lualatex"
+  "main.out" 1738808186 93 aea4b6a8ae45636c75679c2f0dfa4493 "lualatex"
+  "main.tex" 1738808186 4389 8468d7a31c2d574acd3f3f3f7e24f410 ""
+  "main.vrb" 1738808186 55 31770940363f4c23b0425b4174ba451a "lualatex"
   (generated)
   "main.aux"
   "main.log"

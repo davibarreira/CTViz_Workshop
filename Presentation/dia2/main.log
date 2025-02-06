@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.11.22)  5 FEB 2025 22:49
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.11.22)  5 FEB 2025 23:16
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -1054,6 +1054,18 @@ LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <5> not available
 \openout4 = main.vrb
  (./main.vrb) [4
 
+]
+\openout4 = main.vrb
+ (./main.vrb) [5
+
+]
+\openout4 = main.vrb
+ (./main.vrb) [6
+
+]
+\openout4 = main.vrb
+ (./main.vrb) [7
+
 ] (./main.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1061,7 +1073,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 6.
-) [5
+) [8
 
 ]
 \tf@nav=\write6
@@ -1079,19 +1091,19 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35073 strings out of 478285
+ 35112 strings out of 478285
  100000,1977958 words of node,token memory allocated
  2656 words of node memory still in use:
    21 hlist, 7 vlist, 4 rule, 15 disc, 3 local_par, 57 glue, 15 kern, 18 penalty, 137 glyph, 55 attribute, 66 glue_spec, 55 attribute_list, 8 write, 2 pdf_dest, 10 pdf_colorstack nodes
    avail lists: 2:280,3:64,4:189,5:140,6:25,7:1985,8:5,9:246,10:17,11:219
- 53762 multiletter control sequences out of 65536+600000
+ 53768 multiletter control sequences out of 65536+600000
  76 fonts using 21143615 bytes
  128i,11n,115p,9591b,3891s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans8-oblique.otf></Users/davibarreira/Library/Fonts/JuliaMono-Regular.ttf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmromandemi10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (5 pages, 81078 bytes).
+Output written on main.pdf (8 pages, 83128 bytes).
 
-PDF statistics: 111 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 131072)
+PDF statistics: 126 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 131072)
  24 words of extra memory for PDF output out of 10000 (max. 100000000)
 

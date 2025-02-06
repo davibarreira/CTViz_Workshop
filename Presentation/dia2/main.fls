@@ -602,6 +602,15 @@ OUTPUT main.vrb
 INPUT ./main.vrb
 INPUT ./main.vrb
 INPUT /Users/davibarreira/Library/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmromandemi10-regular.luc
+OUTPUT main.vrb
+INPUT ./main.vrb
+INPUT ./main.vrb
+OUTPUT main.vrb
+INPUT ./main.vrb
+INPUT ./main.vrb
+OUTPUT main.vrb
+INPUT ./main.vrb
+INPUT ./main.vrb
 INPUT ./main.bbl
 INPUT ./main.bbl
 OUTPUT main.nav
