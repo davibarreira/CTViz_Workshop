@@ -1,0 +1,100 @@
+%! TeX program = lualatex
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[aspectratio=169,xcolor=dvipsnames,10pt]{beamer}
+\usetheme{SimplePlus}
+
+\usepackage{hyperref}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{listings}
+
+%%%%%%% JULIA %%%%%%%%%%
+\input{julia_font}
+\input{julia_listings}
+\input{julia_listings_unicode}
+
+\lstdefinelanguage{JuliaLocal}{
+    language = Julia, % inherit Julia lang. to add keywords
+}
+% \newcommand{\pc}[1]{\lstinline[style=julia]{#1}}
+\newcommand{\pc}[1]{\lstinline[style=juliasmall]{#1}}
+\newcommand{\pcsmall}[1]{\lstinline[style=juliasmall]{#1}}
+\renewcommand{\lstlistingname}{Code}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\theoremstyle{definition}
+\newtheorem{proposition}{Proposition}
+
+\usepackage[square,numbers]{natbib}
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}%
+\newcommand*{\QEDB}{\hfill\ensuremath{\square}}%
+
+%----------------------------------------------------------------------------------------
+%    TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{Data Visualization From a Category Theory Perspective}
+\subtitle{}
+
+\author{Davi Sales Barreira, Asla Medeiros e Sá}
+
+\institute
+{
+    FGV - EMAp, IMPATech
+}
+\date{\today} % Date, can be changed to a custom date
+
+%----------------------------------------------------------------------------------------
+%    PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+\setbeamertemplate{blocks}[default]
+\setbeamercolor{block title}{fg=white, bg=RoyalBlue}
+\setbeamercolor{block body}{fg=black, bg=white}
+
+\begin{document}
+
+\begin{frame}
+    % Print the title page as the first slide
+    \titlepage
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Table of contents}
+	% \setbeamertemplate{section in toc}[sections numbered]
+	% \setbeamertemplate{subsection in toc}[subsections numbered]
+	% \setbeamerfont{subsection in toc}{size=\small}
+	% \tableofcontents[sectionstyle=show, subsectionstyle=show]
+    \begin{enumerate}
+        \item Vizagrams Hands-on
+        \item Category Theory behind Vizagrams
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Category Theory in Programming}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{References}
+    \footnotesize
+    \bibliography{reference.bib}
+    \bibliographystyle{apalike}
+\end{frame}
+
+%------------------------------------------------
+
+% \begin{frame}
+%     \Huge{\centerline{\textbf{The End}}}
+% \end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
