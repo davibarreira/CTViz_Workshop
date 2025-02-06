@@ -1,4 +1,11 @@
 [deps]
+CoordinateTransformations = "150eb455-5306-5404-9cee-2592286d6298"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+MLStyle = "d8e11817-5142-5d16-987a-aa16d5891078"
 Parameters = "d96e819e-fc66-5662-9728-84c9c7592b0a"
+RDatasets = "ce6b1742-4840-55fa-b093-852dadbb1d8b"
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+VegaDatasets = "0ae4a718-28b7-58ec-9efb-cded64d6d5b4"
+Vizagrams = "8c229dad-8b3a-4031-83d6-73545c88426d"
 WhereTraits = "c9d4e05b-6318-49cb-9b56-e0e2b0ceadd8"
