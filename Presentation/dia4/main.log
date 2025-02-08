@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.11.22)  6 FEB 2025 00:54
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.11.22)  8 FEB 2025 16:14
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -1026,10 +1026,150 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-\openout4 = main.vrb
- (./main.vrb) [3
+<./figures/expressiveness.pdf, id=32, 528.10796pt x 190.09515pt>
+File: ./figures/expressiveness.pdf Graphic file (type pdf)
+<use ./figures/expressiveness.pdf>
+Package luatex.def Info: ./figures/expressiveness.pdf  used on input line 83.
+(luatex.def)             Requested size: 332.19652pt x 119.57784pt.
+ [3
 
-] (./main.bbl
+<./figures/expressiveness.pdf>]
+<figs/compvis.png, id=44, 1146.2825pt x 234.8775pt>
+File: figs/compvis.png Graphic file (type png)
+<use figs/compvis.png>
+Package luatex.def Info: figs/compvis.png  used on input line 90.
+(luatex.def)             Requested size: 415.24408pt x 85.08626pt.
+ [4
+
+<./figs/compvis.png>]
+<./figs/moritz.pdf, id=51, 1396.72523pt x 308.65312pt>
+File: ./figs/moritz.pdf Graphic file (type pdf)
+<use ./figs/moritz.pdf>
+Package luatex.def Info: ./figs/moritz.pdf  used on input line 95.
+(luatex.def)             Requested size: 415.24408pt x 91.75832pt.
+ [5
+
+<./figs/moritz.pdf>]
+warning  (file ./figs/pca.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<./figs/pca.pdf, id=90, 290.5925pt x 225.84375pt>
+File: ./figs/pca.pdf Graphic file (type pdf)
+<use ./figs/pca.pdf>
+Package luatex.def Info: ./figs/pca.pdf  used on input line 100.
+(luatex.def)             Requested size: 228.3855pt x 177.50482pt.
+[6
+
+<./figs/pca.pdf>] [7
+
+]
+warning  (file figs/pipe.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<figs/pipe.pdf, id=448, 515.83803pt x 225.84375pt>
+File: figs/pipe.pdf Graphic file (type pdf)
+<use figs/pipe.pdf>
+Package luatex.def Info: figs/pipe.pdf  used on input line 115.
+(luatex.def)             Requested size: 373.71713pt x 163.62741pt.
+[8
+
+<./figs/pipe.pdf>]
+<figs/primitivetransformation.pdf, id=692, 1070.3222pt x 308.65312pt>
+File: figs/primitivetransformation.pdf Graphic file (type pdf)
+<use figs/primitivetransformation.pdf>
+Package luatex.def Info: figs/primitivetransformation.pdf  used on input line 124.
+(luatex.def)             Requested size: 290.66959pt x 83.81784pt.
+ [9
+
+<./figs/primitivetransformation.pdf>]
+\openout4 = main.vrb
+ (./main.vrb
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 3.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 3.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 3.
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 3.
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <7> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 3.
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <5> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 3.
+) [10
+
+]
+\openout4 = main.vrb
+ (./main.vrb
+warning  (file ./figs/simplediagram.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<./figs/simplediagram.pdf, id=728, 252.19218pt x 101.92978pt>
+File: ./figs/simplediagram.pdf Graphic file (type pdf)
+<use ./figs/simplediagram.pdf>
+Package luatex.def Info: ./figs/simplediagram.pdf  used on input line 5.
+(luatex.def)             Requested size: 290.66959pt x 117.48273pt.
+) [11
+
+<./figs/simplediagram.pdf>]
+\openout4 = main.vrb
+ (./main.vrb
+<./figs/diagramtransformation.pdf, id=755, 990.38678pt x 308.65312pt>
+File: ./figs/diagramtransformation.pdf Graphic file (type pdf)
+<use ./figs/diagramtransformation.pdf>
+Package luatex.def Info: ./figs/diagramtransformation.pdf  used on input line 6.
+(luatex.def)             Requested size: 290.66959pt x 90.58562pt.
+) [12
+
+<./figs/diagramtransformation.pdf>]
+\openout4 = main.vrb
+ (./main.vrb
+File: figs/pipe.pdf Graphic file (type pdf)
+<use figs/pipe.pdf>
+Package luatex.def Info: figs/pipe.pdf  used on input line 3.
+(luatex.def)             Requested size: 373.71713pt x 163.62741pt.
+) [13
+
+]
+\openout4 = main.vrb
+ (./main.vrb) [14
+
+]
+\openout4 = main.vrb
+ (./main.vrb
+warning  (file ./figs/composetrees.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<./figs/composetrees.pdf, id=800, 380.00761pt x 225.84375pt>
+File: ./figs/composetrees.pdf Graphic file (type pdf)
+<use ./figs/composetrees.pdf>
+Package luatex.def Info: ./figs/composetrees.pdf  used on input line 14.
+(luatex.def)             Requested size: 249.14897pt x 148.07518pt.
+) [15
+
+<./figs/composetrees.pdf>]
+\openout4 = main.vrb
+ (./main.vrb
+warning  (file ./figs/flattree.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<./figs/flattree.pdf, id=844, 549.40572pt x 225.84375pt>
+File: ./figs/flattree.pdf Graphic file (type pdf)
+<use ./figs/flattree.pdf>
+Package luatex.def Info: ./figs/flattree.pdf  used on input line 10.
+(luatex.def)             Requested size: 290.66959pt x 119.48984pt.
+) [16
+
+<./figs/flattree.pdf>]
+\openout4 = main.vrb
+ (./main.vrb
+warning  (file ./figs/pipe.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<./figs/pipe.pdf, id=894, 515.83803pt x 225.84375pt>
+File: ./figs/pipe.pdf Graphic file (type pdf)
+<use ./figs/pipe.pdf>
+Package luatex.def Info: ./figs/pipe.pdf  used on input line 3.
+(luatex.def)             Requested size: 373.71713pt x 163.62741pt.
+) [17
+
+<./figs/pipe.pdf>] (./main.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\translate ' on input line 1.
@@ -1037,7 +1177,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [4
+) [18
 
 ]
 \tf@nav=\write6
@@ -1055,19 +1195,19 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 31718 strings out of 478285
+ 36708 strings out of 478285
  100000,1977958 words of node,token memory allocated
  1241 words of node memory still in use:
    15 hlist, 7 vlist, 4 rule, 2 disc, 2 local_par, 28 glue, 5 kern, 12 penalty, 13 glyph, 41 attribute, 66 glue_spec, 41 attribute_list, 8 write, 1 pdf_dest, 8 pdf_colorstack nodes
-   avail lists: 2:206,3:50,4:191,5:104,6:20,7:869,9:237,10:6,11:50
- 50433 multiletter control sequences out of 65536+600000
- 32 fonts using 13662095 bytes
- 128i,11n,115p,9591b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (4 pages, 16758 bytes).
+   avail lists: 2:1014,3:70,4:684,5:2514,6:41,7:2853,8:15,9:5074,10:30,11:340
+ 55246 multiletter control sequences out of 65536+600000
+ 72 fonts using 22399743 bytes
+ 128i,11n,115p,9591b,5301s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></Users/davibarreira/Library/Fonts/JuliaMono-Regular.ttf></Users/davibarreira/Library/Fonts/JuliaMono-Bold.ttf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (18 pages, 765054 bytes).
 
-PDF statistics: 71 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 131072)
+PDF statistics: 968 PDF objects out of 1000 (max. 8388607)
+ 649 compressed objects within 7 object streams
+ 38 named destinations out of 1000 (max. 131072)
  24 words of extra memory for PDF output out of 10000 (max. 100000000)
 

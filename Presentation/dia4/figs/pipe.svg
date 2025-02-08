@@ -1,0 +1,493 @@
+<svg height="410" viewBox="0 0 829.1721132897604 410" width="829.1721132897604"
+    xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <polygon
+        points="5.671346727991676 194.97821350762527 267.1092552247237 194.97821350762527 267.1092552247237 20.68627450980398 5.671346727991676 20.68627450980398 "
+        style="stroke: black; fill: white; " />
+    <text x="136.39030097635768"
+        style="font-family: Courier; text-anchor: middle; font-size: 10.4575163398693pt; "
+        transform="rotate(-0.0, 136.39030097635768, 15.457516339869244)" y="15.457516339869244">
+        Specification</text>
+    <polygon
+        points="14.385943677882722 181.9063180827887 258.39465827483264 181.9063180827887 258.39465827483264 33.758169934640534 14.385943677882693 33.758169934640534 "
+        style="fill: grey; opacity: 0.2; " />
+    <text x="19.614701847817372"
+        style="font-family: Courier; text-anchor: start; font-size: 7.668845315904093pt; "
+        transform="rotate(-0.0, 19.614701847817372, 59.37908496732024)" y="59.37908496732024">
+        Plot&#40;</text>
+    <text x="34.95239247962567"
+        style="font-family: Courier; text-anchor: start; font-size: 7.668845315904093pt; "
+        transform="rotate(-0.0, 34.95239247962567, 72.4161220043573)" y="72.4161220043573"> data
+        &#61; df,</text>
+    <text x="34.95239247962567"
+        style="font-family: Courier; text-anchor: start; font-size: 7.668845315904093pt; "
+        transform="rotate(-0.0, 34.95239247962567, 85.45315904139431)" y="85.45315904139431">
+        encodings&#61;&#40;</text>
+    <text x="50.290083111433916"
+        style="font-family: Courier; text-anchor: start; font-size: 7.668845315904207pt; "
+        transform="rotate(-0.0, 50.290083111433916, 98.49019607843138)" y="98.49019607843138">
+        x&#61;&#40;field&#61;:col_1,datatype&#61;:q&#41;,</text>
+    <text x="50.290083111433916"
+        style="font-family: Courier; text-anchor: start; font-size: 7.668845315904207pt; "
+        transform="rotate(-0.0, 50.290083111433916, 111.52723311546839)" y="111.52723311546839">
+        y&#61;&#40;field&#61;:col_2,datatype&#61;:q&#41;,</text>
+    <text x="50.290083111433916"
+        style="font-family: Courier; text-anchor: start; font-size: 7.668845315904207pt; "
+        transform="rotate(-0.0, 50.290083111433916, 124.5642701525054)" y="124.5642701525054">
+        color&#61;&#40;field&#61;:col_2,datatype&#61;:n&#41;,</text>
+    <text x="34.95239247962567"
+        style="font-family: Courier; text-anchor: start; font-size: 7.668845315904093pt; "
+        transform="rotate(-0.0, 34.95239247962567, 137.60130718954247)" y="137.60130718954247">
+        &#41;,</text>
+    <text x="34.95239247962567"
+        style="font-family: Courier; text-anchor: start; font-size: 7.668845315904093pt; "
+        transform="rotate(-0.0, 34.95239247962567, 150.63834422657953)" y="150.63834422657953"> ...</text>
+    <text x="19.614701847817372"
+        style="font-family: Courier; text-anchor: start; font-size: 7.668845315904093pt; "
+        transform="rotate(-0.0, 19.614701847817372, 163.67538126361654)" y="163.67538126361654">
+        &#41;</text>
+    <text x="19.614701847817372"
+        style="font-family: Courier; text-anchor: start; font-size: 7.668845315904093pt; "
+        transform="rotate(-0.0, 19.614701847817372, 59.37908496732024)" y="59.37908496732024"></text>
+    <polygon
+        points="283.19575566852257 194.97821350762527 544.6336641652546 194.97821350762527 544.6336641652546 20.68627450980398 283.19575566852257 20.68627450980398 "
+        style="stroke: black; fill: white; " />
+    <text x="413.9147099168885"
+        style="font-family: Courier; text-anchor: middle; font-size: 10.457516339869244pt; "
+        transform="rotate(-0.0, 413.9147099168885, 15.457516339869244)" y="15.457516339869244">
+        Assembly</text>
+    <circle cy="45.08714596949892" style="stroke: black; fill: white; " r="4.70588235294116"
+        cx="426.11514564673604" />
+    <polyline points="418.27200839183405 49.79302832244008 402.5857338820301 65.479302832244 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="400.9219532204147 67.14308349385942 403.54631809488643 66.43988704510025 401.6251496691741 64.51871861938781 "
+        style="" />
+    <polyline points="433.958282901638 49.79302832244008 449.6445574114419 65.479302832244 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="451.3083380730573 67.14308349385942 450.6051416242981 64.51871861938787 448.68397319858576 66.43988704510019 "
+        style="" />
+    <text x="457.4876946663438"
+        style="font-family: Courier; text-anchor: middle; font-size: 7.058823529411768pt; "
+        transform="rotate(-0.0, 457.4876946663438, 79.98910675381262)" y="79.98910675381262">Circles</text>
+    <circle cy="76.45969498910677" style="stroke: black; fill: white; " r="4.70588235294116"
+        cx="394.7425966271282" />
+    <polyline points="386.8994593722262 81.16557734204792 371.2131848624223 96.85185185185185 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="369.54940420080686 98.51563251346727 372.1737690752784 97.81243606470804 370.2526006495661 95.89126763899571 "
+        style="" />
+    <polyline points="402.5857338820301 81.16557734204792 418.27200839183405 96.85185185185185 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="419.93578905344947 98.51563251346727 419.2325926046901 95.89126763899571 417.31142417897786 97.81243606470804 "
+        style="" />
+    <circle cy="107.83224400871461" style="stroke: black; fill: white; " r="4.70588235294116"
+        cx="426.11514564673604" />
+    <polyline points="418.27200839183405 112.53812636165577 402.5857338820301 128.22440087145964 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="400.9219532204147 129.8881815330751 403.54631809488626 129.18498508431577 401.62514966917394 127.2638166586035 "
+        style="" />
+    <polyline points="433.958282901638 112.53812636165577 449.6445574114419 128.2244008714597 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="451.3083380730573 129.8881815330751 450.6051416242981 127.26381665860356 448.68397319858576 129.18498508431588 "
+        style="" />
+    <text x="457.4876946663438"
+        style="font-family: Courier; text-anchor: middle; font-size: 7.058823529411768pt; "
+        transform="rotate(-0.0, 457.4876946663438, 142.7342047930283)" y="142.7342047930283">Title</text>
+    <circle cy="139.20479302832246" style="stroke: black; fill: white; " r="4.70588235294116"
+        cx="394.7425966271282" />
+    <polyline points="386.8994593722262 143.91067538126356 371.2131848624223 159.59694989106754 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="369.54940420080686 161.26073055268293 372.1737690752784 160.55753410392364 370.2526006495661 158.63636567821135 "
+        style="" />
+    <polyline points="402.5857338820301 143.91067538126356 418.27200839183405 159.59694989106754 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="419.93578905344947 161.26073055268293 419.2325926046901 158.63636567821135 417.31142417897786 160.55753410392373 "
+        style="" />
+    <text x="426.115145646736"
+        style="font-family: Courier; text-anchor: middle; font-size: 7.058823529411768pt; "
+        transform="rotate(-0.0, 426.115145646736, 174.10675381263616)" y="174.10675381263616">XAxis</text>
+    <text x="363.3700476075203"
+        style="font-family: Courier; text-anchor: middle; font-size: 7.058823529411768pt; "
+        transform="rotate(-0.0, 363.3700476075203, 174.10675381263616)" y="174.10675381263616">YAxis</text>
+    <text x="363.3700476075203"
+        style="font-family: Courier; text-anchor: middle; font-size: 7.058823529411768pt; "
+        transform="rotate(-0.0, 363.3700476075203, 111.36165577342047)" y="111.36165577342047">Frame</text>
+    <polygon
+        points="562.0628580650368 194.97821350762527 823.5007665617688 194.97821350762527 823.5007665617688 20.68627450980398 562.0628580650368 20.68627450980398 "
+        style="stroke: black; fill: white; " />
+    <text x="692.7818123134027"
+        style="font-family: Courier; text-anchor: middle; font-size: 10.457516339869358pt; "
+        transform="rotate(-0.0, 692.7818123134027, 15.457516339869244)" y="15.457516339869244">
+        Display</text>
+    <polygon
+        points="604.519083353506 169.61873638344224 787.5256193012185 169.61873638344224 787.5256193012185 47.61437908496731 604.519083353506 47.61437908496731 "
+        style="stroke: lightgrey; fill: white; fill-opacity: 0; " />
+    <polyline points="604.5190833535061 169.61873638344224 787.5256193012185 169.61873638344224 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="604.2140724602598 172.05882352941177 604.8240942467521 172.05882352941177 604.8240942467521 169.61873638344224 604.2140724602598 169.61873638344224 "
+        style="" />
+    <text x="604.519083353506" style="text-anchor: middle; font-size: 4.270152505446617pt; "
+        transform="rotate(-0.0, 604.519083353506, 177.54901960784312)" y="177.54901960784312">0.00</text>
+    <polygon
+        points="649.9657064471878 172.05882352941177 650.5757282336801 172.05882352941177 650.5757282336801 169.61873638344224 649.9657064471878 169.61873638344224 "
+        style="" />
+    <text x="650.2707173404342" style="text-anchor: middle; font-size: 4.270152505446617pt; "
+        transform="rotate(-0.0, 650.2707173404342, 177.54901960784312)" y="177.54901960784312">0.25</text>
+    <polygon
+        points="695.7173404341161 172.05882352941177 696.3273622206084 172.05882352941177 696.3273622206084 169.61873638344224 695.7173404341161 169.61873638344224 "
+        style="" />
+    <text x="696.0223513273622" style="text-anchor: middle; font-size: 4.270152505446731pt; "
+        transform="rotate(-0.0, 696.0223513273622, 177.54901960784312)" y="177.54901960784312">0.50</text>
+    <polygon
+        points="741.4689744210441 172.05882352941177 742.0789962075364 172.05882352941177 742.0789962075364 169.61873638344224 741.4689744210441 169.61873638344224 "
+        style="" />
+    <text x="741.7739853142903" style="text-anchor: middle; font-size: 4.270152505446617pt; "
+        transform="rotate(-0.0, 741.7739853142903, 177.54901960784312)" y="177.54901960784312">0.75</text>
+    <polygon
+        points="787.2206084079721 172.05882352941177 787.8306301944644 172.05882352941177 787.8306301944644 169.61873638344224 787.2206084079721 169.61873638344224 "
+        style="" />
+    <text x="787.5256193012185" style="text-anchor: middle; font-size: 4.270152505446731pt; "
+        transform="rotate(-0.0, 787.5256193012185, 177.54901960784312)" y="177.54901960784312">1.00</text>
+    <text x="696.0223513273622" style="text-anchor: middle; font-size: 6.100217864923707pt; "
+        transform="rotate(-0.0, 696.0223513273622, 189.74945533769062)" y="189.74945533769062">x</text>
+    <polyline points="604.5190833535061 169.61873638344224 604.5190833535061 47.61437908496731 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="604.519083353506 169.92374727668846 604.519083353506 169.31372549019608 602.0789962075364 169.31372549019608 602.0789962075364 169.92374727668846 "
+        style="" />
+    <text x="600.8589526345518" style="text-anchor: end; font-size: 4.270152505446731pt; "
+        transform="rotate(-0.0, 600.8589526345518, 171.75381263616555)" y="171.75381263616555">0.00</text>
+    <polygon
+        points="604.519083353506 139.42265795206976 604.519083353506 138.81263616557737 602.0789962075364 138.81263616557737 602.0789962075364 139.42265795206976 "
+        style="" />
+    <text x="600.8589526345518" style="text-anchor: end; font-size: 4.270152505446731pt; "
+        transform="rotate(-0.0, 600.8589526345518, 141.25272331154684)" y="141.25272331154684">0.25</text>
+    <polygon
+        points="604.519083353506 108.921568627451 604.519083353506 108.31154684095861 602.0789962075364 108.31154684095861 602.0789962075364 108.921568627451 "
+        style="" />
+    <text x="600.8589526345518" style="text-anchor: end; font-size: 4.270152505446731pt; "
+        transform="rotate(-0.0, 600.8589526345518, 110.75163398692808)" y="110.75163398692808">0.50</text>
+    <polygon
+        points="604.519083353506 78.42047930283223 604.519083353506 77.81045751633985 602.0789962075364 77.81045751633985 602.0789962075364 78.42047930283223 "
+        style="" />
+    <text x="600.8589526345518" style="text-anchor: end; font-size: 4.270152505446731pt; "
+        transform="rotate(-0.0, 600.8589526345518, 80.25054466230938)" y="80.25054466230938">0.75</text>
+    <polygon
+        points="604.5190833535061 47.91938997821359 604.5190833535061 47.309368191721205 602.0789962075365 47.309368191721205 602.0789962075365 47.91938997821359 "
+        style="" />
+    <text x="600.8589526345518" style="text-anchor: end; font-size: 4.270152505446731pt; "
+        transform="rotate(-0.0, 600.8589526345518, 49.74945533769062)" y="49.74945533769062">1.00</text>
+    <text x="582.1064310497861" style="text-anchor: middle; font-size: 6.100217864923707pt; "
+        transform="rotate(-90.0, 582.1064310497861, 108.61655773420478)" y="108.61655773420478">y</text>
+    <text x="604.519083353506"
+        style="font-family: Helvetica; text-anchor: start; font-size: 7.930283224400796pt; "
+        transform="rotate(-0.0, 604.519083353506, 39.37908496732024)" y="39.37908496732024">Title</text>
+    <circle cy="88.24010245732131" style="stroke: black; fill-opacity: 0; " r="2.4400871459694145"
+        cx="754.1607431762274" />
+    <circle cy="127.50056586249957" style="stroke: black; fill-opacity: 0; " r="2.4400871459694713"
+        cx="709.3875897718394" />
+    <circle cy="145.88428020938136" style="stroke: black; fill-opacity: 0; " r="2.4400871459694713"
+        cx="633.8674440162902" />
+    <circle cy="66.4004064574591" style="stroke: black; fill-opacity: 0; " r="2.4400871459694713"
+        cx="756.6664822287735" />
+    <circle cy="120.25007857592772" style="stroke: black; fill-opacity: 0; " r="2.4400871459694713"
+        cx="644.5175314315557" />
+    <text x="213.27886710239653"
+        style="font-family: Courier; text-anchor: middle; font-size: 6.710239651416117pt; "
+        transform="rotate(-0.0, 213.27886710239653, 236.54684095860566)" y="236.54684095860566">Graphic
+        ≅ 𝕋 Mark</text>
+    <polygon
+        points="152.27668845315907 364.6514161220043 274.281045751634 364.6514161220043 274.281045751634 242.6470588235294 152.27668845315907 242.6470588235294 "
+        style="stroke: grey; fill-opacity: 0; " />
+    <circle cy="254.8474945533769" style="stroke: black; fill: white; " r="3.6601307189542354"
+        cx="223.03921568627453" />
+    <polyline points="216.9389978213508 258.50762527233115 204.7385620915033 270.7080610021786 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="203.4445104658024 272.0021126278795 205.485683145947 271.45518205662233 203.99144103705962 269.9609399477349 "
+        style="" />
+    <polyline points="229.13943355119827 258.50762527233115 241.33986928104576 270.7080610021786 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="242.63392090674665 272.0021126278795 242.08699033548942 269.96093994773497 240.59274822660208 271.45518205662233 "
+        style="" />
+    <text x="247.44008714596956"
+        style="font-family: Courier; text-anchor: middle; font-size: 5.4901960784313815pt; "
+        transform="rotate(-0.0, 247.44008714596956, 281.99346405228755)" y="281.99346405228755">
+        Circles</text>
+    <circle cy="279.24836601307186" style="stroke: black; fill: white; " r="3.6601307189542354"
+        cx="198.63834422657953" />
+    <polyline points="192.5381263616558 282.90849673202615 180.3376906318083 295.1089324618736 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="179.0436390061074 296.4029840875745 181.08481168625198 295.85605351631733 179.59056957736465 294.36181140742997 "
+        style="" />
+    <polyline points="204.7385620915033 282.90849673202615 216.9389978213508 295.1089324618737 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="218.23304944705166 296.4029840875745 217.68611887579445 294.36181140742997 216.19187676690714 295.85605351631733 "
+        style="" />
+    <circle cy="303.6492374727669" style="stroke: black; fill: white; " r="3.6601307189542354"
+        cx="223.03921568627453" />
+    <polyline points="216.9389978213508 307.3093681917211 204.7385620915033 319.5098039215686 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="203.4445104658024 320.8038555472695 205.485683145947 320.2569249760123 203.99144103705962 318.7626828671249 "
+        style="" />
+    <polyline points="229.13943355119827 307.3093681917211 241.33986928104576 319.5098039215686 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="242.63392090674665 320.8038555472695 242.08699033548953 318.7626828671249 240.59274822660214 320.2569249760122 "
+        style="" />
+    <text x="247.44008714596953"
+        style="font-family: Courier; text-anchor: middle; font-size: 5.490196078431325pt; "
+        transform="rotate(-0.0, 247.44008714596953, 330.79520697167754)" y="330.79520697167754">
+        Title</text>
+    <circle cy="328.05010893246185" style="stroke: black; fill: white; " r="3.6601307189542354"
+        cx="198.63834422657953" />
+    <polyline points="192.5381263616558 331.7102396514161 180.3376906318083 343.91067538126356 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="179.0436390061074 345.2047270069645 181.084811686252 344.65779643570727 179.59056957736462 343.16355432681985 "
+        style="" />
+    <polyline points="204.7385620915033 331.7102396514161 216.9389978213508 343.91067538126356 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="218.23304944705166 345.2047270069645 217.6861188757944 343.1635543268201 216.1918767669072 344.6577964357074 "
+        style="" />
+    <text x="223.03921568627453"
+        style="font-family: Courier; text-anchor: middle; font-size: 5.490196078431325pt; "
+        transform="rotate(-0.0, 223.03921568627453, 355.1960784313726)" y="355.1960784313726">XAxis</text>
+    <text x="174.2374727668846"
+        style="font-family: Courier; text-anchor: middle; font-size: 5.490196078431325pt; "
+        transform="rotate(-0.0, 174.2374727668846, 355.1960784313726)" y="355.1960784313726">YAxis</text>
+    <text x="174.2374727668846"
+        style="font-family: Courier; text-anchor: middle; font-size: 5.490196078431325pt; "
+        transform="rotate(-0.0, 174.2374727668846, 306.3943355119826)" y="306.3943355119826">Frame</text>
+    <text x="347.483660130719"
+        style="font-family: Courier; text-anchor: middle; font-size: 6.7102396514161455pt; "
+        transform="rotate(-0.0, 347.483660130719, 236.54684095860566)" y="236.54684095860566">Marks
+        ≅ &#40;Type, θ&#41;</text>
+    <polygon
+        points="286.4814814814815 364.6514161220043 408.48583877995645 364.6514161220043 408.48583877995645 242.6470588235294 286.4814814814815 242.6470588235294 "
+        style="stroke: grey; fill-opacity: 0; " />
+    <text x="347.483660130719"
+        style="font-family: Courier; text-anchor: middle; font-size: 4.880174291938943pt; "
+        transform="rotate(-0.0, 347.483660130719, 257.2875816993464)" y="257.2875816993464">&#40;XAxis,
+        θ&#41;</text>
+    <polygon
+        points="292.58169934640523 346.3507625272331 402.38562091503275 346.3507625272331 402.38562091503275 260.9477124183006 292.58169934640523 260.9477124183006 "
+        style="fill: grey; opacity: 0.2; " />
+    <text x="297.4618736383443"
+        style="font-family: Courier; text-anchor: start; font-size: 4.880174291939056pt; fill: black; "
+        transform="rotate(-0.0, 297.4618736383443, 274.3681917211329)" y="274.3681917211329">struct
+        XAxis &#60;: Mark</text>
+    <text x="307.2222222222223"
+        style="font-family: Courier; text-anchor: start; font-size: 4.880174291938999pt; fill: black; "
+        transform="rotate(-0.0, 307.2222222222223, 282.6644880174292)" y="282.6644880174292">
+        axis_ticks</text>
+    <text x="307.2222222222223"
+        style="font-family: Courier; text-anchor: start; font-size: 4.880174291938999pt; fill: black; "
+        transform="rotate(-0.0, 307.2222222222223, 290.96078431372547)" y="290.96078431372547">
+        axis_title</text>
+    <text x="307.2222222222223"
+        style="font-family: Courier; text-anchor: start; font-size: 4.880174291938999pt; fill: black; "
+        transform="rotate(-0.0, 307.2222222222223, 299.25708061002183)" y="299.25708061002183">
+        axis_length</text>
+    <text x="307.2222222222223"
+        style="font-family: Courier; text-anchor: start; font-size: 4.880174291938999pt; fill: black; "
+        transform="rotate(-0.0, 307.2222222222223, 307.5533769063181)" y="307.5533769063181"> ...</text>
+    <text x="297.4618736383443"
+        style="font-family: Courier; text-anchor: start; font-size: 4.880174291939056pt; fill: black; "
+        transform="rotate(-0.0, 297.4618736383443, 315.8496732026143)" y="315.8496732026143">end</text>
+    <text x="299.9019607843138"
+        style="font-family: Courier; text-anchor: start; font-size: 4.880174291938999pt; fill: black; "
+        transform="rotate(-0.0, 299.9019607843138, 324.1459694989107)" y="324.1459694989107"> </text>
+    <text x="297.4618736383443"
+        style="font-family: Courier; text-anchor: start; font-size: 4.880174291939056pt; fill: black; "
+        transform="rotate(-0.0, 297.4618736383443, 332.44226579520694)" y="332.44226579520694">θ&#40;x::XAxis&#41;::𝕋&#91;Prim&#93;
+        &#61; ...</text>
+    <text x="297.4618736383443"
+        style="font-family: Courier; text-anchor: start; font-size: 4.880174291939056pt; fill: black; "
+        transform="rotate(-0.0, 297.4618736383443, 274.3681917211329)" y="274.3681917211329"></text>
+    <text x="481.68845315904144"
+        style="font-family: Courier; text-anchor: middle; font-size: 6.710239651416032pt; "
+        transform="rotate(-0.0, 481.68845315904144, 236.54684095860566)" y="236.54684095860566">Diagram
+        Tree ≅ 𝕋&#91;Prim&#93;</text>
+    <polygon
+        points="420.686274509804 364.6514161220043 542.6906318082789 364.6514161220043 542.6906318082789 242.6470588235294 420.686274509804 242.6470588235294 "
+        style="stroke: grey; fill-opacity: 0; " />
+    <circle cy="254.8474945533769" style="stroke: black; fill: white; " r="3.660130718954264"
+        cx="487.7886710239652" />
+    <polyline points="481.68845315904144 258.50762527233115 469.488017429194 270.7080610021786 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="468.1939658034931 272.0021126278795 470.2351384836376 271.4551820566223 468.74089637475026 269.9609399477349 "
+        style="" />
+    <polyline points="493.8888888888889 258.50762527233115 506.08932461873644 270.7080610021786 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="507.3833762444373 272.0021126278795 506.8364456731801 269.960939947735 505.34220356429273 271.45518205662233 "
+        style="" />
+    <text x="512.1895424836601" style="text-anchor: middle; font-size: 6.778019849915324pt; "
+        transform="rotate(-0.0, 512.1895424836601, 282.63737593802955)" y="282.63737593802955">...</text>
+    <circle cy="279.24836601307186" style="stroke: black; fill: white; " r="3.6601307189542354"
+        cx="463.3877995642702" />
+    <polyline points="457.28758169934645 282.90849673202615 445.087145969499 295.1089324618736 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="443.7930943437981 296.4029840875745 445.83426702394263 295.8560535163173 444.34002491505527 294.36181140742997 "
+        style="" />
+    <polyline points="469.488017429194 282.90849673202615 481.68845315904144 295.1089324618737 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="482.98250478474233 296.4029840875745 482.43557421348504 294.36181140742997 480.94133210459773 295.8560535163174 "
+        style="" />
+    <circle cy="303.6492374727669" style="stroke: black; fill: white; " r="3.660130718954264"
+        cx="487.7886710239652" />
+    <polyline points="481.68845315904144 307.3093681917211 469.488017429194 319.5098039215686 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="468.1939658034931 320.8038555472695 470.2351384836376 320.2569249760122 468.74089637475026 318.7626828671249 "
+        style="" />
+    <polyline points="493.8888888888889 307.3093681917211 506.08932461873644 319.5098039215686 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="507.3833762444373 320.8038555472695 506.8364456731801 318.7626828671249 505.34220356429273 320.2569249760122 "
+        style="" />
+    <text x="512.1895424836603" style="text-anchor: middle; font-size: 5.490196078431495pt; "
+        transform="rotate(-0.0, 512.1895424836603, 330.79520697167754)" y="330.79520697167754">
+        &#91;p3,p4&#93;</text>
+    <text x="463.38779956427015"
+        style="font-family: Courier; text-anchor: middle; font-size: 6.1002178649237635pt; "
+        transform="rotate(-0.0, 463.38779956427015, 331.1002178649237)" y="331.1002178649237">h</text>
+    <polyline points="463.3877995642702 337.20043572984747 463.3877995642702 342.08061002178647 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="463.3877995642702 343.91067538126356 464.4443882921988 342.08061002178647 462.3312108363414 342.0806100217866 "
+        style="" />
+    <text x="463.38779956427015" style="text-anchor: middle; font-size: 5.490196078431438pt; "
+        transform="rotate(-0.0, 463.38779956427015, 355.50108932461876)" y="355.50108932461876">
+        &#91; &#93; </text>
+    <text x="438.9869281045752"
+        style="font-family: Courier; text-anchor: middle; font-size: 6.100217864923707pt; "
+        transform="rotate(-0.0, 438.9869281045752, 306.69934640522877)" y="306.69934640522877">g</text>
+    <polyline points="438.9869281045752 312.7995642701525 438.9869281045752 317.67973856209153 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="438.9869281045752 319.5098039215686 440.04351683250405 317.67973856209153 437.93033937664654 317.6797385620914 "
+        style="" />
+    <text x="438.9869281045752" style="text-anchor: middle; font-size: 5.490196078431438pt; "
+        transform="rotate(-0.0, 438.9869281045752, 331.1002178649237)" y="331.1002178649237">
+        &#91;p1,p2&#93;</text>
+    <text x="615.893246187364"
+        style="font-family: Courier; text-anchor: middle; font-size: 6.7102396514161455pt; "
+        transform="rotate(-0.0, 615.893246187364, 236.54684095860566)" y="236.54684095860566">Diagram
+        ≅ &#91;Prim&#93;</text>
+    <polygon
+        points="554.8910675381264 364.6514161220043 676.8954248366015 364.6514161220043 676.8954248366015 242.6470588235294 554.8910675381264 242.6470588235294 "
+        style="stroke: grey; fill-opacity: 0; " />
+    <text x="615.893246187364"
+        style="font-family: Courier; text-anchor: middle; font-size: 5.490196078431495pt; "
+        transform="rotate(-0.0, 615.893246187364, 300.2941176470588)" y="300.2941176470588">&#91;g&#40;p1&#41;,
+        g&#40;p2&#41;, p3, p4...&#93;</text>
+    <polyline
+        points="152.4509803921569 244.65141612200435 152.4509803921569 216.76470588235293 283.1699346405229 216.76470588235293 283.1699346405229 199.33551198257078 "
+        style="stroke: black; fill: none; stroke-dasharray: 5; " />
+    <polyline
+        points="676.7211328976035 244.6514161220044 676.7211328976035 216.76470588235298 546.0021786492375 216.76470588235296 546.0021786492375 199.33551198257084 "
+        style="stroke: black; fill: none; stroke-dasharray: 5; " />
+    <text x="688.6397826262372"
+        style="font-family: Courier; text-anchor: start; font-size: 6.971677559912905pt; "
+        transform="rotate(-0.0, 688.6397826262372, 274.281045751634)" y="274.281045751634">Render
+        &#91;Prim&#93; with SVG</text>
+    <text x="688.6397826262372"
+        style="font-family: Courier; text-anchor: start; font-size: 5.228758169934508pt; "
+        transform="rotate(-0.0, 688.6397826262372, 289.967320261438)" y="289.967320261438">Circle&#40;r&#61;1&#41;
+        → &#60;center r&#61;&#34;1&#34;/&#62;</text>
+    <text x="688.6397826262372"
+        style="font-family: Courier; text-anchor: start; font-size: 5.228758169934508pt; "
+        transform="rotate(-0.0, 688.6397826262372, 298.85620915032683)" y="298.85620915032683">Circle&#40;r&#61;2&#41;
+        → &#60;center r&#61;&#34;2&#34;/&#62;</text>
+    <text x="688.6397826262372"
+        style="font-family: Courier; text-anchor: start; font-size: 5.228758169934508pt; "
+        transform="rotate(-0.0, 688.6397826262372, 307.74509803921575)" y="307.74509803921575">Line&#40;
+        ... &#41; → &#60;polyline .../&#62;</text>
+    <text x="735.698606155649"
+        style="font-family: Courier; text-anchor: start; font-size: 5.228758169934622pt; "
+        transform="rotate(-0.0, 735.698606155649, 316.6339869281046)" y="316.6339869281046"> ...</text>
+    <text x="688.6397826262372"
+        style="font-family: Courier; text-anchor: start; font-size: 5.228758169934508pt; "
+        transform="rotate(-0.0, 688.6397826262372, 289.967320261438)" y="289.967320261438"></text>
+    <text x="18.943355119825725"
+        style="font-family: Courier; text-anchor: start; font-size: 5.228758169934679pt; "
+        transform="rotate(-0.0, 18.943355119825725, 291.18736383442274)" y="291.18736383442274">∑&#40;row-&#62;
+        begin</text>
+    <text x="29.400871459694997"
+        style="font-family: Courier; text-anchor: start; font-size: 5.228758169934622pt; "
+        transform="rotate(-0.0, 29.400871459694997, 300.0762527233116)" y="300.0762527233116">
+        S&#40;:fill&#61;&#62;row&#91;:color&#93;&#41;*</text>
+    <text x="29.400871459694997"
+        style="font-family: Courier; text-anchor: start; font-size: 5.228758169934622pt; "
+        transform="rotate(-0.0, 29.400871459694997, 308.96514161220045)" y="308.96514161220045">
+        T&#40;row&#91;:x&#93;,row&#91;:y&#93;&#41;*Circle&#40;&#41;</text>
+    <text x="18.943355119825725"
+        style="font-family: Courier; text-anchor: start; font-size: 5.228758169934679pt; "
+        transform="rotate(-0.0, 18.943355119825725, 317.85403050108937)" y="317.85403050108937">
+        end&#41;</text>
+    <text x="18.943355119825725"
+        style="font-family: Courier; text-anchor: start; font-size: 5.228758169934679pt; "
+        transform="rotate(-0.0, 18.943355119825725, 291.18736383442274)" y="291.18736383442274"></text>
+    <text x="63.737225432309316"
+        style="font-family: Courier; text-anchor: middle; font-size: 6.971677559912848pt; "
+        transform="rotate(-0.0, 63.737225432309316, 274.281045751634)" y="274.281045751634">Graphic
+        Expresion</text>
+    <polyline
+        points="824.1721132897604 201.07843137254906 824.1721132897603 343.9978213507626 676.0239651416123 343.9978213507626 "
+        style="stroke: black; fill: none; " />
+    <polyline
+        points="5.0 201.078431372549 5.0 343.99782135076254 153.14814814814815 343.99782135076254 "
+        style="stroke: black; fill: none; " />
+    <polygon
+        points="554.8910675381264 405.0 676.8954248366015 405.0 676.8954248366015 370.1416122004357 554.8910675381264 370.1416122004357 "
+        style="stroke: grey; fill: white; stroke-dasharray: 1; " />
+    <text x="615.893246187364"
+        style="font-family: Courier; text-anchor: middle; font-size: 8.71459694989096pt; fill: grey; "
+        transform="rotate(-0.0, 615.893246187364, 391.9281045751634)" y="391.9281045751634">section
+        4</text>
+    <polygon
+        points="420.686274509804 405.0 542.6906318082789 405.0 542.6906318082789 370.1416122004357 420.686274509804 370.1416122004357 "
+        style="stroke: grey; fill: white; stroke-dasharray: 1; " />
+    <text x="481.68845315904144"
+        style="font-family: Courier; text-anchor: middle; font-size: 8.714596949891074pt; fill: grey; "
+        transform="rotate(-0.0, 481.68845315904144, 391.9281045751634)" y="391.9281045751634">section
+        5</text>
+    <polygon
+        points="286.4814814814815 405.0 408.48583877995645 405.0 408.48583877995645 370.1416122004357 286.4814814814815 370.1416122004357 "
+        style="stroke: grey; fill: white; stroke-dasharray: 1; " />
+    <text x="347.483660130719"
+        style="font-family: Courier; text-anchor: middle; font-size: 8.714596949891074pt; fill: grey; "
+        transform="rotate(-0.0, 347.483660130719, 391.9281045751634)" y="391.9281045751634">section
+        6</text>
+    <polygon
+        points="152.27668845315907 405.0 274.281045751634 405.0 274.281045751634 370.1416122004357 152.27668845315907 370.1416122004357 "
+        style="stroke: grey; fill: white; stroke-dasharray: 1; " />
+    <text x="213.27886710239653"
+        style="font-family: Courier; text-anchor: middle; font-size: 8.714596949891046pt; fill: grey; "
+        transform="rotate(-0.0, 213.27886710239653, 391.9281045751634)" y="391.9281045751634">section
+        7</text>
+    <polygon
+        points="18.07189542483661 405.0 140.0762527233116 405.0 140.0762527233116 370.1416122004357 18.071895424836597 370.1416122004357 "
+        style="stroke: grey; fill: white; stroke-dasharray: 1; " />
+    <text x="79.07407407407408"
+        style="font-family: Courier; text-anchor: middle; font-size: 8.714596949891074pt; fill: grey; "
+        transform="rotate(-0.0, 79.07407407407408, 391.9281045751634)" y="391.9281045751634">section
+        8</text>
+</svg>
