@@ -1,8 +1,12 @@
 \frametitle{Data Visualization + Category Theory}
-\textbf{Plot Specifications}
-    $$\text{Plot} = \text{Guide} + \text{Graphic Expression} \circ \text{Scale(Data, Encodings)}$$
-  \begin{figure}
-    \begin{center}
-        \includegraphics[width=0.8\textwidth]{./figs/frame_graphic.pdf}
-    \end{center}
-  \end{figure}
+Here are some examples of graphic expressions:
+
+  $$
+  \sum^{+}_{\text{row} \in D} \text{T(row[:x],row[:y]) * Circle(r=row[:size])}
+  $$
+
+  \vspace{3mm}
+
+  $$
+  \sum^{+}_{\text{gdf} \in D_\text{color}} \text{Line(gdf[:x],gdf[:y],color=gdf[1,:color])}
+  $$

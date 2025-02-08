@@ -70,8 +70,8 @@
 %------------------------------------------------
 \begin{frame}{Table of contents}
     \begin{enumerate}
-        \item Category Theory behind Vizagrams
         \item Vizagrams Hands-on
+        \item Category Theory behind Vizagrams
     \end{enumerate}
 \end{frame}
 
@@ -303,7 +303,7 @@ end
    
    With all these concepts in mind, we can define \textbf{graphic} as a value of $\mathbb T \text{Mark}$,
   i.e. a tree where the leafs contain marks. Since each mark has a $\theta$ function,
-  we can turn a $\mathbb T\text{Mark}$ into a $\mathbb T \text{[Prim]}$ using $\mu \circ \mathbbT \theta$.
+  we can turn a $\mathbb T\text{Mark}$ into a $\mathbb T \text{[Prim]}$ using $\mu \circ \mathbb T \theta$.
 
   \vspace{3mm}
 
@@ -338,18 +338,77 @@ end
   \end{figure}
 \end{frame}
 
-%------------------------------------------------
-\begin{frame}{References}
-    \footnotesize
-    \bibliography{reference.bib}
-    \bibliographystyle{apalike}
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+  Guides are the visual aids which
+  enable users to decode information regarding the visualization.
+  Encodings are dictionaries which describe how to scale
+  data attributes, with each encoding having a channel, a field and
+  a scale.
+  \begin{figure}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{./figs/scaleddata.pdf}
+    \end{center}
+  \end{figure}
 \end{frame}
 
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+  The \textbf{graphic expression} is a function that takes as input
+  the scaled data and returns a graphic. It iterates through the data,
+  creating several graphical elements, which are then combined together
+  to form the graphic. More formally, a graphic expression is a triple
+  $(expr,alg,coalg)$, where:
+    \begin{align*}
+        \sum^{alg}_{coalg}expr \cong \left[
+        \begin{array}{@{}c@{}}
+            \begin{aligned}
+                &expr : D\to \mathbb T \texttt{\{Mark\}} \\
+                &alg : [\mathbb T \texttt{\{Mark\}}]\to \mathbb T\texttt{\{Mark\}} \\
+                &coalg : D\to \texttt{[}D\texttt{]}
+            \end{aligned}
+        \end{array}
+    \right] 
+    \end{align*}
+\end{frame}
+
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+  The graphic expression is very similar to the split-apply-combine
+  pattern. The coalgebra does the splitting, the expression does the
+  apply and the algebra does the combine.
+
+  \begin{figure}
+    \begin{center}
+        \includegraphics[width=1.0\textwidth]{./figs/graphicexpression.pdf}
+    \end{center}
+  \end{figure}
+\end{frame}
+
+
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+  Here are some examples of graphic expressions:
+
+  $$
+  \sum^{+}_{\text{row} \in D} \text{T(row[:x],row[:y]) * Circle(r=row[:size])}
+  $$
+
+  \vspace{3mm}
+
+  $$
+  \sum^{+}_{\text{gdf} \in D_\text{color}} \text{Line(gdf[:x],gdf[:y],color=gdf[1,:color])}
+  $$
+\end{frame}
+
+% %------------------------------------------------
+% \begin{frame}{References}
+%     \footnotesize
+%     \bibliography{reference.bib}
+%     \bibliographystyle{apalike}
+% \end{frame}
+
 %------------------------------------------------
 
-% \begin{frame}
-%     \Huge{\centerline{\textbf{The End}}}
-% \end{frame}
+\begin{frame}
+    \Huge{\centerline{\textbf{The End}}}
+\end{frame}
 
 %----------------------------------------------------------------------------------------
 
