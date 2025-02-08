@@ -202,17 +202,141 @@ fmap(f::Function, x::Act) = Act(x._1,f(x._2))
 
   \begin{figure}
     \begin{center}
-    \includegraphics[width=0.7\textwidth]{./figs/flattree.pdf}
+        \includegraphics[width=0.7\textwidth]{./figs/flattree.pdf}
     \end{center}
   \end{figure}
 \end{frame}
 
 \begin{frame}[fragile]{Data Visualization + Category Theory}
     \begin{center}
-    \includegraphics[width=0.9\textwidth]{./figs/pipe.pdf}
+        \includegraphics[width=0.9\textwidth]{./figs/pipe.pdf}
     \end{center}
 \end{frame}
 
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+  The current definitions of marks equate them with primitives. We propose
+  a new definition:
+
+  \vspace{3mm}
+
+  Def: A \textbf{Graphical Mark} is a tuple $(A,\theta_A)$, where $A$ is a type and $\theta_A$
+  is a function $\theta_A : A \to \mathbb T \text{[Prim]}$.
+
+  \vspace{3mm}
+
+  \begin{minipage}{0.55\textwidth}
+  \begin{lstlisting}[language=JuliaLocal, style=julia, texcl=true, escapeinside={(@}{@)}]
+struct Face <: Mark
+  size::Real
+  smile::Real
+end
+
+function θ(face::Face)
+  eyes = Circle(...) + Circle(...)
+  smile = Bezier(...)
+  head = Circle(...)
+
+  return head + eyes + smile
+end
+  \end{lstlisting}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./figs/face.pdf}
+  \end{minipage}
+
+\end{frame}
+
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+  We want to be able to define marks using previously defined marks.
+  In other words, instead of specifying $\theta_A: A \to \mathbb T [Prim]$,
+  we want to define a function $\zeta_A: A \to \mathbb T \text{Mark}$. In other words,
+  we want use $\zeta_A$ to infer $\theta_A$.
+  \begin{figure}
+    \begin{center}
+        \includegraphics[width=1.0\textwidth]{./figs/petal_flower.pdf}
+    \end{center}
+  \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+  Our $\zeta$ function can be formalized through the use
+  of slice categories.
+
+  \vspace{3mm}
+
+  \textbf{Def.} The category of marks $\mathcal M$ is
+  a subcategory of  $\textbf{Set}_\mathbb T \slash \text{[Prim]}$.
+
+  \vspace{3mm}
+
+  Assuming this category, a morphism
+  $\zeta_A \in \text{Hom}_\mathcal{M}(A, B)$ induces
+  $$\theta_A = \theta_{\mathbb T B} \circ \zeta_A = \mu \circ \mathbb T \theta_B \circ \zeta_A$$
+
+
+  This means that given an existing mark $(B, \theta_b)$, we can
+  define a new mark $(A, \theta_A)$ by defining $\zeta_A$ and inferring
+  of $\theta_A$.
+
+  \vspace{3mm}
+
+  Programmatically, we can define an abstract type `Mark`, such
+  that every subtype of `Mark` has a $theta$ function.
+\end{frame}
+
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/pipe.pdf}
+\end{frame}
+
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+  In summary:
+  \begin{itemize}
+      \item A diagram is a value of [Prim];
+      \item A diagram tree is a value of $\mathbb T \text{[Prim]}$;
+      \item A mark is a value of type \texttt{A <: Mark} for which $\exists \theta:A \to \mathbb T\text{[Prim]}$;
+  \end{itemize}
+
+  \vspace{3mm}
+   
+   With all these concepts in mind, we can define \textbf{graphic} as a value of $\mathbb T \text{Mark}$,
+  i.e. a tree where the leafs contain marks. Since each mark has a $\theta$ function,
+  we can turn a $\mathbb T\text{Mark}$ into a $\mathbb T \text{[Prim]}$ using $\mu \circ \mathbbT \theta$.
+
+  \vspace{3mm}
+
+  Note that $\mathbb T \theta: \mathbb T\text{Mark} \to \mathbb T \mathbb T \text{Mark}$ and
+  $\mu:\mathbb T \circ \mathbb T \to \mathbb T$.
+\end{frame}
+
+
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+  Using $+$ as diagram composition and $*$ to apply transformations,
+  we can construct values of $\mathbb T\text{Mark}$ using a notation similar to
+  mathematical expressions:
+  \begin{figure}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{./figs/graphic.pdf}
+    \end{center}
+  \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/pipe.pdf}
+\end{frame}
+
+\begin{frame}[fragile]{Data Visualization + Category Theory}
+    \textbf{Plot Specifications}
+    $$\text{Plot} = \text{Guide} + \text{Graphic Expression} \circ \text{Scale(Data, Encodings)}$$
+  \begin{figure}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{./figs/frame_graphic.pdf}
+    \end{center}
+  \end{figure}
+\end{frame}
 
 %------------------------------------------------
 \begin{frame}{References}

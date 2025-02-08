@@ -1,4 +1,8 @@
 \frametitle{Data Visualization + Category Theory}
-\begin{center}
-    \includegraphics[width=0.9\textwidth]{./figs/pipe.pdf}
+\textbf{Plot Specifications}
+    $$\text{Plot} = \text{Guide} + \text{Graphic Expression} \circ \text{Scale(Data, Encodings)}$$
+  \begin{figure}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{./figs/frame_graphic.pdf}
     \end{center}
+  \end{figure}

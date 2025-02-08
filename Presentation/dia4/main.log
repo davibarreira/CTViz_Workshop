@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.11.22)  8 FEB 2025 16:14
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.11.22)  8 FEB 2025 17:53
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -1106,21 +1106,22 @@ LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <5> not available
 \openout4 = main.vrb
  (./main.vrb
 warning  (file ./figs/simplediagram.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
-<./figs/simplediagram.pdf, id=728, 252.19218pt x 101.92978pt>
+<./figs/simplediagram.pdf, id=728, 795.80965pt x 225.84375pt>
 File: ./figs/simplediagram.pdf Graphic file (type pdf)
 <use ./figs/simplediagram.pdf>
 Package luatex.def Info: ./figs/simplediagram.pdf  used on input line 5.
-(luatex.def)             Requested size: 290.66959pt x 117.48273pt.
+(luatex.def)             Requested size: 290.66959pt x 82.48914pt.
 ) [11
 
 <./figs/simplediagram.pdf>]
 \openout4 = main.vrb
  (./main.vrb
-<./figs/diagramtransformation.pdf, id=755, 990.38678pt x 308.65312pt>
+warning  (file ./figs/diagramtransformation.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<./figs/diagramtransformation.pdf, id=747, 691.82104pt x 225.84375pt>
 File: ./figs/diagramtransformation.pdf Graphic file (type pdf)
 <use ./figs/diagramtransformation.pdf>
 Package luatex.def Info: ./figs/diagramtransformation.pdf  used on input line 6.
-(luatex.def)             Requested size: 290.66959pt x 90.58562pt.
+(luatex.def)             Requested size: 290.66959pt x 94.88818pt.
 ) [12
 
 <./figs/diagramtransformation.pdf>]
@@ -1140,7 +1141,7 @@ Package luatex.def Info: figs/pipe.pdf  used on input line 3.
 \openout4 = main.vrb
  (./main.vrb
 warning  (file ./figs/composetrees.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
-<./figs/composetrees.pdf, id=800, 380.00761pt x 225.84375pt>
+<./figs/composetrees.pdf, id=792, 380.00761pt x 225.84375pt>
 File: ./figs/composetrees.pdf Graphic file (type pdf)
 <use ./figs/composetrees.pdf>
 Package luatex.def Info: ./figs/composetrees.pdf  used on input line 14.
@@ -1151,7 +1152,7 @@ Package luatex.def Info: ./figs/composetrees.pdf  used on input line 14.
 \openout4 = main.vrb
  (./main.vrb
 warning  (file ./figs/flattree.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
-<./figs/flattree.pdf, id=844, 549.40572pt x 225.84375pt>
+<./figs/flattree.pdf, id=836, 549.40572pt x 225.84375pt>
 File: ./figs/flattree.pdf Graphic file (type pdf)
 <use ./figs/flattree.pdf>
 Package luatex.def Info: ./figs/flattree.pdf  used on input line 10.
@@ -1162,14 +1163,93 @@ Package luatex.def Info: ./figs/flattree.pdf  used on input line 10.
 \openout4 = main.vrb
  (./main.vrb
 warning  (file ./figs/pipe.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
-<./figs/pipe.pdf, id=894, 515.83803pt x 225.84375pt>
+<./figs/pipe.pdf, id=886, 515.83803pt x 225.84375pt>
 File: ./figs/pipe.pdf Graphic file (type pdf)
 <use ./figs/pipe.pdf>
 Package luatex.def Info: ./figs/pipe.pdf  used on input line 3.
 (luatex.def)             Requested size: 373.71713pt x 163.62741pt.
 ) [17
 
-<./figs/pipe.pdf>] (./main.bbl
+<./figs/pipe.pdf>]
+\openout4 = main.vrb
+ (./main.vrb
+warning  (file ./figs/face.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<./figs/face.pdf, id=892, 225.84375pt x 225.84375pt>
+File: ./figs/face.pdf Graphic file (type pdf)
+<use ./figs/face.pdf>
+Package luatex.def Info: ./figs/face.pdf  used on input line 31.
+(luatex.def)             Requested size: 132.87657pt x 132.88481pt.
+) [18
+
+<./figs/face.pdf>]
+\openout4 = main.vrb
+ (./main.vrb
+warning  (file ./figs/petal_flower.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<./figs/petal_flower.pdf, id=902, 743.18414pt x 225.84375pt>
+File: ./figs/petal_flower.pdf Graphic file (type pdf)
+<use ./figs/petal_flower.pdf>
+Package luatex.def Info: ./figs/petal_flower.pdf  used on input line 8.
+(luatex.def)             Requested size: 415.24408pt x 126.18904pt.
+) [19
+
+<./figs/petal_flower.pdf>]
+\openout4 = main.vrb
+ (./main.vrb) [20
+
+]
+\openout4 = main.vrb
+ (./main.vrb
+File: figs/pipe.pdf Graphic file (type pdf)
+<use figs/pipe.pdf>
+Package luatex.def Info: figs/pipe.pdf  used on input line 3.
+(luatex.def)             Requested size: 373.71713pt x 163.62741pt.
+) [21
+
+]
+\openout4 = main.vrb
+ (./main.vrb
+./main.vrb:13: Undefined control sequence.
+l.13 ...b T \text{[Prim]}$ using $\mu \circ \mathbbT
+                                                   \theta$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) [22
+
+]
+\openout4 = main.vrb
+ (./main.vrb
+<./figs/graphic.pdf, id=1166, 748.05234pt x 314.67563pt>
+File: ./figs/graphic.pdf Graphic file (type pdf)
+<use ./figs/graphic.pdf>
+Package luatex.def Info: ./figs/graphic.pdf  used on input line 7.
+(luatex.def)             Requested size: 332.19652pt x 139.7445pt.
+) [23
+
+<./figs/graphic.pdf>]
+\openout4 = main.vrb
+ (./main.vrb
+File: figs/pipe.pdf Graphic file (type pdf)
+<use figs/pipe.pdf>
+Package luatex.def Info: figs/pipe.pdf  used on input line 3.
+(luatex.def)             Requested size: 373.71713pt x 163.62741pt.
+) [24
+
+]
+\openout4 = main.vrb
+ (./main.vrb
+warning  (file ./figs/frame_graphic.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<./figs/frame_graphic.pdf, id=1212, 648.3174pt x 225.84375pt>
+File: ./figs/frame_graphic.pdf Graphic file (type pdf)
+<use ./figs/frame_graphic.pdf>
+Package luatex.def Info: ./figs/frame_graphic.pdf  used on input line 6.
+(luatex.def)             Requested size: 332.19652pt x 115.71982pt.
+) [25
+
+<./figs/frame_graphic.pdf>] (./main.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\translate ' on input line 1.
@@ -1177,7 +1257,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [18
+) [26
 
 ]
 \tf@nav=\write6
@@ -1195,19 +1275,19 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36708 strings out of 478285
+ 36897 strings out of 478285
  100000,1977958 words of node,token memory allocated
- 1241 words of node memory still in use:
-   15 hlist, 7 vlist, 4 rule, 2 disc, 2 local_par, 28 glue, 5 kern, 12 penalty, 13 glyph, 41 attribute, 66 glue_spec, 41 attribute_list, 8 write, 1 pdf_dest, 8 pdf_colorstack nodes
-   avail lists: 2:1014,3:70,4:684,5:2514,6:41,7:2853,8:15,9:5074,10:30,11:340
- 55246 multiletter control sequences out of 65536+600000
- 72 fonts using 22399743 bytes
+ 1249 words of node memory still in use:
+   15 hlist, 7 vlist, 4 rule, 2 disc, 2 local_par, 28 glue, 5 kern, 12 penalty, 13 glyph, 43 attribute, 66 glue_spec, 43 attribute_list, 8 write, 1 pdf_dest, 8 pdf_colorstack nodes
+   avail lists: 2:1016,3:112,4:684,5:2515,6:71,7:3081,8:24,9:5074,10:30,11:340
+ 55311 multiletter control sequences out of 65536+600000
+ 75 fonts using 22789207 bytes
  128i,11n,115p,9591b,5301s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></Users/davibarreira/Library/Fonts/JuliaMono-Regular.ttf></Users/davibarreira/Library/Fonts/JuliaMono-Bold.ttf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (18 pages, 765054 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></Users/davibarreira/Library/Fonts/JuliaMono-Regular.ttf></Users/davibarreira/Library/Fonts/JuliaMono-Bold.ttf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (26 pages, 872988 bytes).
 
-PDF statistics: 968 PDF objects out of 1000 (max. 8388607)
- 649 compressed objects within 7 object streams
- 38 named destinations out of 1000 (max. 131072)
+PDF statistics: 1437 PDF objects out of 1440 (max. 8388607)
+ 924 compressed objects within 10 object streams
+ 54 named destinations out of 1000 (max. 131072)
  24 words of extra memory for PDF output out of 10000 (max. 100000000)
 
